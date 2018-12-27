@@ -10,11 +10,13 @@ INCPATH=$(RABBITMQ_C_DIR)/librabbitmq
 
 LIBPATH=$(RABBITMQ_C_DIR)/build/librabbitmq
 
-CFLAGS=-g -Wall -lrabbitmq -I. -I$(INCPATH) -L$(LIBPATH) -Wl,-rpath=$(LIBPATH)
+CFLAGS=-g -Wall -lrt -lpthread -lrabbitmq -I. -I$(INCPATH) -L$(LIBPATH) -Wl,-rpath=$(LIBPATH)
 
 SRC=rmq_listener.c \
      utils.c \
-     unix/platform_utils.c
+     unix/platform_utils.c \
+     can_utils.c \
+     lib.c
 
 
 STUB_SRC=rmq_sender.c \

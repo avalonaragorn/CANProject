@@ -1,38 +1,3 @@
-/*
- * ***** BEGIN LICENSE BLOCK *****
- * Version: MIT
- *
- * Portions created by Alan Antonuk are Copyright (c) 2012-2013
- * Alan Antonuk. All Rights Reserved.
- *
- * Portions created by VMware are Copyright (c) 2007-2012 VMware, Inc.
- * All Rights Reserved.
- *
- * Portions created by Tony Garnock-Jones are Copyright (c) 2009-2010
- * VMware, Inc. and Tony Garnock-Jones. All Rights Reserved.
- *
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use, copy,
- * modify, merge, publish, distribute, sublicense, and/or sell copies
- * of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
- * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
- * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- * ***** END LICENSE BLOCK *****
- */
-
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -48,14 +13,15 @@ int main(int argc, char const *const *argv) {
   int port, status;
   char const *exchange;
   char const *routingkey;
-  char const *messagebody;
+  // char const *messagebody;
+  char const *dspImageFile;
   amqp_socket_t *socket = NULL;
   amqp_connection_state_t conn;
 
   if (argc < 6) {
     fprintf(
         stderr,
-        "Usage: rmq_sender host port exchange routingkey messagebody\n");
+        "Usage: rmq_sender host port exchange routingkey dspImageFile\n");
     return 1;
   }
 
@@ -63,7 +29,8 @@ int main(int argc, char const *const *argv) {
   port = atoi(argv[2]);
   exchange = argv[3];
   routingkey = argv[4];
-  messagebody = argv[5];
+  // messagebody = argv[5];
+  dspImageFile = argv[5];
 
   conn = amqp_new_connection();
 
@@ -89,10 +56,32 @@ int main(int argc, char const *const *argv) {
     props._flags = AMQP_BASIC_CONTENT_TYPE_FLAG | AMQP_BASIC_DELIVERY_MODE_FLAG;
     props.content_type = amqp_cstring_bytes("text/plain");
     props.delivery_mode = 2; /* persistent delivery mode */
+
+
+    int length;
+    FILE *image;
+    image = fopen(dspImageFile, "r");
+    fseek(image, 0, SEEK_END);
+    length = ftell(image);
+    rewind(image);
+
+    amqp_bytes_t msg = amqp_bytes_malloc(length);
+    fread(msg.bytes, msg.len, 1, image);
+    fclose(image);
+
     die_on_error(amqp_basic_publish(conn, 1, amqp_cstring_bytes(exchange),
                                     amqp_cstring_bytes(routingkey), 0, 0,
-                                    &props, amqp_cstring_bytes(messagebody)),
+                                    &props, msg),
                  "Publishing");
+
+    printf("Send DSP Image: %s, File Size: %d\n", dspImageFile, length);
+
+    amqp_bytes_free(msg);
+
+    // die_on_error(amqp_basic_publish(conn, 1, amqp_cstring_bytes(exchange),
+    //                                 amqp_cstring_bytes(routingkey), 0, 0,
+    //                                 &props, amqp_cstring_bytes(messagebody)),
+    //              "Publishing");
   }
 
   die_on_amqp_error(amqp_channel_close(conn, 1, AMQP_REPLY_SUCCESS),
