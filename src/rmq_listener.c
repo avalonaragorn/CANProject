@@ -11,16 +11,22 @@
 #include <errno.h>
 #include <unistd.h>
 #include <net/if.h>
+#include <arpa/inet.h>
 
 #include "utils.h"
 #include "can_utils.h"
 
+#define MAX_LINE 1024
 
-#define EXCHANGE "amq.direct";
-#define BINDING_KEY "tbox";
-#define ROUTING_KEY "controller";
+#define EXCHANGE "amq.direct"
+#define BINDING_KEY "tbox"
+#define ROUTING_KEY "controller"
 
 #define LOCAL_IMAGE "local_img.hex"
+
+#define WAITING_TIME_INTERVAL 500000
+
+#define MAX_SECTOR_SIZE (1800 - 8)
 
 char const *exchange = EXCHANGE;
 char const *bindingkey = BINDING_KEY;
@@ -32,6 +38,8 @@ static unsigned int dsp_default_can_id = 0x000003B1;
 
 static pthread_t can_msg_forward_thread;
 void *forward_received_can_msg(void *arg);
+
+int burn_hex_file_to_dsp();
 
 int rmq_send(unsigned char* payload, unsigned char len)
 {
@@ -63,18 +71,25 @@ int main(int argc, char const *const *argv)
   int port, status;
   // char const *exchange;
   // char const *bindingkey;
+  char const *canItf;
   amqp_socket_t *socket = NULL;
 
   amqp_bytes_t queuename;
 
-  if (argc < 3) {
-    fprintf(stderr, "Usage: canproxy host port\n");
+  if (argc < 4) {
+    fprintf(stderr, "Usage: canproxy host port canItf\n");
     return 1;
   }
 
+  hostname = argv[1];
+  port = atoi(argv[2]);
+  canItf = argv[3];
+  // exchange = argv[3];
+  // bindingkey = argv[4];
+  // bindingkey = BINDING_KEY;
+
   // zhj: init can socket
-  // if (can_init("can0") !=0)
-  if (can_init("vcan0") !=0)
+  if (can_init(canItf) !=0)
   {
     printf("Failed to init can socket!\n");
   }
@@ -89,12 +104,6 @@ int main(int argc, char const *const *argv)
       printf("Create CAN Msg Forward Thread!\n");
   }
   //zhj: end
-
-  hostname = argv[1];
-  port = atoi(argv[2]);
-  // exchange = argv[3];
-  // bindingkey = argv[4];
-  // bindingkey = BINDING_KEY;
 
   conn = amqp_new_connection();
 
@@ -161,40 +170,20 @@ int main(int argc, char const *const *argv)
 
       amqp_dump(envelope.message.body.bytes, envelope.message.body.len);
 
-      printf("\nRecevied HEX file size: %ld\n", envelope.message.body.len);
+      printf("\nRecevied HEX file size: %ld\n\n", envelope.message.body.len);
 
       FILE* image = fopen (LOCAL_IMAGE, "w");
       fwrite(envelope.message.body.bytes, 1, envelope.message.body.len, image);
       fclose(image);
 
       //zhj: download image by can interface
-      printf("Downloading DSP image ......\n");
-
-      unsigned char payload[8] = {0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08};
-
-      int i;
-      for (i = 0; i < (envelope.message.body.len/sizeof(payload)); i++)
+      if (burn_hex_file_to_dsp() < 0)
       {
-        memcpy(payload, (unsigned char*)envelope.message.body.bytes + i * sizeof(payload), sizeof(payload));
-
-        if (can_send(dsp_default_can_id, payload, sizeof(payload)) !=0)
-        {
-          printf("Failed to send can frame!\n");
-        }
-
-      }
-
-      if (envelope.message.body.len > (i * sizeof(payload)))
+        printf("Oops! Download DSP image failed\n");
+      } else
       {
-        memcpy(payload, (unsigned char*)envelope.message.body.bytes + i * sizeof(payload), envelope.message.body.len%sizeof(payload));
-        if (can_send(dsp_default_can_id, payload, envelope.message.body.len%sizeof(payload)) !=0)
-        {
-          printf("Failed to send can frame!\n");
-        }
+        printf("Congratulation! Download DSP image successfully\n");
       }
-
-      printf("End\n");
-
       // zhj
 
       amqp_destroy_envelope(&envelope);
@@ -225,7 +214,6 @@ void *forward_received_can_msg(void *arg)
       }
 
       // printf("the nbytes:%d\n", nbytes);
-      // printf("length:%ld\n", sizeof(frame));
       printf("Recv CAN Msg:\t%03X    [%d]    %02X %02X %02X %02X %02X %02X %02X %02X",
           frame.can_id,
           frame.len,
@@ -242,7 +230,7 @@ void *forward_received_can_msg(void *arg)
 
       if (rmq_send((unsigned char *)&frame, frame_size) < 0)
       {
-        printf("\t\tForward Fail\n");     
+        printf("\t\tForward Fail\n");
       } else
       {
         printf("\t\tForward Succ\n");
@@ -250,4 +238,445 @@ void *forward_received_can_msg(void *arg)
   }
 
   return NULL;
+}
+
+int burn_hex_file_to_dsp()
+{
+  int ret = 0;
+
+  unsigned char can_frame_data[8] = {0};
+
+  unsigned int Total_Data_Bytes_Has_Been_Sent = 0;
+  
+  unsigned int curBaseAddr = 0;
+  unsigned int curAddrOffset = 0;
+  unsigned int Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
+  unsigned int Data_Bytes_For_Current_Offset_Has_Been_Sent = 0;
+  unsigned int Data_Bytes_For_Current_Base_Addr_Has_Been_Sent = 0;
+  
+  unsigned char Base_Addr_Just_Be_Set = true;
+  unsigned char Need_To_Send_New_Addr_Offset = true;
+  unsigned char Last_Sector_Has_Been_Sent = false;
+
+  unsigned char PAUSE_FLAG = false;
+
+  //zhj: Parse HEX file per line, and download image to DSP
+  FILE *fp;
+  char strLine[MAX_LINE];
+  if ((fp = fopen(LOCAL_IMAGE,"r")) == NULL)
+  {
+    printf("Failed to open file %s!\n", LOCAL_IMAGE);
+    return -1;
+  }
+
+  unsigned int nbytes=0, addrOffset=0, type=0, line_num=0, i, val, line_chksum;
+  unsigned char data[MAX_LINE];
+  unsigned char chksum;
+
+  unsigned char sectorId = 0;
+
+  printf("Downloading DSP image ......\n");
+
+  while (!feof(fp))
+  { 
+    memset(strLine, 0, sizeof(strLine));
+    fgets(strLine, sizeof(strLine)-1, fp);
+
+    if (strlen(strLine) == 0)
+    {
+      break;
+    }
+
+    ++line_num;
+
+    const char *s = strLine;
+
+    if (*s != ':')
+    {  
+      printf("Line[%d]: %s: format violation (1)\n", line_num, strLine);      
+      ret = -1;
+      goto OUT;
+    }
+
+    ++s;
+    
+    if (sscanf(s, "%02x%04x%02x", &nbytes, &addrOffset, &type) != 3)
+    {  
+      printf("Line[%d]: %s: format violation (2)\n", line_num, strLine);      
+      ret = -1;
+      goto OUT;
+    }
+
+    if (!(nbytes >= 0 && nbytes < MAX_LINE))
+    {
+      printf("Unsupport %d bytes per line\n", nbytes);      
+      ret = -1;
+      goto OUT;
+    }
+
+    s += 8;
+
+    chksum = nbytes + addrOffset + (addrOffset>>8) + type;
+
+    for (i=0; i < nbytes; i++)
+    {
+      val = 0;
+
+      if (sscanf(s, "%02x", &val) != 1)
+      {
+        printf("Line[%d]: %s: format violation (3)\n", line_num, strLine);        
+        ret = -1;
+        goto OUT;
+      }
+
+      s += 2;
+
+      data[i] = val;
+      chksum += val;
+    }
+
+    line_chksum = 0;
+    if (sscanf(s, "%02x", &line_chksum) != 1)
+    {
+      printf("Line[%d]: %s: format violation (4)\n", line_num, strLine);      
+      ret = -1;
+      goto OUT;
+    }
+
+    if ((chksum + line_chksum) & 0xff)
+    {  
+      printf("Line[%d]: %s: checksum mismatch (%u/%u)/n", line_num, strLine, chksum, line_chksum);      
+      ret = -1;
+      goto OUT;
+    }
+
+    unsigned int *tp = NULL;
+
+    switch (type)
+    {
+        case 0: // Data Record
+          if (Base_Addr_Just_Be_Set == false)
+          {
+            if ((curAddrOffset + Data_Bytes_For_Current_Offset_Has_Been_Sent / 2) != addrOffset)
+            {
+              if (Data_Bytes_For_Current_Offset_Has_Been_Sent != 0)
+              {
+                sectorId += 1;
+                printf("\nSector[%d]: %d bytes, Done!\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+                printf("\nBase Addr: 0x%08X, Offset: 0x%08X, %d bytes, Done!\n\n", curBaseAddr, curAddrOffset, 
+                      Data_Bytes_For_Current_Offset_Has_Been_Sent);
+                usleep(WAITING_TIME_INTERVAL);
+              }
+
+              //zhj: send can frame, FAD0XXXXXXXX0002
+              can_frame_data[0] = 0xFA;
+              can_frame_data[1] = 0xD0;
+              
+              tp = (unsigned int *)&can_frame_data[2];
+              *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+
+              can_frame_data[6] = 0x00;
+              can_frame_data[7] = 0x02;
+
+              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              {
+                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+                ret = -1;
+                goto OUT;
+              }
+
+              Need_To_Send_New_Addr_Offset = true;
+            }
+          }          
+
+          if (Need_To_Send_New_Addr_Offset)
+          {
+            //zhj: send can frame, FADD0000XXXXXXXX
+            can_frame_data[0] = 0xFA;
+            can_frame_data[1] = 0xDD;
+            can_frame_data[2] = 0x00;
+            can_frame_data[3] = 0x00;
+
+            tp = (unsigned int *)&can_frame_data[4];
+            *tp = htonl(addrOffset);
+
+            if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+            {
+              printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+              ret = -1;
+              goto OUT;
+            }
+
+            if (Base_Addr_Just_Be_Set)
+            {
+              Base_Addr_Just_Be_Set = false;
+            }
+
+            Need_To_Send_New_Addr_Offset = false;
+            curAddrOffset = addrOffset;
+            Data_Bytes_For_Current_Offset_Has_Been_Sent = 0;
+          }
+
+          for (i = 0; i < (nbytes/8); i++)
+          {
+            memcpy(can_frame_data, data + i*8, 8);
+
+            if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) !=0)
+            {
+              printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+              ret = -1;
+              goto OUT;
+            }
+
+            Total_Data_Bytes_Has_Been_Sent += 8;
+            Data_Bytes_For_Current_Offset_Has_Been_Sent += 8;
+            Data_Bytes_For_Current_Base_Addr_Has_Been_Sent += 8;
+            Data_Bytes_For_Current_Sector_Has_Been_Sent += 8;
+
+            if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
+            {
+              // PAUSE_FLAG = true;
+
+              //zhj: send can frame, FAD0XXXXXXXX0000
+              can_frame_data[0] = 0xFA;
+              can_frame_data[1] = 0xD0;
+
+              tp = (unsigned int *)&can_frame_data[2];
+              *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+
+              can_frame_data[6] = 0x00;
+              can_frame_data[7] = 0x00;
+
+              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              {
+                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+                ret = -1;
+                goto OUT;
+              }
+
+              sectorId += 1;
+              printf("\nSector[%d]: %d bytes, Done!\n\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+              usleep(WAITING_TIME_INTERVAL);
+
+              Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
+            }
+          }
+
+          unsigned int left = nbytes % 8;
+          switch (left)
+          {
+            case 6:
+              //zhj: send can frame, FAD6XXXXXXXXXXXX
+              can_frame_data[0] = 0xFA;
+              can_frame_data[1] = 0xD6;
+              
+              memcpy(&can_frame_data[2], data + i*8, 6);
+
+              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              {
+                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+                ret = -1;
+                goto OUT;
+              }
+
+              Total_Data_Bytes_Has_Been_Sent += 6;
+              Data_Bytes_For_Current_Offset_Has_Been_Sent += 6;
+              Data_Bytes_For_Current_Base_Addr_Has_Been_Sent += 6;
+              Data_Bytes_For_Current_Sector_Has_Been_Sent += 6;
+
+              Last_Sector_Has_Been_Sent = true;
+
+              if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
+              {
+                PAUSE_FLAG = true;
+              }
+
+              break;
+            case 4:
+              //zhj: send can frame, FAD40000XXXXXXXX
+              can_frame_data[0] = 0xFA;
+              can_frame_data[1] = 0xD4;
+              can_frame_data[2] = 0x00;
+              can_frame_data[3] = 0x00;
+              
+              memcpy(&can_frame_data[4], data + i*8, 4);
+
+              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              {
+                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+                ret = -1;
+                goto OUT;
+              }
+
+              Total_Data_Bytes_Has_Been_Sent += 4;
+              Data_Bytes_For_Current_Offset_Has_Been_Sent += 4;
+              Data_Bytes_For_Current_Base_Addr_Has_Been_Sent += 4;
+              Data_Bytes_For_Current_Sector_Has_Been_Sent += 4;
+
+              Last_Sector_Has_Been_Sent = true;
+
+              if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
+              {
+                PAUSE_FLAG = true;
+              }
+
+              break;
+            case 2:
+              //zhj: send can frame, FAD200000000XXXX
+              can_frame_data[0] = 0xFA;
+              can_frame_data[1] = 0xD4;
+              can_frame_data[2] = 0x00;
+              can_frame_data[3] = 0x00;
+              can_frame_data[4] = 0x00;
+              can_frame_data[5] = 0x00;
+              
+              memcpy(&can_frame_data[6], data + i*8, 2);
+
+              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              {
+                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+                ret = -1;
+                goto OUT;
+              }
+
+              Total_Data_Bytes_Has_Been_Sent += 2;
+              Data_Bytes_For_Current_Offset_Has_Been_Sent += 2;
+              Data_Bytes_For_Current_Base_Addr_Has_Been_Sent += 2;
+              Data_Bytes_For_Current_Sector_Has_Been_Sent += 2;
+
+              Last_Sector_Has_Been_Sent = true;
+
+              if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
+              {
+                PAUSE_FLAG = true;
+              }
+
+              break;
+            case 0:
+              Last_Sector_Has_Been_Sent = true;
+              break;
+            default:
+              printf("Line[%d]: %s: data length is odd, %d !!!\n", line_num, strLine, nbytes);          
+              ret = -1;
+              goto OUT;
+          }
+
+          if (PAUSE_FLAG)
+          {
+            PAUSE_FLAG = false;
+
+            //zhj: send can frame, FAD0XXXXXXXX0000
+            can_frame_data[0] = 0xFA;
+            can_frame_data[1] = 0xD0;
+
+            tp = (unsigned int *)&can_frame_data[2];
+            *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+
+            can_frame_data[6] = 0x00;
+            can_frame_data[7] = 0x00;
+
+            if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+            {
+              printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+              ret = -1;
+              goto OUT;
+            }
+
+            sectorId += 1;
+            printf("\nSector[%d]: %d bytes, Done!\n\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+            usleep(WAITING_TIME_INTERVAL);
+
+            Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
+          }
+
+          break;
+        case 1: // EOF
+          //zhj: send can frame, FAD0XXXXXXXX0003
+          can_frame_data[0] = 0xFA;
+          can_frame_data[1] = 0xD0;
+
+          tp = (unsigned int *)&can_frame_data[2];
+          *tp = htonl(Total_Data_Bytes_Has_Been_Sent);
+
+          can_frame_data[6] = 0x00;
+          can_frame_data[7] = 0x03;
+
+          if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+          {
+            printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+            ret = -1;
+            goto OUT;
+          }
+
+          printf("\nTotally %d bytes, Done!\n\n", Total_Data_Bytes_Has_Been_Sent);
+
+          break;
+        case 4: // Extended Linear Address Record
+          if (Last_Sector_Has_Been_Sent)
+          {
+            //zhj: send can frame, FAD0XXXXXXXX0001
+            can_frame_data[0] = 0xFA;
+            can_frame_data[1] = 0xD0;
+
+            tp = (unsigned int *)&can_frame_data[2];
+            *tp = htonl(Data_Bytes_For_Current_Base_Addr_Has_Been_Sent);
+
+            can_frame_data[6] = 0x00;
+            can_frame_data[7] = 0x01;
+
+            if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+            {
+              printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+              ret = -1;
+              goto OUT;
+            }
+
+            sectorId += 1;
+            printf("\nSector[%d]: %d bytes, Done!\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+            printf("\nBase Addr: 0x%08X, Offset: 0x%08X, %d bytes, Done!\n", curBaseAddr, curAddrOffset, Data_Bytes_For_Current_Offset_Has_Been_Sent);
+            printf("\nBase Addr: 0x%08X, %d bytes, Done!\n\n", curBaseAddr, Data_Bytes_For_Current_Base_Addr_Has_Been_Sent);
+
+            Last_Sector_Has_Been_Sent = false;
+            Data_Bytes_For_Current_Base_Addr_Has_Been_Sent = 0;
+
+            usleep(WAITING_TIME_INTERVAL);
+          }
+
+          //zhj: send new base address, FADB0000XXXX0000
+          can_frame_data[0] = 0xFA;
+          can_frame_data[1] = 0xDB;
+          can_frame_data[2] = 0x00;
+          can_frame_data[3] = 0x00;
+
+          memcpy(&can_frame_data[4], data, 2);
+
+          can_frame_data[6] = 0x00;
+          can_frame_data[7] = 0x00;
+
+          curBaseAddr = *((unsigned int *)&can_frame_data[4]);
+          curBaseAddr = ntohl(curBaseAddr);
+
+          if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+          {
+            printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+            ret = -1;
+            goto OUT;
+          }
+
+          Base_Addr_Just_Be_Set = true;
+          Need_To_Send_New_Addr_Offset = true;
+          sectorId = 0;
+
+          break;
+        default:
+          printf("Line[%d]: %s: Unknown entry type %d\n", line_num, strLine, type);
+          ret = -1;
+          goto OUT;
+    }
+  }
+
+
+OUT:
+  fclose(fp);
+  return ret;
 }

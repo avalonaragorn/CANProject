@@ -9,7 +9,7 @@
 
 #include "can_utils.h"
 
-int can_init(char* can_itf)
+int can_init(char const *can_itf)
 {
 	struct sockaddr_can addr;
 	struct ifreq ifr;
@@ -59,12 +59,25 @@ int can_send(unsigned int can_id, unsigned char* payload, unsigned char len)
 	
 	frame_size = sizeof(struct canfd_frame) - sizeof(frame.data) + frame.len;
 
-	/* send frame */
+	printf("Send CAN Msg:\t%03X    [%d]    %02X %02X %02X %02X %02X %02X %02X %02X",
+          frame.can_id,
+          frame.len,
+          frame.data[0],
+          frame.data[1],
+          frame.data[2],
+          frame.data[3],
+          frame.data[4],
+          frame.data[5],
+          frame.data[6],
+          frame.data[7]);
+
+	//zhj: send can frame
 	if (write(canSocket, &frame, frame_size) != frame_size)
 	{
-		perror("write");
-		return 1;
+		printf("\t\tFail\n");
+		return -1;
 	}
 
+	printf("\t\tSucc\n");
 	return 0;
 }

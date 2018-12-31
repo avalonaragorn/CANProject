@@ -6,9 +6,12 @@
 
 #include "lib.h"
 
+#define true 1
+#define false 0
+
 int canSocket;
 
-int can_init(char* can_itf);
+int can_init(char const *can_itf);
 void can_deinit();
 int can_send(unsigned int can_id, unsigned char* payload, unsigned char len);
 
