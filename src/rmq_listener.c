@@ -26,7 +26,7 @@
 
 #define WAITING_TIME_INTERVAL 500000
 
-#define MAX_SECTOR_SIZE (1800 - 8)
+#define MAX_SECTOR_SIZE 1800
 
 char const *exchange = EXCHANGE;
 char const *bindingkey = BINDING_KEY;
@@ -248,8 +248,8 @@ void swap_can_frame_data(unsigned char* can_frame_data)
 
   memcpy(temp_data, can_frame_data, sizeof(temp_data));
 
-  can_frame_data[0] = temp_data[3];
-  can_frame_data[1] = temp_data[4];
+  can_frame_data[0] = temp_data[2];
+  can_frame_data[1] = temp_data[3];
   can_frame_data[2] = temp_data[0];
   can_frame_data[3] = temp_data[1];
   can_frame_data[4] = temp_data[6];
@@ -391,7 +391,8 @@ int burn_hex_file_to_dsp()
               can_frame_data[1] = 0xD0;
               
               tp = (unsigned int *)&can_frame_data[2];
-              *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+              // *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+              *tp = htonl(Data_Bytes_For_Current_Sector_Has_Been_Sent);
 
               can_frame_data[6] = 0x00;
               can_frame_data[7] = 0x02;
@@ -435,6 +436,7 @@ int burn_hex_file_to_dsp()
             Need_To_Send_New_Addr_Offset = false;
             curAddrOffset = addrOffset;
             Data_Bytes_For_Current_Offset_Has_Been_Sent = 0;
+            Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
           }
 
           for (i = 0; i < (nbytes/8); i++)
@@ -456,31 +458,31 @@ int burn_hex_file_to_dsp()
 
             if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
             {
-              // PAUSE_FLAG = true;
+              PAUSE_FLAG = true;
 
-              //zhj: send can frame, FAD0XXXXXXXX0000
-              can_frame_data[0] = 0xFA;
-              can_frame_data[1] = 0xD0;
+              // //zhj: send can frame, FAD0XXXXXXXX0000
+              // can_frame_data[0] = 0xFA;
+              // can_frame_data[1] = 0xD0;
 
-              tp = (unsigned int *)&can_frame_data[2];
-              *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+              // tp = (unsigned int *)&can_frame_data[2];
+              // *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
 
-              can_frame_data[6] = 0x00;
-              can_frame_data[7] = 0x00;
+              // can_frame_data[6] = 0x00;
+              // can_frame_data[7] = 0x00;
 
-              swap_can_frame_data(can_frame_data);
-              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
-              {
-                printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
-                ret = -1;
-                goto OUT;
-              }
+              // swap_can_frame_data(can_frame_data);
+              // if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              // {
+              //   printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
+              //   ret = -1;
+              //   goto OUT;
+              // }
 
-              sectorId += 1;
-              printf("\nSector[%d]: %d bytes, Done!\n\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
-              usleep(WAITING_TIME_INTERVAL);
+              // sectorId += 1;
+              // printf("\nSector[%d]: %d bytes, Done!\n\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+              // usleep(WAITING_TIME_INTERVAL);
 
-              Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
+              // Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
             }
           }
 
@@ -495,7 +497,7 @@ int burn_hex_file_to_dsp()
               memcpy(&can_frame_data[2], data + i*8, 6);
 
               swap_can_frame_data(can_frame_data);
-              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
                 ret = -1;
@@ -525,7 +527,7 @@ int burn_hex_file_to_dsp()
               memcpy(&can_frame_data[4], data + i*8, 4);
 
               swap_can_frame_data(can_frame_data);
-              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
                 ret = -1;
@@ -557,7 +559,7 @@ int burn_hex_file_to_dsp()
               memcpy(&can_frame_data[6], data + i*8, 2);
 
               swap_can_frame_data(can_frame_data);
-              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
                 ret = -1;
@@ -595,7 +597,7 @@ int burn_hex_file_to_dsp()
             can_frame_data[1] = 0xD0;
 
             tp = (unsigned int *)&can_frame_data[2];
-            *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
+            *tp = htonl(Data_Bytes_For_Current_Sector_Has_Been_Sent);
 
             can_frame_data[6] = 0x00;
             can_frame_data[7] = 0x00;
@@ -646,7 +648,8 @@ int burn_hex_file_to_dsp()
             can_frame_data[1] = 0xD0;
 
             tp = (unsigned int *)&can_frame_data[2];
-            *tp = htonl(Data_Bytes_For_Current_Base_Addr_Has_Been_Sent);
+            // *tp = htonl(Data_Bytes_For_Current_Base_Addr_Has_Been_Sent);
+            *tp = htonl(Data_Bytes_For_Current_Sector_Has_Been_Sent);
 
             can_frame_data[6] = 0x00;
             can_frame_data[7] = 0x01;
@@ -666,6 +669,7 @@ int burn_hex_file_to_dsp()
 
             Last_Sector_Has_Been_Sent = false;
             Data_Bytes_For_Current_Base_Addr_Has_Been_Sent = 0;
+            Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
 
             usleep(WAITING_TIME_INTERVAL);
           }
