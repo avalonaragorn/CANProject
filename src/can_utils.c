@@ -79,5 +79,15 @@ int can_send(unsigned int can_id, unsigned char* payload, unsigned char len)
 	}
 
 	printf("\t\tSucc\n");
+
+	// while (1)
+	// {
+	// 	if (getchar())
+	// 		break;
+	// 	sleep(1);
+	// }
+
+	usleep(2000);
+
 	return 0;
 }

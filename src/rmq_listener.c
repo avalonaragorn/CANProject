@@ -39,6 +39,7 @@ static unsigned int dsp_default_can_id = 0x000003B1;
 static pthread_t can_msg_forward_thread;
 void *forward_received_can_msg(void *arg);
 
+void swap_can_frame_data(unsigned char* data);
 int burn_hex_file_to_dsp();
 
 int rmq_send(unsigned char* payload, unsigned char len)
@@ -94,15 +95,16 @@ int main(int argc, char const *const *argv)
     printf("Failed to init can socket!\n");
   }
 
-  int ret = pthread_create(&can_msg_forward_thread, 0, forward_received_can_msg, NULL);
-  if (ret != 0)
-  {
-      printf("Failed to Create CAN Msg Forward Thread: %s\n", strerror(errno));
-      return ret;
-  } else
-  {
-      printf("Create CAN Msg Forward Thread!\n");
-  }
+  // zhj: just for test, temporally comment it
+  // int ret = pthread_create(&can_msg_forward_thread, 0, forward_received_can_msg, NULL);
+  // if (ret != 0)
+  // {
+  //     printf("Failed to Create CAN Msg Forward Thread: %s\n", strerror(errno));
+  //     return ret;
+  // } else
+  // {
+  //     printf("Create CAN Msg Forward Thread!\n");
+  // }
   //zhj: end
 
   conn = amqp_new_connection();
@@ -238,6 +240,22 @@ void *forward_received_can_msg(void *arg)
   }
 
   return NULL;
+}
+
+void swap_can_frame_data(unsigned char* can_frame_data)
+{
+  unsigned char temp_data[8] = {0};
+
+  memcpy(temp_data, can_frame_data, sizeof(temp_data));
+
+  can_frame_data[0] = temp_data[3];
+  can_frame_data[1] = temp_data[4];
+  can_frame_data[2] = temp_data[0];
+  can_frame_data[3] = temp_data[1];
+  can_frame_data[4] = temp_data[6];
+  can_frame_data[5] = temp_data[7];
+  can_frame_data[6] = temp_data[4];
+  can_frame_data[7] = temp_data[5];
 }
 
 int burn_hex_file_to_dsp()
@@ -378,7 +396,8 @@ int burn_hex_file_to_dsp()
               can_frame_data[6] = 0x00;
               can_frame_data[7] = 0x02;
 
-              if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+              swap_can_frame_data(can_frame_data);
+              if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
                 ret = -1;
@@ -400,7 +419,8 @@ int burn_hex_file_to_dsp()
             tp = (unsigned int *)&can_frame_data[4];
             *tp = htonl(addrOffset);
 
-            if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
+            swap_can_frame_data(can_frame_data);
+            if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
             {
               printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
               ret = -1;
@@ -421,6 +441,7 @@ int burn_hex_file_to_dsp()
           {
             memcpy(can_frame_data, data + i*8, 8);
 
+            swap_can_frame_data(can_frame_data);
             if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) !=0)
             {
               printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -447,6 +468,7 @@ int burn_hex_file_to_dsp()
               can_frame_data[6] = 0x00;
               can_frame_data[7] = 0x00;
 
+              swap_can_frame_data(can_frame_data);
               if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -472,6 +494,7 @@ int burn_hex_file_to_dsp()
               
               memcpy(&can_frame_data[2], data + i*8, 6);
 
+              swap_can_frame_data(can_frame_data);
               if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -501,6 +524,7 @@ int burn_hex_file_to_dsp()
               
               memcpy(&can_frame_data[4], data + i*8, 4);
 
+              swap_can_frame_data(can_frame_data);
               if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -532,6 +556,7 @@ int burn_hex_file_to_dsp()
               
               memcpy(&can_frame_data[6], data + i*8, 2);
 
+              swap_can_frame_data(can_frame_data);
               if (can_send(dsp_data_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
               {
                 printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -575,6 +600,7 @@ int burn_hex_file_to_dsp()
             can_frame_data[6] = 0x00;
             can_frame_data[7] = 0x00;
 
+            swap_can_frame_data(can_frame_data);
             if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
             {
               printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -601,6 +627,7 @@ int burn_hex_file_to_dsp()
           can_frame_data[6] = 0x00;
           can_frame_data[7] = 0x03;
 
+          swap_can_frame_data(can_frame_data);
           if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
           {
             printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -624,6 +651,7 @@ int burn_hex_file_to_dsp()
             can_frame_data[6] = 0x00;
             can_frame_data[7] = 0x01;
 
+            swap_can_frame_data(can_frame_data);
             if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
             {
               printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
@@ -656,6 +684,7 @@ int burn_hex_file_to_dsp()
           curBaseAddr = *((unsigned int *)&can_frame_data[4]);
           curBaseAddr = ntohl(curBaseAddr);
 
+          swap_can_frame_data(can_frame_data);
           if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
           {
             printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
