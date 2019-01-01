@@ -9,7 +9,7 @@
 #define true 1
 #define false 0
 
-#define CAN_FRAME_TIME_INTERVAL 2000
+#define CAN_FRAME_TIME_INTERVAL 5000
 
 int canSocket;
 
