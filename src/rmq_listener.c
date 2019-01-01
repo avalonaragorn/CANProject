@@ -36,7 +36,11 @@ static amqp_connection_state_t conn;
 static unsigned int dsp_data_can_id = 0x000004B1;
 static unsigned int dsp_default_can_id = 0x000003B1;
 
-// static pthread_t can_msg_forward_thread;
+static unsigned char g_1stPackageHasBeenSent = false;
+static unsigned char g_1stPackageResponse = false;
+
+
+static pthread_t can_msg_forward_thread;
 void *forward_received_can_msg(void *arg);
 
 void swap_can_frame_data(unsigned char* data);
@@ -95,16 +99,15 @@ int main(int argc, char const *const *argv)
     printf("Failed to init can socket!\n");
   }
 
-  // zhj: just for test, temporally comment it
-  // int ret = pthread_create(&can_msg_forward_thread, 0, forward_received_can_msg, NULL);
-  // if (ret != 0)
-  // {
-  //     printf("Failed to Create CAN Msg Forward Thread: %s\n", strerror(errno));
-  //     return ret;
-  // } else
-  // {
-  //     printf("Create CAN Msg Forward Thread!\n");
-  // }
+  int ret = pthread_create(&can_msg_forward_thread, 0, forward_received_can_msg, NULL);
+  if (ret != 0)
+  {
+      printf("Failed to Create CAN Msg Forward Thread: %s\n", strerror(errno));
+      return ret;
+  } else
+  {
+      printf("Create CAN Msg Forward Thread!\n");
+  }
 
   //zhj: end
 
@@ -218,28 +221,51 @@ void *forward_received_can_msg(void *arg)
           continue;
       }
 
-      // printf("the nbytes:%d\n", nbytes);
-      printf("Recv CAN Msg:\t%03X    [%d]    %02X %02X %02X %02X %02X %02X %02X %02X",
-          frame.can_id,
-          frame.len,
-          frame.data[0],
-          frame.data[1],
-          frame.data[2],
-          frame.data[3],
-          frame.data[4],
-          frame.data[5],
-          frame.data[6],
-          frame.data[7]);
-
-      int frame_size = sizeof(struct canfd_frame) - sizeof(frame.data) + frame.len;
-
-      if (rmq_send((unsigned char *)&frame, frame_size) < 0)
+      if ((g_1stPackageHasBeenSent == true) && (g_1stPackageResponse == false))
       {
-        printf("\t\tForward Fail\n");
-      } else
-      {
-        printf("\t\tForward Succ\n");
+        //zhj: waiting for "EF CC C" from DSP
+        if ((frame.data[0] == 0xEF) && (frame.data[1] == 0xCC) && ((frame.data[2] >> 4) == 0xC))
+        {
+          printf("Recv CAN Msg:\t%03X    [%d]    %02X %02X %02X %02X %02X %02X %02X %02X\n",
+              frame.can_id,
+              frame.len,
+              frame.data[0],
+              frame.data[1],
+              frame.data[2],
+              frame.data[3],
+              frame.data[4],
+              frame.data[5],
+              frame.data[6],
+              frame.data[7]);
+
+          g_1stPackageResponse = true;
+        }
       }
+      
+
+      // zhj: controller not ready, nobody receive rmq message
+
+      // printf("Recv CAN Msg:\t%03X    [%d]    %02X %02X %02X %02X %02X %02X %02X %02X\n",
+      //     frame.can_id,
+      //     frame.len,
+      //     frame.data[0],
+      //     frame.data[1],
+      //     frame.data[2],
+      //     frame.data[3],
+      //     frame.data[4],
+      //     frame.data[5],
+      //     frame.data[6],
+      //     frame.data[7]);
+
+      // int frame_size = sizeof(struct canfd_frame) - sizeof(frame.data) + frame.len;
+
+      // if (rmq_send((unsigned char *)&frame, frame_size) < 0)
+      // {
+      //   printf("\t\tForward Fail\n");
+      // } else
+      // {
+      //   printf("\t\tForward Succ\n");
+      // }
   }
 
   return NULL;
@@ -297,6 +323,9 @@ int burn_hex_file_to_dsp()
   unsigned char sectorId = 0;
 
   printf("Downloading DSP image ......\n");
+
+  g_1stPackageHasBeenSent = false;
+  g_1stPackageResponse = false;
 
   while (!feof(fp))
   { 
@@ -594,6 +623,23 @@ int burn_hex_file_to_dsp()
             usleep(WAITING_TIME_INTERVAL);
 
             Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
+
+            if (g_1stPackageHasBeenSent == false)
+            {
+              g_1stPackageHasBeenSent = true;
+              printf("\nWaiting for 1st Package Response from DSP ......\n\n");
+            }
+
+            while (1)
+            {
+              if (g_1stPackageResponse == false)
+              {
+                usleep(10000);
+              } else
+              {
+                break;
+              }
+            }
           }
 
           break;
@@ -615,6 +661,11 @@ int burn_hex_file_to_dsp()
             ret = -1;
             goto OUT;
           }
+
+          sectorId += 1;
+          printf("\nSector[%d]: %d bytes, Done!\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
+          printf("\nBase Addr: 0x%08X, Offset: 0x%08X, %d bytes, Done!\n", curBaseAddr, curAddrOffset, Data_Bytes_For_Current_Offset_Has_Been_Sent);
+          printf("\nBase Addr: 0x%08X, %d bytes, Done!\n", curBaseAddr, Data_Bytes_For_Current_Base_Addr_Has_Been_Sent);
 
           printf("\nTotally %d bytes, Done!\n\n", Total_Data_Bytes_Has_Been_Sent);
 
@@ -677,7 +728,7 @@ int burn_hex_file_to_dsp()
 
           Base_Addr_Just_Be_Set = true;
           Need_To_Send_New_Addr_Offset = true;
-          sectorId = 0;
+          // sectorId = 0;
 
           break;
         default:
