@@ -558,7 +558,7 @@ int burn_hex_file_to_dsp()
             case 2:
               //zhj: send can frame, FAD200000000XXXX
               can_frame_data[0] = 0xFA;
-              can_frame_data[1] = 0xD4;
+              can_frame_data[1] = 0xD2;
               can_frame_data[2] = 0x00;
               can_frame_data[3] = 0x00;
               can_frame_data[4] = 0x00;

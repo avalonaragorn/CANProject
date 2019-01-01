@@ -33,4 +33,4 @@ $(STUB_EXE):
 	$(CC) $(STUB_SRC) $(CFLAGS) -o $(STUB_EXE)
 
 clean:
-	@rm $(EXE) $(STUB_EXE) -f
+	@rm $(EXE) $(STUB_EXE) local_img.hex -f
