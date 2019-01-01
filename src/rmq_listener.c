@@ -153,6 +153,8 @@ int main(int argc, char const *const *argv)
 
       amqp_maybe_release_buffers(conn);
 
+      printf("\nWaiting for Hex file ......\n\n");
+
       res = amqp_consume_message(conn, &envelope, NULL, 0);
 
       if (AMQP_RESPONSE_NORMAL != res.reply_type) {

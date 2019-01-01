@@ -53,7 +53,7 @@ int can_send(unsigned int can_id, unsigned char* payload, unsigned char len)
 	int frame_size;
 	struct canfd_frame frame;
 
-	frame.can_id = can_id;
+	frame.can_id = can_id | CAN_EFF_FLAG; //zhj: extended can id
 	frame.len = len;
 	memcpy(frame.data, payload, len);
 	
