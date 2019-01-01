@@ -36,7 +36,7 @@ static amqp_connection_state_t conn;
 static unsigned int dsp_data_can_id = 0x000004B1;
 static unsigned int dsp_default_can_id = 0x000003B1;
 
-static pthread_t can_msg_forward_thread;
+// static pthread_t can_msg_forward_thread;
 void *forward_received_can_msg(void *arg);
 
 void swap_can_frame_data(unsigned char* data);
@@ -105,6 +105,7 @@ int main(int argc, char const *const *argv)
   // {
   //     printf("Create CAN Msg Forward Thread!\n");
   // }
+
   //zhj: end
 
   conn = amqp_new_connection();
@@ -172,7 +173,7 @@ int main(int argc, char const *const *argv)
 
       amqp_dump(envelope.message.body.bytes, envelope.message.body.len);
 
-      printf("\nRecevied HEX file size: %ld\n\n", envelope.message.body.len);
+      printf("\nRecevied HEX file size: %d\n\n", (unsigned int)envelope.message.body.len);
 
       FILE* image = fopen (LOCAL_IMAGE, "w");
       fwrite(envelope.message.body.bytes, 1, envelope.message.body.len, image);
@@ -459,30 +460,6 @@ int burn_hex_file_to_dsp()
             if (Data_Bytes_For_Current_Sector_Has_Been_Sent >= MAX_SECTOR_SIZE)
             {
               PAUSE_FLAG = true;
-
-              // //zhj: send can frame, FAD0XXXXXXXX0000
-              // can_frame_data[0] = 0xFA;
-              // can_frame_data[1] = 0xD0;
-
-              // tp = (unsigned int *)&can_frame_data[2];
-              // *tp = htonl(Data_Bytes_For_Current_Offset_Has_Been_Sent);
-
-              // can_frame_data[6] = 0x00;
-              // can_frame_data[7] = 0x00;
-
-              // swap_can_frame_data(can_frame_data);
-              // if (can_send(dsp_default_can_id, can_frame_data, sizeof(can_frame_data)) != 0)
-              // {
-              //   printf("%s:%d  Failed to send can frame: %s\n", __FILE__, __LINE__, strerror(errno));
-              //   ret = -1;
-              //   goto OUT;
-              // }
-
-              // sectorId += 1;
-              // printf("\nSector[%d]: %d bytes, Done!\n\n", sectorId, Data_Bytes_For_Current_Sector_Has_Been_Sent);
-              // usleep(WAITING_TIME_INTERVAL);
-
-              // Data_Bytes_For_Current_Sector_Has_Been_Sent = 0;
             }
           }
 

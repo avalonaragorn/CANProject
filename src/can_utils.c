@@ -80,6 +80,7 @@ int can_send(unsigned int can_id, unsigned char* payload, unsigned char len)
 
 	printf("\t\tSucc\n");
 
+	// zhj: for test, step by step
 	// while (1)
 	// {
 	// 	if (getchar())
@@ -87,7 +88,7 @@ int can_send(unsigned int can_id, unsigned char* payload, unsigned char len)
 	// 	sleep(1);
 	// }
 
-	usleep(2000);
+	usleep(CAN_FRAME_TIME_INTERVAL); // zhj: can't too fast
 
 	return 0;
 }

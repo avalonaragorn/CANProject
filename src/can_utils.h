@@ -9,6 +9,8 @@
 #define true 1
 #define false 0
 
+#define CAN_FRAME_TIME_INTERVAL 2000
+
 int canSocket;
 
 int can_init(char const *can_itf);
