@@ -1,0 +1,1704 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDENDUM_VERSION_PREAMBLE	MPQCTL.h	/^} __attribute__ ((packed)) ADDENDUM_VERSION_PREAMBLE, *PADDENDUM_VERSION_PREAMBLE;$/;"	t	typeref:struct:_ADDENDUM_VERSION_PREAMBLE
+AIDLength	MPQMUX.h	/^   UCHAR  AIDLength;$/;"	m	struct:_QMIUIM_CARD_STATUS
+AddendumMajor	MPQMI.h	/^   USHORT AddendumMajor;$/;"	m	struct:_QMI_SERVICE_VERSION
+AddendumMinor	MPQMI.h	/^   USHORT AddendumMinor;$/;"	m	struct:_QMI_SERVICE_VERSION
+Address	QMIThread.h	/^    UCHAR Address[16];$/;"	m	struct:__IPV6
+Address	QMIThread.h	/^    uint32_t Address;$/;"	m	struct:__IPV4
+Aid_Len	MPQMUX.h	/^   UCHAR  Aid_Len;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+Aid_Len	MPQMUX.h	/^   UCHAR  Aid_Len;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+ApnName	MPQMUX.h	/^   UCHAR  ApnName;$/;"	m	struct:_QMIWDS_APNNAME
+AppState	MPQMUX.h	/^   UCHAR  AppState;$/;"	m	struct:_QMIUIM_CARD_STATUS
+AppType	MPQMUX.h	/^   UCHAR  AppType;$/;"	m	struct:_QMIUIM_CARD_STATUS
+AuthPreference	MPQMUX.h	/^   UCHAR  AuthPreference;$/;"	m	struct:_QMIWDS_AUTH_PREFERENCE
+AutoConnect	MPQMUX.h	/^   UCHAR  AutoConnect;$/;"	m	struct:_QMIWDS_AUTOCONNECT
+BOOL	MPQMI.h	/^typedef int   BOOL;$/;"	t
+BRIDGE_IPV4_FILE	udhcpc.c	107;"	d	file:
+BRIDGE_MODE_FILE	udhcpc.c	106;"	d	file:
+BSInfoValid	MPQMUX.h	/^   UCHAR  BSInfoValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BSPRev	MPQMUX.h	/^   UCHAR  BSPRev;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BSPRevValid	MPQMUX.h	/^   UCHAR  BSPRevValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BaseID	MPQMUX.h	/^   USHORT BaseID;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BaseLAT	MPQMUX.h	/^   ULONG  BaseLAT;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BaseLONG	MPQMUX.h	/^   ULONG  BaseLONG;$/;"	m	struct:_CDMA_SYSTEM_INFO
+BindMuxDataPortReq	MPQMUX.h	/^      QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG         BindMuxDataPortReq;$/;"	m	union:_QMUX_MSG::__anon3
+CC	Makefile	/^CC:=$(CROSS-COMPILE)gcc$/;"	m
+CCSSupported	MPQMUX.h	/^   UCHAR  CCSSupported;$/;"	m	struct:_CDMA_SYSTEM_INFO
+CCSSupportedValid	MPQMUX.h	/^   UCHAR  CCSSupportedValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+CDMASysIdValid	MPQMUX.h	/^   UCHAR  CDMASysIdValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+CDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) CDMA_SYSTEM_INFO, *PCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_CDMA_SYSTEM_INFO
+CHAR	MPQMI.h	/^typedef char    CHAR;$/;"	t
+CONFIG_APN	QMIThread.h	7;"	d
+CONFIG_DEFAULT_PDP	QMIThread.h	9;"	d
+CONFIG_GOBINET	QMIThread.h	4;"	d
+CONFIG_QMIWWAN	QMIThread.h	5;"	d
+CONFIG_RESET_RADIO	QMIThread.h	12;"	d
+CONFIG_SIM	QMIThread.h	6;"	d
+CONFIG_VERSION	QMIThread.h	8;"	d
+CROSS-COMPILE	Makefile	/^CROSS-COMPILE:=arm-linux-gnueabihf-$/;"	m
+CSAttachedState	MPQMUX.h	/^   UCHAR  CSAttachedState;$/;"	m	struct:_SERVING_SYSTEM
+CTLMsg	QMIThread.h	/^        QMICTL_MSG CTLMsg;$/;"	m	union:_QCQMIMSG::__anon4
+CUSTOMQCTL	QmiWwanCM.c	/^typedef USHORT (*CUSTOMQCTL)(PQMICTL_MSG pCTLMsg, void *arg);$/;"	t	file:
+CUSTOMQMUX	QMIThread.c	/^typedef USHORT (*CUSTOMQMUX)(PQMUX_MSG pMUXMsg, void *arg);$/;"	t	file:
+CallEndReason	MPQMUX.h	/^   USHORT CallEndReason;$/;"	m	struct:_QMIWDS_CALL_END_REASON_TLV
+CallEndReason	MPQMUX.h	/^   USHORT CallEndReason;$/;"	m	struct:_QMIWDS_CALL_END_REASON_V_TLV
+CallEndReasonType	MPQMUX.h	/^   USHORT CallEndReasonType;$/;"	m	struct:_QMIWDS_CALL_END_REASON_V_TLV
+CardState	MPQMUX.h	/^   UCHAR  CardState;$/;"	m	struct:_QMIUIM_CARD_STATUS
+CellBroadcastCap	MPQMUX.h	/^   ULONG  CellBroadcastCap;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CellBroadcastCapValid	MPQMUX.h	/^   UCHAR  CellBroadcastCapValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CellId	MPQMUX.h	/^   ULONG  CellId;$/;"	m	struct:_GSM_SYSTEM_INFO
+CellId	MPQMUX.h	/^   ULONG  CellId;$/;"	m	struct:_LTE_SYSTEM_INFO
+CellId	MPQMUX.h	/^   ULONG  CellId;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CellId	MPQMUX.h	/^   ULONG  CellId;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+CellIdValid	MPQMUX.h	/^   UCHAR  CellIdValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+CellIdValid	MPQMUX.h	/^   UCHAR  CellIdValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+CellIdValid	MPQMUX.h	/^   UCHAR  CellIdValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CellIdValid	MPQMUX.h	/^   UCHAR  CellIdValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+CellParameterId	MPQMUX.h	/^   USHORT CellParameterId;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CellParameterIdValid	MPQMUX.h	/^   UCHAR  CellParameterIdValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CipherDomain	MPQMUX.h	/^   UCHAR  CipherDomain;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CipherDomainValid	MPQMUX.h	/^   UCHAR  CipherDomainValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+ClientId	MPQCTL.h	/^   UCHAR  ClientId;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+ClientId	MPQCTL.h	/^   UCHAR  ClientId;$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+ClientId	MPQCTL.h	/^   UCHAR  ClientId;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+ClientId	MPQCTL.h	/^   UCHAR  ClientId;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+ClientId	MPQCTL.h	/^   UCHAR  ClientId;$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+ClientId	MPQMI.h	/^   UCHAR  ClientId;$/;"	m	struct:_QCQMI
+ClientId	MPQMI.h	/^   UCHAR  ClientId;$/;"	m	struct:_QCQMI_HDR
+ComposeQCTLMsg	QmiWwanCM.c	/^static PQCQMIMSG ComposeQCTLMsg(USHORT QMICTLType, CUSTOMQCTL customQctlMsgFunction, void *arg) {$/;"	f	file:
+ComposeQMUXMsg	QMIThread.c	/^static PQCQMIMSG ComposeQMUXMsg(UCHAR QMIType, USHORT Type, CUSTOMQMUX customQmuxMsgFunction, void *arg) {$/;"	f	file:
+ConnectionStatus	MPQMUX.h	/^   UCHAR  ConnectionStatus;$/;"	m	struct:_QMIWDS_PKT_SRVC_TLV
+CsBarStatus	MPQMUX.h	/^   ULONG  CsBarStatus;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CsBarStatusValid	MPQMUX.h	/^   UCHAR  CsBarStatusValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_INDICATION$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_INDICATION$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_INDICATION$/;"	m	struct:_QMICTL_SYNC_IND_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_REQUEST$/;"	m	struct:_QMICTL_SYNC_REQ_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;        \/\/ QMICTL_FLAG_RESPONSE$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;  \/\/ 00-cmd, 01-rsp, 10-ind$/;"	m	struct:_QCQMICTL_MSG
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;  \/\/ 00-cmd, 01-rsp, 10-ind$/;"	m	struct:_QCQMICTL_MSG_HDR
+CtlFlags	MPQCTL.h	/^   UCHAR  CtlFlags;  \/\/ 00-cmd, 01-rsp, 10-ind$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+CtlFlags	MPQMI.h	/^   UCHAR  CtlFlags;      \/\/ 0: single QMUX Msg; 1:$/;"	m	struct:_QCQMUX
+CtlFlags	MPQMI.h	/^   UCHAR  CtlFlags;      \/\/ 0: single QMUX Msg; 1:$/;"	m	struct:_QCQMUX_HDR
+CtlFlags	MPQMI.h	/^   UCHAR  CtlFlags;  \/\/ reserved$/;"	m	struct:_QCQMI
+CtlFlags	MPQMI.h	/^   UCHAR  CtlFlags;  \/\/ reserved$/;"	m	struct:_QCQMI_HDR
+CtlGetClientIdReq	QmiWwanCM.c	/^static USHORT CtlGetClientIdReq(PQMICTL_MSG QCTLMsg, void *arg) {$/;"	f	file:
+CtlGetVersionReq	QmiWwanCM.c	/^static USHORT CtlGetVersionReq(PQMICTL_MSG QCTLMsg, void *arg) {$/;"	f	file:
+CtlReleaseClientIdReq	QmiWwanCM.c	/^static USHORT CtlReleaseClientIdReq(PQMICTL_MSG QCTLMsg, void *arg) {$/;"	f	file:
+DEVICE_CLASS_CDMA	QMIThread.h	42;"	d
+DEVICE_CLASS_GSM	QMIThread.h	43;"	d
+DEVICE_CLASS_UNKNOWN	QMIThread.h	41;"	d
+DEVICE_REV_ID	MPQMUX.h	/^} __attribute__ ((packed)) DEVICE_REV_ID, *PDEVICE_REV_ID;$/;"	t	typeref:struct:_DEVICE_REV_ID
+DataCap	MPQMUX.h	/^   UCHAR  DataCap;$/;"	m	struct:_QMINAS_DATA_CAP
+DataCapListLen	MPQMUX.h	/^   UCHAR  DataCapListLen;$/;"	m	struct:_QMINAS_DATA_CAP
+DataFormat	MPQCTL.h	/^   UCHAR  DataFormat;      \/\/ 0-default; 1-QoS hdr present$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+DlTlpSetting	MPQCTL.h	/^   UCHAR  DlTlpSetting;    \/\/ 0x0: Disable; 0x01: Enable$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP
+DmsSetOperatingModeReq	QMIThread.c	/^static USHORT DmsSetOperatingModeReq(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+DmsUIMVerifyPinReqSend	QMIThread.c	/^static USHORT DmsUIMVerifyPinReqSend(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+DnsPrimary	QMIThread.h	/^    UCHAR DnsPrimary[16];$/;"	m	struct:__IPV6
+DnsPrimary	QMIThread.h	/^    uint32_t DnsPrimary;$/;"	m	struct:__IPV4
+DnsSecondary	QMIThread.h	/^    UCHAR DnsSecondary[16];$/;"	m	struct:__IPV6
+DnsSecondary	QMIThread.h	/^    uint32_t DnsSecondary;$/;"	m	struct:__IPV4
+DtmSupp	MPQMUX.h	/^   UCHAR  DtmSupp;$/;"	m	struct:_GSM_SYSTEM_INFO
+DtmSuppValid	MPQMUX.h	/^   UCHAR  DtmSuppValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+EgprsSupp	MPQMUX.h	/^   UCHAR  EgprsSupp;$/;"	m	struct:_GSM_SYSTEM_INFO
+EgprsSuppValid	MPQMUX.h	/^   UCHAR  EgprsSuppValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+ErrorCode	MPQMUX.h	/^   UCHAR  ErrorCode;$/;"	m	struct:_QMIUIM_CARD_STATUS
+FALSE	MPQMI.h	39;"	d
+GSM_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) GSM_SYSTEM_INFO, *PGSM_SYSTEM_INFO;$/;"	t	typeref:struct:_GSM_SYSTEM_INFO
+Gateway	QMIThread.h	/^    UCHAR Gateway[16];$/;"	m	struct:__IPV6
+Gateway	QMIThread.h	/^    uint32_t Gateway;$/;"	m	struct:__IPV4
+GetClientIdReq	MPQCTL.h	/^      QMICTL_GET_CLIENT_ID_REQ_MSG                 GetClientIdReq;$/;"	m	union:_QMICTL_MSG::__anon1
+GetClientIdRsp	MPQCTL.h	/^      QMICTL_GET_CLIENT_ID_RESP_MSG                GetClientIdRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+GetDefaultSettingsReq	MPQMUX.h	/^      QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG       GetDefaultSettingsReq;$/;"	m	union:_QMUX_MSG::__anon3
+GetDefaultSettingsResp	MPQMUX.h	/^      QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG      GetDefaultSettingsResp;$/;"	m	union:_QMUX_MSG::__anon3
+GetProfileSettingsReq	MPQMUX.h	/^      QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG    GetProfileSettingsReq;$/;"	m	union:_QMUX_MSG::__anon3
+GetQCTLTransactionId	QmiWwanCM.c	/^static UCHAR GetQCTLTransactionId(void) {$/;"	f	file:
+GetQMUXTransactionId	QMIThread.c	/^static USHORT GetQMUXTransactionId(void) {$/;"	f	file:
+GetRuntimeSettingsReq	MPQMUX.h	/^      QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG       GetRuntimeSettingsReq;$/;"	m	union:_QMUX_MSG::__anon3
+GetRuntimeSettingsRsp	MPQMUX.h	/^      QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG      GetRuntimeSettingsRsp;$/;"	m	union:_QMUX_MSG::__anon3
+GetServingSystemResp	MPQMUX.h	/^      QMINAS_GET_SERVING_SYSTEM_RESP_MSG        GetServingSystemResp;$/;"	m	union:_QMUX_MSG::__anon3
+GetSysInfoResp	MPQMUX.h	/^      QMINAS_GET_SYS_INFO_RESP_MSG              GetSysInfoResp;$/;"	m	union:_QMUX_MSG::__anon3
+GetTLV	QMIThread.c	/^PQMI_TLV_HDR GetTLV (PQCQMUX_MSG_HDR pQMUXMsgHdr, int TLVType) {$/;"	f
+GetVersionReq	MPQCTL.h	/^      QMICTL_GET_VERSION_REQ_MSG                   GetVersionReq;$/;"	m	union:_QMICTL_MSG::__anon1
+GetVersionRsp	MPQCTL.h	/^      QMICTL_GET_VERSION_RESP_MSG                  GetVersionRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+GobiNetDeInit	GobiNetCM.c	/^int GobiNetDeInit(void) {$/;"	f
+GobiNetGetClientID	GobiNetCM.c	/^static int GobiNetGetClientID(const char *qcqmi, UCHAR QMIType) {$/;"	f	file:
+GobiNetSendQMI	GobiNetCM.c	/^int GobiNetSendQMI(PQCQMIMSG pRequest) {$/;"	f
+GobiNetSendQMI	GobiNetCM.c	/^int GobiNetSendQMI(PQCQMIMSG pRequest) {return -1;}$/;"	f
+GobiNetThread	GobiNetCM.c	/^void * GobiNetThread(void *pData) {$/;"	f
+GobiNetThread	GobiNetCM.c	/^void * GobiNetThread(void *pData) {dbg_time("please set CONFIG_GOBINET"); return NULL;}$/;"	f
+HDR_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) HDR_SYSTEM_INFO, *PHDR_SYSTEM_INFO;$/;"	t	typeref:struct:_HDR_SYSTEM_INFO
+HOME_NETWORK	MPQMUX.h	/^} __attribute__ ((packed)) HOME_NETWORK, *PHOME_NETWORK;$/;"	t	typeref:struct:_HOME_NETWORK
+HOME_NETWORK_SYSTEMID	MPQMUX.h	/^} __attribute__ ((packed)) HOME_NETWORK_SYSTEMID, *PHOME_NETWORK_SYSTEMID;$/;"	t	typeref:struct:_HOME_NETWORK_SYSTEMID
+Handle	MPQMUX.h	/^   ULONG  Handle;          \/\/$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+Handle	MPQMUX.h	/^   ULONG  Handle;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+HdrActiveProt	MPQMUX.h	/^   UCHAR  HdrActiveProt;$/;"	m	struct:_HDR_SYSTEM_INFO
+HdrActiveProtValid	MPQMUX.h	/^   UCHAR  HdrActiveProtValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+HdrPersonality	MPQMUX.h	/^   UCHAR  HdrPersonality;$/;"	m	struct:_HDR_SYSTEM_INFO
+HdrPersonalityValid	MPQMUX.h	/^   UCHAR  HdrPersonalityValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+HsCallStatus	MPQMUX.h	/^   UCHAR  HsCallStatus;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+HsCallStatus	MPQMUX.h	/^   UCHAR  HsCallStatus;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+HsCallStatusValid	MPQMUX.h	/^   UCHAR  HsCallStatusValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+HsCallStatusValid	MPQMUX.h	/^   UCHAR  HsCallStatusValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+HsInd	MPQMUX.h	/^   UCHAR  HsInd;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+HsInd	MPQMUX.h	/^   UCHAR  HsInd;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+HsIndValid	MPQMUX.h	/^   UCHAR  HsIndValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+HsIndValid	MPQMUX.h	/^   UCHAR  HsIndValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+IFType	MPQMI.h	/^   UCHAR  IFType;$/;"	m	struct:_QCQMI
+IFType	MPQMI.h	/^   UCHAR  IFType;$/;"	m	struct:_QCQMI_HDR
+IFType	MPQMI.h	/^   UCHAR IFType;$/;"	m	struct:_QCUSB_CTL_MSG
+IFType	MPQMI.h	/^   UCHAR IFType;$/;"	m	struct:_QCUSB_CTL_MSG_HDR
+IMSI	MPQMUX.h	/^   UCHAR IMSI;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+INT	MPQMI.h	/^typedef int   INT;$/;"	t
+IOCTL_QMI_GET_DEVICE_MEID	GobiNetCM.c	17;"	d	file:
+IOCTL_QMI_GET_DEVICE_VIDPID	GobiNetCM.c	14;"	d	file:
+IOCTL_QMI_GET_SERVICE_FILE	GobiNetCM.c	11;"	d	file:
+IPV4Address	MPQMUX.h	/^   ULONG  IPV4Address;     \/\/ address$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR
+IPV4_T	QMIThread.h	/^} IPV4_T;$/;"	t	typeref:struct:__IPV4
+IPV6Address	MPQMUX.h	/^   UCHAR  IPV6Address[16]; \/\/ address$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+IPV6_T	QMIThread.h	/^} IPV6_T;$/;"	t	typeref:struct:__IPV6
+InUseRadioIF	MPQMUX.h	/^   UCHAR  InUseRadioIF;$/;"	m	struct:_SERVING_SYSTEM
+Index1XPri	MPQMUX.h	/^   USHORT Index1XPri;$/;"	m	struct:_QMIUIM_CARD_STATUS
+Index1XSec	MPQMUX.h	/^   USHORT Index1XSec;$/;"	m	struct:_QMIUIM_CARD_STATUS
+IndexGWPri	MPQMUX.h	/^   USHORT IndexGWPri;$/;"	m	struct:_QMIUIM_CARD_STATUS
+IndexGWSec	MPQMUX.h	/^   USHORT IndexGWSec;$/;"	m	struct:_QMIUIM_CARD_STATUS
+InvalidClientIdInd	MPQCTL.h	/^      QMICTL_INVALID_CLIENT_ID_IND_MSG             InvalidClientIdInd;$/;"	m	union:_QMICTL_MSG::__anon1
+IpFamily	MPQMUX.h	/^   UCHAR  IpFamily;         \/\/ IPV4-0x04, IPV6-0x06$/;"	m	struct:_QMIWDS_IP_FAMILY_TLV
+IpFamilyV4	QMIThread.h	98;"	d
+IpFamilyV6	QMIThread.h	99;"	d
+IpPreference	MPQMUX.h	/^   UCHAR  IpPreference;     \/\/ IPV4-0x04, IPV6-0x06$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+IsDualIPSupported	QMIThread.h	/^    int IsDualIPSupported;$/;"	m	struct:__PROFILE
+IsPrefDataPath	MPQMUX.h	/^   UCHAR  IsPrefDataPath;$/;"	m	struct:_SERVICE_STATUS_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_CDMA_SYSTEM_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_GSM_SYSTEM_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_HDR_SYSTEM_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_LTE_SYSTEM_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+IsSysForbidden	MPQMUX.h	/^   UCHAR  IsSysForbidden;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+IsSysForbiddenValid	MPQMUX.h	/^   UCHAR  IsSysForbiddenValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+IsSysPrlMatch	MPQMUX.h	/^   UCHAR  IsSysPrlMatch;$/;"	m	struct:_CDMA_SYSTEM_INFO
+IsSysPrlMatch	MPQMUX.h	/^   UCHAR  IsSysPrlMatch;$/;"	m	struct:_HDR_SYSTEM_INFO
+IsSysPrlMatchValid	MPQMUX.h	/^   UCHAR  IsSysPrlMatchValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+IsSysPrlMatchValid	MPQMUX.h	/^   UCHAR  IsSysPrlMatchValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+LD	Makefile	/^LD:=$(CROSS-COMPILE)ld$/;"	m
+LOG_TAG	util.c	15;"	d	file:
+LONG	MPQMI.h	/^typedef long    LONG;$/;"	t
+LTE_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) LTE_SYSTEM_INFO, *PLTE_SYSTEM_INFO;$/;"	t	typeref:struct:_LTE_SYSTEM_INFO
+Label	MPQCTL.h	/^   UCHAR Label;$/;"	m	struct:_ADDENDUM_VERSION_PREAMBLE
+LabelLength	MPQCTL.h	/^   UCHAR LabelLength;$/;"	m	struct:_ADDENDUM_VERSION_PREAMBLE
+Lac	MPQMUX.h	/^   USHORT Lac;$/;"	m	struct:_GSM_SYSTEM_INFO
+Lac	MPQMUX.h	/^   USHORT Lac;$/;"	m	struct:_LTE_SYSTEM_INFO
+Lac	MPQMUX.h	/^   USHORT Lac;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+Lac	MPQMUX.h	/^   USHORT Lac;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+LacValid	MPQMUX.h	/^   UCHAR  LacValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+LacValid	MPQMUX.h	/^   UCHAR  LacValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+LacValid	MPQMUX.h	/^   UCHAR  LacValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+LacValid	MPQMUX.h	/^   UCHAR  LacValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+Length	MPQCTL.h	/^   USHORT Length;          \/\/ 0$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;          \/\/ 0$/;"	m	struct:_QMICTL_SYNC_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;          \/\/ 4$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QCQMICTL_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QCQMICTL_MSG_HDR
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_SYNC_IND_MSG
+Length	MPQCTL.h	/^   USHORT Length;$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+Length	MPQMI.h	/^   USHORT Length;$/;"	m	struct:_QCQMI
+Length	MPQMI.h	/^   USHORT Length;$/;"	m	struct:_QCQMI_HDR
+Length	MPQMI.h	/^   USHORT Length;$/;"	m	struct:_QCQMUX_MSG_HDR
+Length	MPQMI.h	/^   USHORT Length;$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+Length	MPQMI.h	/^   USHORT Length;$/;"	m	struct:_QCQMUX_TLV
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_GET_DEVICE_REV_ID_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMINAS_GET_HOME_NETWORK_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMINAS_SYS_INFO_IND_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+Length	MPQMUX.h	/^   USHORT Length;$/;"	m	struct:_READ_TRANSPARENT_TLV
+LinkProt	MPQCTL.h	/^   USHORT LinkProt;        \/\/ 0x1: ETH; 0x2: IP$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT
+MAX_PATH	main.c	190;"	d	file:
+MCC	MPQMUX.h	/^   UCHAR  MCC[3];$/;"	m	struct:_CDMA_SYSTEM_INFO
+MCC	MPQMUX.h	/^   UCHAR  MCC[3];$/;"	m	struct:_GSM_SYSTEM_INFO
+MCC	MPQMUX.h	/^   UCHAR  MCC[3];$/;"	m	struct:_LTE_SYSTEM_INFO
+MCC	MPQMUX.h	/^   UCHAR  MCC[3];$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+MCC	MPQMUX.h	/^   UCHAR  MCC[3];$/;"	m	struct:_WCDMA_SYSTEM_INFO
+MNC	MPQMUX.h	/^   UCHAR  MNC[3];$/;"	m	struct:_CDMA_SYSTEM_INFO
+MNC	MPQMUX.h	/^   UCHAR  MNC[3];$/;"	m	struct:_GSM_SYSTEM_INFO
+MNC	MPQMUX.h	/^   UCHAR  MNC[3];$/;"	m	struct:_LTE_SYSTEM_INFO
+MNC	MPQMUX.h	/^   UCHAR  MNC[3];$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+MNC	MPQMUX.h	/^   UCHAR  MNC[3];$/;"	m	struct:_WCDMA_SYSTEM_INFO
+MPIOC_DEV_INFO	MPQMUX.h	/^typedef struct _MPIOC_DEV_INFO MPIOC_DEV_INFO, *PMPIOC_DEV_INFO;$/;"	t	typeref:struct:_MPIOC_DEV_INFO
+MPQCTL_H	MPQCTL.h	14;"	d
+MPQMUX_H	MPQMUX.h	14;"	d
+MUXMsg	QMIThread.h	/^        QMUX_MSG MUXMsg;$/;"	m	union:_QCQMIMSG::__anon4
+Major	MPQMI.h	/^   USHORT Major;$/;"	m	struct:_QMI_SERVICE_VERSION
+MajorVersion	MPQCTL.h	/^   USHORT MajorVersion;$/;"	m	struct:_QMUX_TYPE_VERSION_STRUCT
+Mask	MPQMUX.h	/^   ULONG  Mask;            \/\/ mask, bit 8: IP addr -- 0x0100$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+Message	MPQMI.h	/^   UCHAR  Message;  \/\/ Type(2), Length(2), Value$/;"	m	struct:_QCQMUX
+Message	MPQMI.h	/^   UCHAR Message;$/;"	m	struct:_QCUSB_CTL_MSG
+Minor	MPQMI.h	/^   USHORT Minor;$/;"	m	struct:_QMI_SERVICE_VERSION
+MinorVersion	MPQCTL.h	/^   USHORT MinorVersion;$/;"	m	struct:_QMUX_TYPE_VERSION_STRUCT
+MobileCountryCode	MPQMUX.h	/^   USHORT MobileCountryCode;$/;"	m	struct:_HOME_NETWORK
+MobileCountryCode	MPQMUX.h	/^   USHORT MobileCountryCode;$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+MobileNetworkCode	MPQMUX.h	/^   USHORT MobileNetworkCode;$/;"	m	struct:_HOME_NETWORK
+MobileNetworkCode	MPQMUX.h	/^   USHORT MobileNetworkCode;$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+ModifyProfileSettingsReq	MPQMUX.h	/^      QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG    ModifyProfileSettingsReq;$/;"	m	union:_QMUX_MSG::__anon3
+ModifyProfileSettingsResp	MPQMUX.h	/^      QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG   ModifyProfileSettingsResp;$/;"	m	union:_QMUX_MSG::__anon3
+Mtu	MPQMUX.h	/^   ULONG  Mtu;             \/\/ MTU$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU
+Mtu	QMIThread.h	/^    ULONG Mtu;$/;"	m	struct:__IPV6
+Mtu	QMIThread.h	/^    uint32_t Mtu;$/;"	m	struct:__IPV4
+MuxId	MPQMUX.h	/^   UCHAR  MuxId;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+NETWORK_DESC_ENCODING_7BITASCII	MPQMUX.h	92;"	d
+NETWORK_DESC_ENCODING_EXTPROTOCOL	MPQMUX.h	91;"	d
+NETWORK_DESC_ENCODING_GSM7BIT	MPQMUX.h	99;"	d
+NETWORK_DESC_ENCODING_GSMDATA	MPQMUX.h	100;"	d
+NETWORK_DESC_ENCODING_IA5	MPQMUX.h	93;"	d
+NETWORK_DESC_ENCODING_KOREAN	MPQMUX.h	96;"	d
+NETWORK_DESC_ENCODING_LATIN	MPQMUX.h	98;"	d
+NETWORK_DESC_ENCODING_LATINH	MPQMUX.h	97;"	d
+NETWORK_DESC_ENCODING_OCTET	MPQMUX.h	90;"	d
+NETWORK_DESC_ENCODING_SHIFTJIS	MPQMUX.h	95;"	d
+NETWORK_DESC_ENCODING_UNICODE	MPQMUX.h	94;"	d
+NETWORK_DESC_ENCODING_UNKNOWN	MPQMUX.h	101;"	d
+NID	MPQMUX.h	/^   USHORT NID;$/;"	m	struct:_CDMA_SYSTEM_INFO
+NasSysInfoInd	MPQMUX.h	/^      QMINAS_SYS_INFO_IND_MSG                   NasSysInfoInd;$/;"	m	union:_QMUX_MSG::__anon3
+NetworkDesc	MPQMUX.h	/^   UCHAR  NetworkDesc;$/;"	m	struct:_HOME_NETWORK
+NetworkDesc	MPQMUX.h	/^   UCHAR  NetworkDesc;$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+NetworkDesclen	MPQMUX.h	/^   UCHAR  NetworkDesclen;$/;"	m	struct:_HOME_NETWORK
+NetworkDesclen	MPQMUX.h	/^   UCHAR  NetworkDesclen;$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+NetworkID	MPQMUX.h	/^   USHORT NetworkID;$/;"	m	struct:_HOME_NETWORK_SYSTEMID
+NetworkIdValid	MPQMUX.h	/^   UCHAR  NetworkIdValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+NetworkIdValid	MPQMUX.h	/^   UCHAR  NetworkIdValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+NetworkIdValid	MPQMUX.h	/^   UCHAR  NetworkIdValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+NetworkIdValid	MPQMUX.h	/^   UCHAR  NetworkIdValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+NetworkIdValid	MPQMUX.h	/^   UCHAR  NetworkIdValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+NumApp	MPQMUX.h	/^   UCHAR  NumApp;$/;"	m	struct:_QMIUIM_CARD_STATUS
+NumElements	MPQCTL.h	/^   UCHAR  NumElements;     \/\/ Num of QMUX_TYPE_VERSION_STRUCT$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+NumSlot	MPQMUX.h	/^   UCHAR  NumSlot;$/;"	m	struct:_QMIUIM_CARD_STATUS
+Offset	MPQMUX.h	/^   USHORT Offset;$/;"	m	struct:_READ_TRANSPARENT_TLV
+OperatingMode	MPQMUX.h	/^   UCHAR  OperatingMode;$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+PADDENDUM_VERSION_PREAMBLE	MPQCTL.h	/^} __attribute__ ((packed)) ADDENDUM_VERSION_PREAMBLE, *PADDENDUM_VERSION_PREAMBLE;$/;"	t	typeref:struct:_ADDENDUM_VERSION_PREAMBLE
+PCDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) CDMA_SYSTEM_INFO, *PCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_CDMA_SYSTEM_INFO
+PCHAR	MPQMI.h	/^typedef char   *PCHAR;$/;"	t
+PDEVICE_REV_ID	MPQMUX.h	/^} __attribute__ ((packed)) DEVICE_REV_ID, *PDEVICE_REV_ID;$/;"	t	typeref:struct:_DEVICE_REV_ID
+PGSM_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) GSM_SYSTEM_INFO, *PGSM_SYSTEM_INFO;$/;"	t	typeref:struct:_GSM_SYSTEM_INFO
+PHDR_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) HDR_SYSTEM_INFO, *PHDR_SYSTEM_INFO;$/;"	t	typeref:struct:_HDR_SYSTEM_INFO
+PHOME_NETWORK	MPQMUX.h	/^} __attribute__ ((packed)) HOME_NETWORK, *PHOME_NETWORK;$/;"	t	typeref:struct:_HOME_NETWORK
+PHOME_NETWORK_SYSTEMID	MPQMUX.h	/^} __attribute__ ((packed)) HOME_NETWORK_SYSTEMID, *PHOME_NETWORK_SYSTEMID;$/;"	t	typeref:struct:_HOME_NETWORK_SYSTEMID
+PIN1Retries	MPQMUX.h	/^   UCHAR  PIN1Retries;$/;"	m	struct:_QMIUIM_PIN_STATE
+PIN1State	MPQMUX.h	/^   UCHAR  PIN1State;$/;"	m	struct:_QMIUIM_PIN_STATE
+PIN2Retries	MPQMUX.h	/^   UCHAR  PIN2Retries;$/;"	m	struct:_QMIUIM_PIN_STATE
+PIN2State	MPQMUX.h	/^   UCHAR  PIN2State;$/;"	m	struct:_QMIUIM_PIN_STATE
+PINID	MPQMUX.h	/^   UCHAR  PINID;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+PINID	MPQMUX.h	/^   UCHAR  PINID;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+PINLen	MPQMUX.h	/^   UCHAR  PINLen;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+PINLen	MPQMUX.h	/^   UCHAR  PINLen;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+PINStatus	MPQMUX.h	/^   UCHAR  PINStatus;$/;"	m	struct:_QMIDMS_UIM_PIN_STATUS
+PINT	MPQMI.h	/^typedef int   *PINT;$/;"	t
+PINUnblockRetriesLeft	MPQMUX.h	/^   UCHAR  PINUnblockRetriesLeft;$/;"	m	struct:_QMIDMS_UIM_PIN_STATUS
+PINUnblockRetriesLeft	MPQMUX.h	/^   UCHAR  PINUnblockRetriesLeft;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+PINUnblockRetriesLeft	MPQMUX.h	/^   UCHAR  PINUnblockRetriesLeft;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+PINValue	MPQMUX.h	/^   UCHAR  PINValue;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+PINValue	MPQMUX.h	/^   UCHAR  PINValue;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+PINVerifyRetriesLeft	MPQMUX.h	/^   UCHAR  PINVerifyRetriesLeft;$/;"	m	struct:_QMIDMS_UIM_PIN_STATUS
+PINVerifyRetriesLeft	MPQMUX.h	/^   UCHAR  PINVerifyRetriesLeft;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+PINVerifyRetriesLeft	MPQMUX.h	/^   UCHAR  PINVerifyRetriesLeft;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+PLTE_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) LTE_SYSTEM_INFO, *PLTE_SYSTEM_INFO;$/;"	t	typeref:struct:_LTE_SYSTEM_INFO
+PMPIOC_DEV_INFO	MPQMUX.h	/^typedef struct _MPIOC_DEV_INFO MPIOC_DEV_INFO, *PMPIOC_DEV_INFO;$/;"	t	typeref:struct:
+PQCQMI	MPQMI.h	/^} __attribute__ ((packed)) QCQMI, *PQCQMI;$/;"	t	typeref:struct:_QCQMI
+PQCQMICTL_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG, *PQCQMICTL_MSG;$/;"	t	typeref:struct:_QCQMICTL_MSG
+PQCQMICTL_MSG_HDR	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG_HDR, *PQCQMICTL_MSG_HDR;$/;"	t	typeref:struct:_QCQMICTL_MSG_HDR
+PQCQMICTL_MSG_HDR_RESP	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG_HDR_RESP, *PQCQMICTL_MSG_HDR_RESP;$/;"	t	typeref:struct:_QCQMICTL_MSG_HDR_RESP
+PQCQMICTL_TLV_HDR	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_TLV_HDR, *PQCQMICTL_TLV_HDR;$/;"	t	typeref:struct:_QCQMICTL_TLV_HDR
+PQCQMIMSG	QMIThread.h	/^} __attribute__ ((packed)) QCQMIMSG, *PQCQMIMSG;$/;"	t	typeref:struct:_QCQMIMSG
+PQCQMI_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMI_HDR, *PQCQMI_HDR;$/;"	t	typeref:struct:_QCQMI_HDR
+PQCQMUX	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX, *PQCQMUX;$/;"	t	typeref:struct:_QCQMUX
+PQCQMUX_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_HDR, *PQCQMUX_HDR;$/;"	t	typeref:struct:_QCQMUX_HDR
+PQCQMUX_MSG_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_MSG_HDR, *PQCQMUX_MSG_HDR;$/;"	t	typeref:struct:_QCQMUX_MSG_HDR
+PQCQMUX_MSG_HDR_RESP	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_MSG_HDR_RESP, *PQCQMUX_MSG_HDR_RESP;$/;"	t	typeref:struct:_QCQMUX_MSG_HDR_RESP
+PQCQMUX_TLV	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_TLV, *PQCQMUX_TLV;$/;"	t	typeref:struct:_QCQMUX_TLV
+PQCUSB_CTL_MSG	MPQMI.h	/^} __attribute__ ((packed)) QCUSB_CTL_MSG, *PQCUSB_CTL_MSG;$/;"	t	typeref:struct:_QCUSB_CTL_MSG
+PQCUSB_CTL_MSG_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCUSB_CTL_MSG_HDR, *PQCUSB_CTL_MSG_HDR;$/;"	t	typeref:struct:_QCUSB_CTL_MSG_HDR
+PQMICTL_GET_CLIENT_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_CLIENT_ID_REQ_MSG, *PQMICTL_GET_CLIENT_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+PQMICTL_GET_CLIENT_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_CLIENT_ID_RESP_MSG, *PQMICTL_GET_CLIENT_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+PQMICTL_GET_VERSION_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_VERSION_REQ_MSG, *PQMICTL_GET_VERSION_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_GET_VERSION_REQ_MSG
+PQMICTL_GET_VERSION_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_VERSION_RESP_MSG, *PQMICTL_GET_VERSION_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_GET_VERSION_RESP_MSG
+PQMICTL_INVALID_CLIENT_ID_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_INVALID_CLIENT_ID_IND_MSG, *PQMICTL_INVALID_CLIENT_ID_IND_MSG;$/;"	t	typeref:struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+PQMICTL_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_MSG, *PQMICTL_MSG;$/;"	t	typeref:struct:_QMICTL_MSG
+PQMICTL_RELEASE_CLIENT_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_RELEASE_CLIENT_ID_REQ_MSG, *PQMICTL_RELEASE_CLIENT_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+PQMICTL_RELEASE_CLIENT_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_RELEASE_CLIENT_ID_RESP_MSG, *PQMICTL_RELEASE_CLIENT_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+PQMICTL_REVOKE_CLIENT_ID_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_REVOKE_CLIENT_ID_IND_MSG, *PQMICTL_REVOKE_CLIENT_ID_IND_MSG;$/;"	t	typeref:struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+PQMICTL_SET_DATA_FORMAT_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_DATA_FORMAT_REQ_MSG, *PQMICTL_SET_DATA_FORMAT_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+PQMICTL_SET_DATA_FORMAT_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_DATA_FORMAT_RESP_MSG, *PQMICTL_SET_DATA_FORMAT_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+PQMICTL_SET_DATA_FORMAT_TLV_DL_TLP	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_DL_TLP, *PQMICTL_SET_DATA_FORMAT_TLV_DL_TLP;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP
+PQMICTL_SET_DATA_FORMAT_TLV_LINK_PROT	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT, *PQMICTL_SET_DATA_FORMAT_TLV_LINK_PROT;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT
+PQMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING, *PQMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING
+PQMICTL_SET_DATA_FORMAT_TLV_UL_TLP	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_UL_TLP, *PQMICTL_SET_DATA_FORMAT_TLV_UL_TLP;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP
+PQMICTL_SET_INSTANCE_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_INSTANCE_ID_REQ_MSG, *PQMICTL_SET_INSTANCE_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+PQMICTL_SET_INSTANCE_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_INSTANCE_ID_RESP_MSG, *PQMICTL_SET_INSTANCE_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+PQMICTL_SYNC_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_IND_MSG, *PQMICTL_SYNC_IND_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_IND_MSG
+PQMICTL_SYNC_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_REQ_MSG, *PQMICTL_SYNC_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_REQ_MSG
+PQMICTL_SYNC_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_RESP_MSG, *PQMICTL_SYNC_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_RESP_MSG
+PQMIDMS_GET_DEVICE_REV_ID_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_GET_DEVICE_REV_ID_REQ_MSG, *PQMIDMS_GET_DEVICE_REV_ID_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_GET_DEVICE_REV_ID_REQ_MSG
+PQMIDMS_SET_OPERATING_MODE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_SET_OPERATING_MODE_REQ_MSG, *PQMIDMS_SET_OPERATING_MODE_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+PQMIDMS_SET_OPERATING_MODE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_SET_OPERATING_MODE_RESP_MSG, *PQMIDMS_SET_OPERATING_MODE_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+PQMIDMS_UIM_GET_IMSI_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_IMSI_REQ_MSG, *PQMIDMS_UIM_GET_IMSI_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_IMSI_REQ_MSG
+PQMIDMS_UIM_GET_IMSI_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_IMSI_RESP_MSG, *PQMIDMS_UIM_GET_IMSI_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+PQMIDMS_UIM_GET_PIN_STATUS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG, *PQMIDMS_UIM_GET_PIN_STATUS_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG
+PQMIDMS_UIM_GET_PIN_STATUS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG, *PQMIDMS_UIM_GET_PIN_STATUS_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+PQMIDMS_UIM_GET_STATE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_STATE_REQ_MSG, *PQMIDMS_UIM_GET_STATE_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_STATE_REQ_MSG
+PQMIDMS_UIM_GET_STATE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_STATE_RESP_MSG, *PQMIDMS_UIM_GET_STATE_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+PQMIDMS_UIM_PIN_STATUS	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_PIN_STATUS, *PQMIDMS_UIM_PIN_STATUS;$/;"	t	typeref:struct:_QMIDMS_UIM_PIN_STATUS
+PQMIDMS_UIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_VERIFY_PIN_REQ_MSG, *PQMIDMS_UIM_VERIFY_PIN_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+PQMIDMS_UIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_VERIFY_PIN_RESP_MSG, *PQMIDMS_UIM_VERIFY_PIN_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+PQMINAS_CURRENT_PLMN_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_CURRENT_PLMN_MSG, *PQMINAS_CURRENT_PLMN_MSG;$/;"	t	typeref:struct:_QMINAS_CURRENT_PLMN_MSG
+PQMINAS_DATA_CAP	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_DATA_CAP, *PQMINAS_DATA_CAP;$/;"	t	typeref:struct:_QMINAS_DATA_CAP
+PQMINAS_GET_HOME_NETWORK_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_HOME_NETWORK_REQ_MSG, *PQMINAS_GET_HOME_NETWORK_REQ_MSG;$/;"	t	typeref:struct:_QMINAS_GET_HOME_NETWORK_REQ_MSG
+PQMINAS_GET_SERVING_SYSTEM_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_SERVING_SYSTEM_RESP_MSG, *PQMINAS_GET_SERVING_SYSTEM_RESP_MSG;$/;"	t	typeref:struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+PQMINAS_GET_SYS_INFO_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_SYS_INFO_RESP_MSG, *PQMINAS_GET_SYS_INFO_RESP_MSG;$/;"	t	typeref:struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+PQMINAS_SYS_INFO_IND_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_SYS_INFO_IND_MSG, *PQMINAS_SYS_INFO_IND_MSG;$/;"	t	typeref:struct:_QMINAS_SYS_INFO_IND_MSG
+PQMIUIM_CARD_STATUS	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_CARD_STATUS, *PQMIUIM_CARD_STATUS;$/;"	t	typeref:struct:_QMIUIM_CARD_STATUS
+PQMIUIM_CONTENT	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_CONTENT, *PQMIUIM_CONTENT;$/;"	t	typeref:struct:_QMIUIM_CONTENT
+PQMIUIM_GET_CARD_STATUS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_GET_CARD_STATUS_RESP_MSG, *PQMIUIM_GET_CARD_STATUS_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+PQMIUIM_PIN_STATE	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_PIN_STATE, *PQMIUIM_PIN_STATE;$/;"	t	typeref:struct:_QMIUIM_PIN_STATE
+PQMIUIM_READ_TRANSPARENT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_READ_TRANSPARENT_REQ_MSG, *PQMIUIM_READ_TRANSPARENT_REQ_MSG;$/;"	t	typeref:struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+PQMIUIM_READ_TRANSPARENT_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_READ_TRANSPARENT_RESP_MSG, *PQMIUIM_READ_TRANSPARENT_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+PQMIUIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_VERIFY_PIN_REQ_MSG, *PQMIUIM_VERIFY_PIN_REQ_MSG;$/;"	t	typeref:struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+PQMIUIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_VERIFY_PIN_RESP_MSG, *PQMIUIM_VERIFY_PIN_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+PQMIWDS_ADMIN_SET_DATA_FORMAT	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT, *PQMIWDS_ADMIN_SET_DATA_FORMAT;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT
+PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT_TLV, *PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV
+PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS, *PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS
+PQMIWDS_APNNAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_APNNAME, *PQMIWDS_APNNAME;$/;"	t	typeref:struct:_QMIWDS_APNNAME
+PQMIWDS_AUTH_PREFERENCE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_AUTH_PREFERENCE, *PQMIWDS_AUTH_PREFERENCE;$/;"	t	typeref:struct:_QMIWDS_AUTH_PREFERENCE
+PQMIWDS_AUTOCONNECT	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_AUTOCONNECT, *PQMIWDS_AUTOCONNECT;$/;"	t	typeref:struct:_QMIWDS_AUTOCONNECT
+PQMIWDS_BIND_MUX_DATA_PORT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG, *PQMIWDS_BIND_MUX_DATA_PORT_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+PQMIWDS_CALLENDREASON	MPQMUX.h	/^}__attribute__ ((packed)) QMIWDS_CALLENDREASON, *PQMIWDS_CALLENDREASON;$/;"	t	typeref:struct:_QMIWDS_CALLENDREASON
+PQMIWDS_CALL_END_REASON_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_CALL_END_REASON_TLV, *PQMIWDS_CALL_END_REASON_TLV;$/;"	t	typeref:struct:_QMIWDS_CALL_END_REASON_TLV
+PQMIWDS_CALL_END_REASON_V_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_CALL_END_REASON_V_TLV, *PQMIWDS_CALL_END_REASON_V_TLV;$/;"	t	typeref:struct:_QMIWDS_CALL_END_REASON_V_TLV
+PQMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG, *PQMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+PQMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG, *PQMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+PQMIWDS_GET_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG, *PQMIWDS_GET_PROFILE_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+PQMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG, *PQMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+PQMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG, *PQMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR
+PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+PQMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU
+PQMIWDS_IP_FAMILY_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_IP_FAMILY_TLV, *PQMIWDS_IP_FAMILY_TLV;$/;"	t	typeref:struct:_QMIWDS_IP_FAMILY_TLV
+PQMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG, *PQMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+PQMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG, *PQMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+PQMIWDS_PASSWD	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PASSWD, *PQMIWDS_PASSWD;$/;"	t	typeref:struct:_QMIWDS_PASSWD
+PQMIWDS_PDPTYPE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PDPTYPE, *PQMIWDS_PDPTYPE;$/;"	t	typeref:struct:_QMIWDS_PDPTYPE
+PQMIWDS_PKT_SRVC_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PKT_SRVC_TLV, *PQMIWDS_PKT_SRVC_TLV;$/;"	t	typeref:struct:_QMIWDS_PKT_SRVC_TLV
+PQMIWDS_PROFILENAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PROFILENAME, *PQMIWDS_PROFILENAME;$/;"	t	typeref:struct:_QMIWDS_PROFILENAME
+PQMIWDS_PROFILE_IDENTIFIER	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PROFILE_IDENTIFIER, *PQMIWDS_PROFILE_IDENTIFIER;$/;"	t	typeref:struct:_QMIWDS_PROFILE_IDENTIFIER
+PQMIWDS_SET_AUTO_CONNECT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_AUTO_CONNECT_REQ_MSG, *PQMIWDS_SET_AUTO_CONNECT_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG, *PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG, *PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+PQMIWDS_START_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_START_NETWORK_INTERFACE_REQ_MSG, *PQMIWDS_START_NETWORK_INTERFACE_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_START_NETWORK_INTERFACE_REQ_MSG
+PQMIWDS_START_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_START_NETWORK_INTERFACE_RESP_MSG, *PQMIWDS_START_NETWORK_INTERFACE_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+PQMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG, *PQMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+PQMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG, *PQMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+PQMIWDS_TECHNOLOGY_PREFERECE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_TECHNOLOGY_PREFERECE, *PQMIWDS_TECHNOLOGY_PREFERECE;$/;"	t	typeref:struct:_QMIWDS_TECHNOLOGY_PREFERECE
+PQMIWDS_USERNAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_USERNAME, *PQMIWDS_USERNAME;$/;"	t	typeref:struct:_QMIWDS_USERNAME
+PQMI_SERVICE_VERSION	MPQMI.h	/^} __attribute__ ((packed)) QMI_SERVICE_VERSION, *PQMI_SERVICE_VERSION;$/;"	t	typeref:struct:_QMI_SERVICE_VERSION
+PQMI_TLV_HDR	MPQMI.h	/^} __attribute__ ((packed)) QMI_TLV_HDR, *PQMI_TLV_HDR;$/;"	t	typeref:struct:_QMI_TLV_HDR
+PQMUX_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMUX_MSG, *PQMUX_MSG;$/;"	t	typeref:struct:_QMUX_MSG
+PQMUX_TYPE_VERSION_STRUCT	MPQCTL.h	/^} __attribute__ ((packed)) QMUX_TYPE_VERSION_STRUCT, *PQMUX_TYPE_VERSION_STRUCT;$/;"	t	typeref:struct:_QMUX_TYPE_VERSION_STRUCT
+PREAD_TRANSPARENT_TLV	MPQMUX.h	/^} __attribute__ ((packed)) READ_TRANSPARENT_TLV, *PREAD_TRANSPARENT_TLV;$/;"	t	typeref:struct:_READ_TRANSPARENT_TLV
+PROFILE_T	QMIThread.h	/^} PROFILE_T;$/;"	t	typeref:struct:__PROFILE
+PRevInUse	MPQMUX.h	/^   UCHAR  PRevInUse;$/;"	m	struct:_CDMA_SYSTEM_INFO
+PRevInUseValid	MPQMUX.h	/^   UCHAR  PRevInUseValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+PSAttachedState	MPQMUX.h	/^   UCHAR  PSAttachedState;$/;"	m	struct:_SERVING_SYSTEM
+PSERVICE_STATUS_INFO	MPQMUX.h	/^} __attribute__ ((packed)) SERVICE_STATUS_INFO, *PSERVICE_STATUS_INFO;$/;"	t	typeref:struct:_SERVICE_STATUS_INFO
+PSERVING_SYSTEM	MPQMUX.h	/^} __attribute__ ((packed)) SERVING_SYSTEM, *PSERVING_SYSTEM;$/;"	t	typeref:struct:_SERVING_SYSTEM
+PTDSCDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) TDSCDMA_SYSTEM_INFO, *PTDSCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_TDSCDMA_SYSTEM_INFO
+PUCHAR	MPQMI.h	/^typedef unsigned char   *PUCHAR;$/;"	t
+PUK1Retries	MPQMUX.h	/^   UCHAR  PUK1Retries;$/;"	m	struct:_QMIUIM_PIN_STATE
+PUK2Retries	MPQMUX.h	/^   UCHAR  PUK2Retries;$/;"	m	struct:_QMIUIM_PIN_STATE
+PWCDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) WCDMA_SYSTEM_INFO, *PWCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_WCDMA_SYSTEM_INFO
+PacketZone	MPQMUX.h	/^   USHORT PacketZone;$/;"	m	struct:_CDMA_SYSTEM_INFO
+PacketZoneValid	MPQMUX.h	/^   UCHAR  PacketZoneValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+Passwd	MPQMUX.h	/^   UCHAR  Passwd;$/;"	m	struct:_QMIWDS_PASSWD
+Payload	MPQCTL.h	/^   UCHAR  Payload;$/;"	m	struct:_QCQMICTL_MSG
+PdpType	MPQMUX.h	/^    UCHAR  PdpType;$/;"	m	struct:_QMIWDS_PDPTYPE
+PersoFeature	MPQMUX.h	/^   UCHAR  PersoFeature;$/;"	m	struct:_QMIUIM_CARD_STATUS
+PersoRetries	MPQMUX.h	/^   UCHAR  PersoRetries;$/;"	m	struct:_QMIUIM_CARD_STATUS
+PersoState	MPQMUX.h	/^   UCHAR  PersoState;$/;"	m	struct:_QMIUIM_CARD_STATUS
+PersoUnblockRetries	MPQMUX.h	/^   UCHAR  PersoUnblockRetries;$/;"	m	struct:_QMIUIM_CARD_STATUS
+PinStatus	MPQMUX.h	/^   UCHAR PinStatus;$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+PrefixLength	MPQMUX.h	/^   UCHAR  PrefixLength;    \/\/ prefix length$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+PrefixLengthGateway	QMIThread.h	/^    UCHAR PrefixLengthGateway;$/;"	m	struct:__IPV6
+PrefixLengthIPAddr	QMIThread.h	/^    UCHAR PrefixLengthIPAddr;$/;"	m	struct:__IPV6
+ProfileIndex	MPQMUX.h	/^   UCHAR  ProfileIndex;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+ProfileIndex	MPQMUX.h	/^   UCHAR  ProfileIndex;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+ProfileIndex	MPQMUX.h	/^   UCHAR  ProfileIndex;$/;"	m	struct:_QMIWDS_PROFILE_IDENTIFIER
+ProfileName	MPQMUX.h	/^   UCHAR  ProfileName;$/;"	m	struct:_QMIWDS_PROFILENAME
+ProfileType	MPQMUX.h	/^   UCHAR  ProfileType;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+ProfileType	MPQMUX.h	/^   UCHAR  ProfileType;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+ProfileType	MPQMUX.h	/^   UCHAR  ProfileType;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+PsBarStatus	MPQMUX.h	/^   ULONG  PsBarStatus;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+PsBarStatusValid	MPQMUX.h	/^   UCHAR  PsBarStatusValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+Psc	MPQMUX.h	/^   UCHAR  Psc;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+PscValid	MPQMUX.h	/^   UCHAR  PscValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+QCQMI	MPQMI.h	/^} __attribute__ ((packed)) QCQMI, *PQCQMI;$/;"	t	typeref:struct:_QCQMI
+QCQMICTL_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG, *PQCQMICTL_MSG;$/;"	t	typeref:struct:_QCQMICTL_MSG
+QCQMICTL_MSG_HDR	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG_HDR, *PQCQMICTL_MSG_HDR;$/;"	t	typeref:struct:_QCQMICTL_MSG_HDR
+QCQMICTL_MSG_HDR_RESP	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_MSG_HDR_RESP, *PQCQMICTL_MSG_HDR_RESP;$/;"	t	typeref:struct:_QCQMICTL_MSG_HDR_RESP
+QCQMICTL_MSG_HDR_SIZE	MPQCTL.h	45;"	d
+QCQMICTL_TLV_HDR	MPQCTL.h	/^} __attribute__ ((packed)) QCQMICTL_TLV_HDR, *PQCQMICTL_TLV_HDR;$/;"	t	typeref:struct:_QCQMICTL_TLV_HDR
+QCQMICTL_TLV_HDR_SIZE	MPQCTL.h	79;"	d
+QCQMIMSG	QMIThread.h	/^} __attribute__ ((packed)) QCQMIMSG, *PQCQMIMSG;$/;"	t	typeref:struct:_QCQMIMSG
+QCQMI_CTL_FLAG_CTL_POINT	MPQMI.h	123;"	d
+QCQMI_CTL_FLAG_SERVICE	MPQMI.h	122;"	d
+QCQMI_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMI_HDR, *PQCQMI_HDR;$/;"	t	typeref:struct:_QCQMI_HDR
+QCQMI_HDR_SIZE	MPQMI.h	134;"	d
+QCQMUX	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX, *PQCQMUX;$/;"	t	typeref:struct:_QCQMUX
+QCQMUX_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_HDR, *PQCQMUX_HDR;$/;"	t	typeref:struct:_QCQMUX_HDR
+QCQMUX_HDR_SIZE	MPQMI.h	173;"	d
+QCQMUX_MSG_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_MSG_HDR, *PQCQMUX_MSG_HDR;$/;"	t	typeref:struct:_QCQMUX_MSG_HDR
+QCQMUX_MSG_HDR_RESP	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_MSG_HDR_RESP, *PQCQMUX_MSG_HDR_RESP;$/;"	t	typeref:struct:_QCQMUX_MSG_HDR_RESP
+QCQMUX_MSG_HDR_SIZE	MPQMI.h	181;"	d
+QCQMUX_TLV	MPQMI.h	/^} __attribute__ ((packed)) QCQMUX_TLV, *PQCQMUX_TLV;$/;"	t	typeref:struct:_QCQMUX_TLV
+QCTLV_TYPE_REQUIRED_PARAMETER	MPQMI.h	64;"	d
+QCTLV_TYPE_RESULT_CODE	MPQMI.h	65;"	d
+QCUSB_CTL_MSG	MPQMI.h	/^} __attribute__ ((packed)) QCUSB_CTL_MSG, *PQCUSB_CTL_MSG;$/;"	t	typeref:struct:_QCUSB_CTL_MSG
+QCUSB_CTL_MSG_HDR	MPQMI.h	/^} __attribute__ ((packed)) QCUSB_CTL_MSG_HDR, *PQCUSB_CTL_MSG_HDR;$/;"	t	typeref:struct:_QCUSB_CTL_MSG_HDR
+QCUSB_CTL_MSG_HDR_SIZE	MPQMI.h	56;"	d
+QMICTLMsgHdr	MPQCTL.h	/^      QCQMICTL_MSG_HDR                             QMICTLMsgHdr;$/;"	m	union:_QMICTL_MSG::__anon1
+QMICTLMsgHdrRsp	MPQCTL.h	/^      QCQMICTL_MSG_HDR_RESP                             QMICTLMsgHdrRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_CTL_SYNC_REQ$/;"	m	struct:_QMICTL_SYNC_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_CTL_SYNC_RESP$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_GET_CLIENT_ID_REQ$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_GET_CLIENT_ID_RESP$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_GET_VERSION_REQ$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_GET_VERSION_RESP$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_RELEASE_CLIENT_ID_REQ$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_RELEASE_CLIENT_ID_RESP$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_REVOKE_CLIENT_ID_IND$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_REVOKE_CLIENT_ID_IND$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_REVOKE_CLIENT_ID_IND$/;"	m	struct:_QMICTL_SYNC_IND_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_SET_DATA_FORMAT_REQ$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_SET_DATA_FORMAT_RESP$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_SET_INSTANCE_ID_REQ$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;      \/\/ QMICTL_SET_INSTANCE_ID_RESP$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;$/;"	m	struct:_QCQMICTL_MSG
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;$/;"	m	struct:_QCQMICTL_MSG_HDR
+QMICTLType	MPQCTL.h	/^   USHORT QMICTLType;$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+QMICTL_CTL_FLAG_CMD	MPQCTL.h	23;"	d
+QMICTL_CTL_FLAG_IND	MPQCTL.h	25;"	d
+QMICTL_CTL_FLAG_RSP	MPQCTL.h	24;"	d
+QMICTL_FLAG_INDICATION	MPQCTL.h	100;"	d
+QMICTL_FLAG_REQUEST	MPQCTL.h	98;"	d
+QMICTL_FLAG_RESPONSE	MPQCTL.h	99;"	d
+QMICTL_GET_CLIENT_ID_REQ	MPQCTL.h	86;"	d
+QMICTL_GET_CLIENT_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_CLIENT_ID_REQ_MSG, *PQMICTL_GET_CLIENT_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+QMICTL_GET_CLIENT_ID_RESP	MPQCTL.h	87;"	d
+QMICTL_GET_CLIENT_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_CLIENT_ID_RESP_MSG, *PQMICTL_GET_CLIENT_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+QMICTL_GET_VERSION_REQ	MPQCTL.h	84;"	d
+QMICTL_GET_VERSION_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_VERSION_REQ_MSG, *PQMICTL_GET_VERSION_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_GET_VERSION_REQ_MSG
+QMICTL_GET_VERSION_RESP	MPQCTL.h	85;"	d
+QMICTL_GET_VERSION_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_GET_VERSION_RESP_MSG, *PQMICTL_GET_VERSION_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_GET_VERSION_RESP_MSG
+QMICTL_GET_VERSION_RSP_TLV_TYPE_ADD_VERSION	MPQCTL.h	158;"	d
+QMICTL_GET_VERSION_RSP_TLV_TYPE_VERSION	MPQCTL.h	157;"	d
+QMICTL_INVALID_CLIENT_ID_IND	MPQCTL.h	91;"	d
+QMICTL_INVALID_CLIENT_ID_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_INVALID_CLIENT_ID_IND_MSG, *PQMICTL_INVALID_CLIENT_ID_IND_MSG;$/;"	t	typeref:struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+QMICTL_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_MSG, *PQMICTL_MSG;$/;"	t	typeref:struct:_QMICTL_MSG
+QMICTL_RELEASE_CLIENT_ID_REQ	MPQCTL.h	88;"	d
+QMICTL_RELEASE_CLIENT_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_RELEASE_CLIENT_ID_REQ_MSG, *PQMICTL_RELEASE_CLIENT_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+QMICTL_RELEASE_CLIENT_ID_RESP	MPQCTL.h	89;"	d
+QMICTL_RELEASE_CLIENT_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_RELEASE_CLIENT_ID_RESP_MSG, *PQMICTL_RELEASE_CLIENT_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+QMICTL_REVOKE_CLIENT_ID_IND	MPQCTL.h	90;"	d
+QMICTL_REVOKE_CLIENT_ID_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_REVOKE_CLIENT_ID_IND_MSG, *PQMICTL_REVOKE_CLIENT_ID_IND_MSG;$/;"	t	typeref:struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+QMICTL_SET_DATA_FORMAT_REQ	MPQCTL.h	92;"	d
+QMICTL_SET_DATA_FORMAT_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_DATA_FORMAT_REQ_MSG, *PQMICTL_SET_DATA_FORMAT_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+QMICTL_SET_DATA_FORMAT_RESP	MPQCTL.h	93;"	d
+QMICTL_SET_DATA_FORMAT_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_DATA_FORMAT_RESP_MSG, *PQMICTL_SET_DATA_FORMAT_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+QMICTL_SET_DATA_FORMAT_TLV_DL_TLP	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_DL_TLP, *PQMICTL_SET_DATA_FORMAT_TLV_DL_TLP;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP
+QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT, *PQMICTL_SET_DATA_FORMAT_TLV_LINK_PROT;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT
+QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING, *PQMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING
+QMICTL_SET_DATA_FORMAT_TLV_UL_TLP	MPQCTL.h	/^} QMICTL_SET_DATA_FORMAT_TLV_UL_TLP, *PQMICTL_SET_DATA_FORMAT_TLV_UL_TLP;$/;"	t	typeref:struct:_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP
+QMICTL_SET_INSTANCE_ID_REQ	MPQCTL.h	82;"	d
+QMICTL_SET_INSTANCE_ID_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_INSTANCE_ID_REQ_MSG, *PQMICTL_SET_INSTANCE_ID_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+QMICTL_SET_INSTANCE_ID_RESP	MPQCTL.h	83;"	d
+QMICTL_SET_INSTANCE_ID_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SET_INSTANCE_ID_RESP_MSG, *PQMICTL_SET_INSTANCE_ID_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+QMICTL_SUPPORTED_MAJOR_VERSION	MPQMI.h	41;"	d
+QMICTL_SUPPORTED_MINOR_VERSION	MPQMI.h	42;"	d
+QMICTL_SYNC_IND	MPQCTL.h	96;"	d
+QMICTL_SYNC_IND_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_IND_MSG, *PQMICTL_SYNC_IND_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_IND_MSG
+QMICTL_SYNC_REQ	MPQCTL.h	94;"	d
+QMICTL_SYNC_REQ_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_REQ_MSG, *PQMICTL_SYNC_REQ_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_REQ_MSG
+QMICTL_SYNC_RESP	MPQCTL.h	95;"	d
+QMICTL_SYNC_RESP_MSG	MPQCTL.h	/^} __attribute__ ((packed)) QMICTL_SYNC_RESP_MSG, *PQMICTL_SYNC_RESP_MSG;$/;"	t	typeref:struct:_QMICTL_SYNC_RESP_MSG
+QMIDMS_ACTIVATE_AUTOMATIC_REQ	MPQMUX.h	788;"	d
+QMIDMS_ACTIVATE_AUTOMATIC_RESP	MPQMUX.h	789;"	d
+QMIDMS_ACTIVATE_MANUAL_REQ	MPQMUX.h	790;"	d
+QMIDMS_ACTIVATE_MANUAL_RESP	MPQMUX.h	791;"	d
+QMIDMS_EVENT_REPORT_IND	MPQMUX.h	757;"	d
+QMIDMS_GET_ACTIVATED_STATUS_REQ	MPQMUX.h	786;"	d
+QMIDMS_GET_ACTIVATED_STATUS_RESP	MPQMUX.h	787;"	d
+QMIDMS_GET_BAND_CAP_REQ	MPQMUX.h	804;"	d
+QMIDMS_GET_BAND_CAP_RESP	MPQMUX.h	805;"	d
+QMIDMS_GET_DEVICE_CAP_REQ	MPQMUX.h	758;"	d
+QMIDMS_GET_DEVICE_CAP_RESP	MPQMUX.h	759;"	d
+QMIDMS_GET_DEVICE_HARDWARE_REV_REQ	MPQMUX.h	780;"	d
+QMIDMS_GET_DEVICE_HARDWARE_REV_RESP	MPQMUX.h	781;"	d
+QMIDMS_GET_DEVICE_MFR_REQ	MPQMUX.h	760;"	d
+QMIDMS_GET_DEVICE_MFR_RESP	MPQMUX.h	761;"	d
+QMIDMS_GET_DEVICE_MODEL_ID_REQ	MPQMUX.h	762;"	d
+QMIDMS_GET_DEVICE_MODEL_ID_RESP	MPQMUX.h	763;"	d
+QMIDMS_GET_DEVICE_REV_ID_REQ	MPQMUX.h	764;"	d
+QMIDMS_GET_DEVICE_REV_ID_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_GET_DEVICE_REV_ID_REQ_MSG, *PQMIDMS_GET_DEVICE_REV_ID_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_GET_DEVICE_REV_ID_REQ_MSG
+QMIDMS_GET_DEVICE_REV_ID_RESP	MPQMUX.h	765;"	d
+QMIDMS_GET_DEVICE_SERIAL_NUMBERS_REQ	MPQMUX.h	768;"	d
+QMIDMS_GET_DEVICE_SERIAL_NUMBERS_RESP	MPQMUX.h	769;"	d
+QMIDMS_GET_MSISDN_REQ	MPQMUX.h	766;"	d
+QMIDMS_GET_MSISDN_RESP	MPQMUX.h	767;"	d
+QMIDMS_GET_OPERATING_MODE_REQ	MPQMUX.h	782;"	d
+QMIDMS_GET_OPERATING_MODE_RESP	MPQMUX.h	783;"	d
+QMIDMS_SET_EVENT_REPORT_REQ	MPQMUX.h	755;"	d
+QMIDMS_SET_EVENT_REPORT_RESP	MPQMUX.h	756;"	d
+QMIDMS_SET_OPERATING_MODE_REQ	MPQMUX.h	784;"	d
+QMIDMS_SET_OPERATING_MODE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_SET_OPERATING_MODE_REQ_MSG, *PQMIDMS_SET_OPERATING_MODE_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+QMIDMS_SET_OPERATING_MODE_RESP	MPQMUX.h	785;"	d
+QMIDMS_SET_OPERATING_MODE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_SET_OPERATING_MODE_RESP_MSG, *PQMIDMS_SET_OPERATING_MODE_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+QMIDMS_UIM_CHANGE_PIN_REQ	MPQMUX.h	776;"	d
+QMIDMS_UIM_CHANGE_PIN_RESP	MPQMUX.h	777;"	d
+QMIDMS_UIM_GET_CK_STATUS_REQ	MPQMUX.h	794;"	d
+QMIDMS_UIM_GET_CK_STATUS_RESP	MPQMUX.h	795;"	d
+QMIDMS_UIM_GET_ICCID_REQ	MPQMUX.h	792;"	d
+QMIDMS_UIM_GET_ICCID_RESP	MPQMUX.h	793;"	d
+QMIDMS_UIM_GET_IMSI_REQ	MPQMUX.h	800;"	d
+QMIDMS_UIM_GET_IMSI_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_IMSI_REQ_MSG, *PQMIDMS_UIM_GET_IMSI_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_IMSI_REQ_MSG
+QMIDMS_UIM_GET_IMSI_RESP	MPQMUX.h	801;"	d
+QMIDMS_UIM_GET_IMSI_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_IMSI_RESP_MSG, *PQMIDMS_UIM_GET_IMSI_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+QMIDMS_UIM_GET_PIN_STATUS_REQ	MPQMUX.h	778;"	d
+QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG, *PQMIDMS_UIM_GET_PIN_STATUS_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG
+QMIDMS_UIM_GET_PIN_STATUS_RESP	MPQMUX.h	779;"	d
+QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG, *PQMIDMS_UIM_GET_PIN_STATUS_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+QMIDMS_UIM_GET_STATE_REQ	MPQMUX.h	802;"	d
+QMIDMS_UIM_GET_STATE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_STATE_REQ_MSG, *PQMIDMS_UIM_GET_STATE_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_STATE_REQ_MSG
+QMIDMS_UIM_GET_STATE_RESP	MPQMUX.h	803;"	d
+QMIDMS_UIM_GET_STATE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_GET_STATE_RESP_MSG, *PQMIDMS_UIM_GET_STATE_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+QMIDMS_UIM_PIN_STATUS	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_PIN_STATUS, *PQMIDMS_UIM_PIN_STATUS;$/;"	t	typeref:struct:_QMIDMS_UIM_PIN_STATUS
+QMIDMS_UIM_SET_CK_PROTECTION_REQ	MPQMUX.h	796;"	d
+QMIDMS_UIM_SET_CK_PROTECTION_RESP	MPQMUX.h	797;"	d
+QMIDMS_UIM_SET_PIN_PROTECTION_REQ	MPQMUX.h	770;"	d
+QMIDMS_UIM_SET_PIN_PROTECTION_RESP	MPQMUX.h	771;"	d
+QMIDMS_UIM_UNBLOCK_CK_REQ	MPQMUX.h	798;"	d
+QMIDMS_UIM_UNBLOCK_CK_RESP	MPQMUX.h	799;"	d
+QMIDMS_UIM_UNBLOCK_PIN_REQ	MPQMUX.h	774;"	d
+QMIDMS_UIM_UNBLOCK_PIN_RESP	MPQMUX.h	775;"	d
+QMIDMS_UIM_VERIFY_PIN_REQ	MPQMUX.h	772;"	d
+QMIDMS_UIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_VERIFY_PIN_REQ_MSG, *PQMIDMS_UIM_VERIFY_PIN_REQ_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+QMIDMS_UIM_VERIFY_PIN_RESP	MPQMUX.h	773;"	d
+QMIDMS_UIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIDMS_UIM_VERIFY_PIN_RESP_MSG, *PQMIDMS_UIM_VERIFY_PIN_RESP_MSG;$/;"	t	typeref:struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;        \/\/ error code$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;        \/\/ error code$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;        \/\/ error code$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+QMIError	MPQCTL.h	/^   USHORT QMIError;$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+QMIHdr	QMIThread.h	/^    QCQMI_HDR QMIHdr;$/;"	m	struct:_QCQMIMSG
+QMINAS_CURRENT_PLMN_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_CURRENT_PLMN_MSG, *PQMINAS_CURRENT_PLMN_MSG;$/;"	t	typeref:struct:_QMINAS_CURRENT_PLMN_MSG
+QMINAS_DATA_CAP	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_DATA_CAP, *PQMINAS_DATA_CAP;$/;"	t	typeref:struct:_QMINAS_DATA_CAP
+QMINAS_EVENT_REPORT_IND	MPQMUX.h	2209;"	d
+QMINAS_GET_FORBIDDEN_NETWORK_REQ	MPQMUX.h	2227;"	d
+QMINAS_GET_FORBIDDEN_NETWORK_RESP	MPQMUX.h	2228;"	d
+QMINAS_GET_HOME_NETWORK_REQ	MPQMUX.h	2221;"	d
+QMINAS_GET_HOME_NETWORK_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_HOME_NETWORK_REQ_MSG, *PQMINAS_GET_HOME_NETWORK_REQ_MSG;$/;"	t	typeref:struct:_QMINAS_GET_HOME_NETWORK_REQ_MSG
+QMINAS_GET_HOME_NETWORK_RESP	MPQMUX.h	2222;"	d
+QMINAS_GET_PLMN_NAME_REQ	MPQMUX.h	2235;"	d
+QMINAS_GET_PLMN_NAME_RESP	MPQMUX.h	2236;"	d
+QMINAS_GET_PREFERRED_NETWORK_REQ	MPQMUX.h	2223;"	d
+QMINAS_GET_PREFERRED_NETWORK_RESP	MPQMUX.h	2224;"	d
+QMINAS_GET_RF_BAND_INFO_REQ	MPQMUX.h	2233;"	d
+QMINAS_GET_RF_BAND_INFO_RESP	MPQMUX.h	2234;"	d
+QMINAS_GET_SERVING_SYSTEM_REQ	MPQMUX.h	2218;"	d
+QMINAS_GET_SERVING_SYSTEM_RESP	MPQMUX.h	2219;"	d
+QMINAS_GET_SERVING_SYSTEM_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_SERVING_SYSTEM_RESP_MSG, *PQMINAS_GET_SERVING_SYSTEM_RESP_MSG;$/;"	t	typeref:struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+QMINAS_GET_SIGNAL_STRENGTH_REQ	MPQMUX.h	2210;"	d
+QMINAS_GET_SIGNAL_STRENGTH_RESP	MPQMUX.h	2211;"	d
+QMINAS_GET_SYS_INFO_REQ	MPQMUX.h	2239;"	d
+QMINAS_GET_SYS_INFO_RESP	MPQMUX.h	2240;"	d
+QMINAS_GET_SYS_INFO_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_GET_SYS_INFO_RESP_MSG, *PQMINAS_GET_SYS_INFO_RESP_MSG;$/;"	t	typeref:struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+QMINAS_INITIATE_ATTACH_REQ	MPQMUX.h	2216;"	d
+QMINAS_INITIATE_ATTACH_RESP	MPQMUX.h	2217;"	d
+QMINAS_INITIATE_NW_REGISTER_REQ	MPQMUX.h	2214;"	d
+QMINAS_INITIATE_NW_REGISTER_RESP	MPQMUX.h	2215;"	d
+QMINAS_PERFORM_NETWORK_SCAN_REQ	MPQMUX.h	2212;"	d
+QMINAS_PERFORM_NETWORK_SCAN_RESP	MPQMUX.h	2213;"	d
+QMINAS_SERVING_SYSTEM_IND	MPQMUX.h	2220;"	d
+QMINAS_SET_EVENT_REPORT_REQ	MPQMUX.h	2207;"	d
+QMINAS_SET_EVENT_REPORT_RESP	MPQMUX.h	2208;"	d
+QMINAS_SET_FORBIDDEN_NETWORK_REQ	MPQMUX.h	2229;"	d
+QMINAS_SET_FORBIDDEN_NETWORK_RESP	MPQMUX.h	2230;"	d
+QMINAS_SET_PREFERRED_NETWORK_REQ	MPQMUX.h	2225;"	d
+QMINAS_SET_PREFERRED_NETWORK_RESP	MPQMUX.h	2226;"	d
+QMINAS_SET_TECHNOLOGY_PREF_REQ	MPQMUX.h	2231;"	d
+QMINAS_SET_TECHNOLOGY_PREF_RESP	MPQMUX.h	2232;"	d
+QMINAS_SYS_INFO_IND	MPQMUX.h	2241;"	d
+QMINAS_SYS_INFO_IND_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMINAS_SYS_INFO_IND_MSG, *PQMINAS_SYS_INFO_IND_MSG;$/;"	t	typeref:struct:_QMINAS_SYS_INFO_IND_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;       \/\/ result code$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;       \/\/ result code$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;       \/\/ result code$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+QMIResult	MPQCTL.h	/^   USHORT QMIResult;$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;         \/\/ QMUX type$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+QMIType	MPQCTL.h	/^   UCHAR  QMIType;$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+QMIType	MPQMI.h	/^   UCHAR  QMIType;$/;"	m	struct:_QCQMI
+QMIType	MPQMI.h	/^   UCHAR  QMIType;$/;"	m	struct:_QCQMI_HDR
+QMIUIM_CARD_STATUS	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_CARD_STATUS, *PQMIUIM_CARD_STATUS;$/;"	t	typeref:struct:_QMIUIM_CARD_STATUS
+QMIUIM_CHANGE_PIN_IND	MPQMUX.h	2976;"	d
+QMIUIM_CHANGE_PIN_REQ	MPQMUX.h	2974;"	d
+QMIUIM_CHANGE_PIN_RESP	MPQMUX.h	2975;"	d
+QMIUIM_CONTENT	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_CONTENT, *PQMIUIM_CONTENT;$/;"	t	typeref:struct:_QMIUIM_CONTENT
+QMIUIM_DEPERSONALIZATION_REQ	MPQMUX.h	2977;"	d
+QMIUIM_DEPERSONALIZATION_RESP	MPQMUX.h	2978;"	d
+QMIUIM_EVENT_REG_REQ	MPQMUX.h	2979;"	d
+QMIUIM_EVENT_REG_RESP	MPQMUX.h	2980;"	d
+QMIUIM_GET_CARD_STATUS_REQ	MPQMUX.h	2981;"	d
+QMIUIM_GET_CARD_STATUS_RESP	MPQMUX.h	2982;"	d
+QMIUIM_GET_CARD_STATUS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_GET_CARD_STATUS_RESP_MSG, *PQMIUIM_GET_CARD_STATUS_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+QMIUIM_PIN_STATE	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_PIN_STATE, *PQMIUIM_PIN_STATE;$/;"	t	typeref:struct:_QMIUIM_PIN_STATE
+QMIUIM_READ_RECORD_IND	MPQMUX.h	2958;"	d
+QMIUIM_READ_RECORD_REQ	MPQMUX.h	2956;"	d
+QMIUIM_READ_RECORD_RESP	MPQMUX.h	2957;"	d
+QMIUIM_READ_TRANSPARENT_IND	MPQMUX.h	2955;"	d
+QMIUIM_READ_TRANSPARENT_REQ	MPQMUX.h	2953;"	d
+QMIUIM_READ_TRANSPARENT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_READ_TRANSPARENT_REQ_MSG, *PQMIUIM_READ_TRANSPARENT_REQ_MSG;$/;"	t	typeref:struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+QMIUIM_READ_TRANSPARENT_RESP	MPQMUX.h	2954;"	d
+QMIUIM_READ_TRANSPARENT_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_READ_TRANSPARENT_RESP_MSG, *PQMIUIM_READ_TRANSPARENT_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+QMIUIM_SET_PIN_PROTECTION_IND	MPQMUX.h	2967;"	d
+QMIUIM_SET_PIN_PROTECTION_REQ	MPQMUX.h	2965;"	d
+QMIUIM_SET_PIN_PROTECTION_RESP	MPQMUX.h	2966;"	d
+QMIUIM_STATUS_CHANGE_IND	MPQMUX.h	2983;"	d
+QMIUIM_UNBLOCK_PIN_IND	MPQMUX.h	2973;"	d
+QMIUIM_UNBLOCK_PIN_REQ	MPQMUX.h	2971;"	d
+QMIUIM_UNBLOCK_PIN_RESP	MPQMUX.h	2972;"	d
+QMIUIM_VERIFY_PIN_IND	MPQMUX.h	2970;"	d
+QMIUIM_VERIFY_PIN_REQ	MPQMUX.h	2968;"	d
+QMIUIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_VERIFY_PIN_REQ_MSG, *PQMIUIM_VERIFY_PIN_REQ_MSG;$/;"	t	typeref:struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+QMIUIM_VERIFY_PIN_RESP	MPQMUX.h	2969;"	d
+QMIUIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIUIM_VERIFY_PIN_RESP_MSG, *PQMIUIM_VERIFY_PIN_RESP_MSG;$/;"	t	typeref:struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+QMIUIM_WRITE_RECORD_IND	MPQMUX.h	2964;"	d
+QMIUIM_WRITE_RECORD_REQ	MPQMUX.h	2962;"	d
+QMIUIM_WRITE_RECORD_RESP	MPQMUX.h	2963;"	d
+QMIUIM_WRITE_TRANSPARENT_IND	MPQMUX.h	2961;"	d
+QMIUIM_WRITE_TRANSPARENT_REQ	MPQMUX.h	2959;"	d
+QMIUIM_WRITE_TRANSPARENT_RESP	MPQMUX.h	2960;"	d
+QMIWDS_ADMIN_GET_DATA_FORMAT_REQ	MPQMUX.h	83;"	d
+QMIWDS_ADMIN_GET_DATA_FORMAT_RESP	MPQMUX.h	84;"	d
+QMIWDS_ADMIN_GET_QMAP_SETTINGS_REQ	MPQMUX.h	87;"	d
+QMIWDS_ADMIN_GET_QMAP_SETTINGS_RESP	MPQMUX.h	88;"	d
+QMIWDS_ADMIN_SET_DATA_FORMAT	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT, *PQMIWDS_ADMIN_SET_DATA_FORMAT;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT
+QMIWDS_ADMIN_SET_DATA_FORMAT_REQ	MPQMUX.h	81;"	d
+QMIWDS_ADMIN_SET_DATA_FORMAT_RESP	MPQMUX.h	82;"	d
+QMIWDS_ADMIN_SET_DATA_FORMAT_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT_TLV, *PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV
+QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS, *PQMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS;$/;"	t	typeref:struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS
+QMIWDS_ADMIN_SET_QMAP_SETTINGS_REQ	MPQMUX.h	85;"	d
+QMIWDS_ADMIN_SET_QMAP_SETTINGS_RESP	MPQMUX.h	86;"	d
+QMIWDS_APNNAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_APNNAME, *PQMIWDS_APNNAME;$/;"	t	typeref:struct:_QMIWDS_APNNAME
+QMIWDS_AUTH_PREFERENCE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_AUTH_PREFERENCE, *PQMIWDS_AUTH_PREFERENCE;$/;"	t	typeref:struct:_QMIWDS_AUTH_PREFERENCE
+QMIWDS_AUTOCONNECT	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_AUTOCONNECT, *PQMIWDS_AUTOCONNECT;$/;"	t	typeref:struct:_QMIWDS_AUTOCONNECT
+QMIWDS_BIND_MUX_DATA_PORT_REQ	MPQMUX.h	53;"	d
+QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG, *PQMIWDS_BIND_MUX_DATA_PORT_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+QMIWDS_BIND_MUX_DATA_PORT_RESP	MPQMUX.h	54;"	d
+QMIWDS_CALLENDREASON	MPQMUX.h	/^}__attribute__ ((packed)) QMIWDS_CALLENDREASON, *PQMIWDS_CALLENDREASON;$/;"	t	typeref:struct:_QMIWDS_CALLENDREASON
+QMIWDS_CALL_END_REASON_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_CALL_END_REASON_TLV, *PQMIWDS_CALL_END_REASON_TLV;$/;"	t	typeref:struct:_QMIWDS_CALL_END_REASON_TLV
+QMIWDS_CALL_END_REASON_V_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_CALL_END_REASON_V_TLV, *PQMIWDS_CALL_END_REASON_V_TLV;$/;"	t	typeref:struct:_QMIWDS_CALL_END_REASON_V_TLV
+QMIWDS_DUN_CALL_INFO_IND	MPQMUX.h	48;"	d
+QMIWDS_DUN_CALL_INFO_REQ	MPQMUX.h	46;"	d
+QMIWDS_DUN_CALL_INFO_RESP	MPQMUX.h	47;"	d
+QMIWDS_EVENT_REPORT_IND	MPQMUX.h	22;"	d
+QMIWDS_GET_CURRENT_CHANNEL_RATE_REQ	MPQMUX.h	30;"	d
+QMIWDS_GET_CURRENT_CHANNEL_RATE_RESP	MPQMUX.h	31;"	d
+QMIWDS_GET_DATA_BEARER_REQ	MPQMUX.h	44;"	d
+QMIWDS_GET_DATA_BEARER_RESP	MPQMUX.h	45;"	d
+QMIWDS_GET_DEFAULT_SETTINGS_REQ	MPQMUX.h	38;"	d
+QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG, *PQMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+QMIWDS_GET_DEFAULT_SETTINGS_RESP	MPQMUX.h	39;"	d
+QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG, *PQMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+QMIWDS_GET_MIP_MODE_REQ	MPQMUX.h	42;"	d
+QMIWDS_GET_MIP_MODE_RESP	MPQMUX.h	43;"	d
+QMIWDS_GET_PKT_SRVC_STATUS_IND	MPQMUX.h	29;"	d
+QMIWDS_GET_PKT_SRVC_STATUS_REQ	MPQMUX.h	27;"	d
+QMIWDS_GET_PKT_SRVC_STATUS_RESP	MPQMUX.h	28;"	d
+QMIWDS_GET_PKT_STATISTICS_REQ	MPQMUX.h	32;"	d
+QMIWDS_GET_PKT_STATISTICS_RESP	MPQMUX.h	33;"	d
+QMIWDS_GET_PROFILE_SETTINGS_REQ	MPQMUX.h	36;"	d
+QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG, *PQMIWDS_GET_PROFILE_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+QMIWDS_GET_PROFILE_SETTINGS_RESP	MPQMUX.h	37;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_MASK_IPV4DNS_ADDR	MPQMUX.h	342;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_MASK_IPV4GATEWAY_ADDR	MPQMUX.h	344;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_MASK_IPV4_ADDR	MPQMUX.h	343;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_MASK_MTU	MPQMUX.h	345;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_REQ	MPQMUX.h	40;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG, *PQMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+QMIWDS_GET_RUNTIME_SETTINGS_RESP	MPQMUX.h	41;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG, *PQMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU, *PQMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU;$/;"	t	typeref:struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4	MPQMUX.h	374;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4GATEWAY	MPQMUX.h	375;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4PRIMARYDNS	MPQMUX.h	372;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4SECONDARYDNS	MPQMUX.h	373;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4SUBNET	MPQMUX.h	376;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV6	MPQMUX.h	378;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV6GATEWAY	MPQMUX.h	379;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV6PRIMARYDNS	MPQMUX.h	380;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV6SECONDARYDNS	MPQMUX.h	381;"	d
+QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_MTU	MPQMUX.h	382;"	d
+QMIWDS_IP_FAMILY_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_IP_FAMILY_TLV, *PQMIWDS_IP_FAMILY_TLV;$/;"	t	typeref:struct:_QMIWDS_IP_FAMILY_TLV
+QMIWDS_MODIFY_PROFILE_SETTINGS_REQ	MPQMUX.h	34;"	d
+QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG, *PQMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+QMIWDS_MODIFY_PROFILE_SETTINGS_RESP	MPQMUX.h	35;"	d
+QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG, *PQMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+QMIWDS_PASSWD	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PASSWD, *PQMIWDS_PASSWD;$/;"	t	typeref:struct:_QMIWDS_PASSWD
+QMIWDS_PDPTYPE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PDPTYPE, *PQMIWDS_PDPTYPE;$/;"	t	typeref:struct:_QMIWDS_PDPTYPE
+QMIWDS_PKT_SRVC_TLV	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PKT_SRVC_TLV, *PQMIWDS_PKT_SRVC_TLV;$/;"	t	typeref:struct:_QMIWDS_PKT_SRVC_TLV
+QMIWDS_PROFILENAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PROFILENAME, *PQMIWDS_PROFILENAME;$/;"	t	typeref:struct:_QMIWDS_PROFILENAME
+QMIWDS_PROFILE_IDENTIFIER	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_PROFILE_IDENTIFIER, *PQMIWDS_PROFILE_IDENTIFIER;$/;"	t	typeref:struct:_QMIWDS_PROFILE_IDENTIFIER
+QMIWDS_SET_AUTO_CONNECT_REQ	MPQMUX.h	51;"	d
+QMIWDS_SET_AUTO_CONNECT_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_AUTO_CONNECT_REQ_MSG, *PQMIWDS_SET_AUTO_CONNECT_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+QMIWDS_SET_AUTO_CONNECT_RESP	MPQMUX.h	52;"	d
+QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ	MPQMUX.h	49;"	d
+QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG, *PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP	MPQMUX.h	50;"	d
+QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG, *PQMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+QMIWDS_SET_EVENT_REPORT_REQ	MPQMUX.h	20;"	d
+QMIWDS_SET_EVENT_REPORT_RESP	MPQMUX.h	21;"	d
+QMIWDS_START_NETWORK_INTERFACE_REQ	MPQMUX.h	23;"	d
+QMIWDS_START_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_START_NETWORK_INTERFACE_REQ_MSG, *PQMIWDS_START_NETWORK_INTERFACE_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_START_NETWORK_INTERFACE_REQ_MSG
+QMIWDS_START_NETWORK_INTERFACE_RESP	MPQMUX.h	24;"	d
+QMIWDS_START_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_START_NETWORK_INTERFACE_RESP_MSG, *PQMIWDS_START_NETWORK_INTERFACE_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+QMIWDS_STOP_NETWORK_INTERFACE_REQ	MPQMUX.h	25;"	d
+QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG, *PQMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG;$/;"	t	typeref:struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+QMIWDS_STOP_NETWORK_INTERFACE_RESP	MPQMUX.h	26;"	d
+QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG, *PQMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG;$/;"	t	typeref:struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+QMIWDS_TECHNOLOGY_PREFERECE	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_TECHNOLOGY_PREFERECE, *PQMIWDS_TECHNOLOGY_PREFERECE;$/;"	t	typeref:struct:_QMIWDS_TECHNOLOGY_PREFERECE
+QMIWDS_USERNAME	MPQMUX.h	/^} __attribute__ ((packed)) QMIWDS_USERNAME, *PQMIWDS_USERNAME;$/;"	t	typeref:struct:_QMIWDS_USERNAME
+QMIWMS_DELETE_REQ	MPQMUX.h	1922;"	d
+QMIWMS_DELETE_RESP	MPQMUX.h	1923;"	d
+QMIWMS_EVENT_REPORT_IND	MPQMUX.h	1913;"	d
+QMIWMS_GET_MESSAGE_PROTOCOL_REQ	MPQMUX.h	1924;"	d
+QMIWMS_GET_MESSAGE_PROTOCOL_RESP	MPQMUX.h	1925;"	d
+QMIWMS_GET_SMSC_ADDRESS_REQ	MPQMUX.h	1928;"	d
+QMIWMS_GET_SMSC_ADDRESS_RESP	MPQMUX.h	1929;"	d
+QMIWMS_GET_STORE_MAX_SIZE_REQ	MPQMUX.h	1932;"	d
+QMIWMS_GET_STORE_MAX_SIZE_RESP	MPQMUX.h	1933;"	d
+QMIWMS_LIST_MESSAGES_REQ	MPQMUX.h	1926;"	d
+QMIWMS_LIST_MESSAGES_RESP	MPQMUX.h	1927;"	d
+QMIWMS_MODIFY_TAG_REQ	MPQMUX.h	1920;"	d
+QMIWMS_MODIFY_TAG_RESP	MPQMUX.h	1921;"	d
+QMIWMS_RAW_READ_REQ	MPQMUX.h	1918;"	d
+QMIWMS_RAW_READ_RESP	MPQMUX.h	1919;"	d
+QMIWMS_RAW_SEND_REQ	MPQMUX.h	1914;"	d
+QMIWMS_RAW_SEND_RESP	MPQMUX.h	1915;"	d
+QMIWMS_RAW_WRITE_REQ	MPQMUX.h	1916;"	d
+QMIWMS_RAW_WRITE_RESP	MPQMUX.h	1917;"	d
+QMIWMS_SET_EVENT_REPORT_REQ	MPQMUX.h	1911;"	d
+QMIWMS_SET_EVENT_REPORT_RESP	MPQMUX.h	1912;"	d
+QMIWMS_SET_SMSC_ADDRESS_REQ	MPQMUX.h	1930;"	d
+QMIWMS_SET_SMSC_ADDRESS_RESP	MPQMUX.h	1931;"	d
+QMI_ERROR_CODE_TYPE	MPQMI.h	/^} QMI_ERROR_CODE_TYPE;$/;"	t	typeref:enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_ACCESS_DENIED	MPQMI.h	/^   QMI_ERR_ACCESS_DENIED        = 0x0052$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_ARG_TOO_LONG	MPQMI.h	/^   QMI_ERR_ARG_TOO_LONG         = 0x0013,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_CLIENT_IDS_EXHAUSTED	MPQMI.h	/^   QMI_ERR_CLIENT_IDS_EXHAUSTED = 0x0005,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_DENIED	MPQMI.h	/^   QMI_ERR_DENIED               = 0x0006,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_DEVICE_IN_USE	MPQMI.h	/^   QMI_ERR_DEVICE_IN_USE        = 0x0017,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_EXTENDED_INTERNAL	MPQMI.h	/^   QMI_ERR_EXTENDED_INTERNAL = 0x0051,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INCORRECT_PIN	MPQMI.h	/^   QMI_ERR_INCORRECT_PIN        = 0x000C,  $/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INTERNAL	MPQMI.h	/^   QMI_ERR_INTERNAL             = 0x0003,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INVALID_ARG	MPQMI.h	/^   QMI_ERR_INVALID_ARG          = 0x0020,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INVALID_CLIENT_IDS	MPQMI.h	/^   QMI_ERR_INVALID_CLIENT_IDS   = 0x0007,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INVALID_HANDLE	MPQMI.h	/^   QMI_ERR_INVALID_HANDLE       = 0x0009,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INVALID_INDEX	MPQMI.h	/^   QMI_ERR_INVALID_INDEX        = 0x0031,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_INVALID_PROFILE	MPQMI.h	/^   QMI_ERR_INVALID_PROFILE      = 0x000A,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NONE	MPQMI.h	/^   QMI_ERR_NONE                 = 0x0000,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NOT_PROVISIONED	MPQMI.h	/^   QMI_ERR_NOT_PROVISIONED      = 0x0010,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NO_BATTERY	MPQMI.h	/^   QMI_ERR_NO_BATTERY           = 0x0008,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NO_EFFECT	MPQMI.h	/^   QMI_ERR_NO_EFFECT            = 0x001A, $/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NO_ENTRY	MPQMI.h	/^   QMI_ERR_NO_ENTRY             = 0x0032,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NO_MEMORY	MPQMI.h	/^   QMI_ERR_NO_MEMORY            = 0x0021,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_NO_NETWORK	MPQMI.h	/^   QMI_ERR_NO_NETWORK           = 0x000D,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_OP_DEVICE_UNSUPPORTED	MPQMI.h	/^   QMI_ERR_OP_DEVICE_UNSUPPORTED = 0x0019,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_OUT_OF_CALL	MPQMI.h	/^   QMI_ERR_OUT_OF_CALL          = 0x000F,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_PIN_BLOCKED	MPQMI.h	/^   QMI_ERR_PIN_BLOCKED          = 0x0023,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_PIN_LOCKED	MPQMI.h	/^   QMI_ERR_PIN_LOCKED           = 0x000E,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_PIN_PERM_BLOCKED	MPQMI.h	/^   QMI_ERR_PIN_PERM_BLOCKED     = 0x0024,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ERR_STORAGE_EXCEEDED	MPQMI.h	/^   QMI_ERR_STORAGE_EXCEEDED     = 0x000B,$/;"	e	enum:_QMI_ERROR_CODE_TYPE
+QMI_ID	MPQCTL.h	/^   USHORT QMI_ID;          \/\/ Upper byte is assigned by MSM,$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+QMI_NAME	MPQMUX.c	293;"	d	file:
+QMI_NAME_T	MPQMUX.c	/^} QMI_NAME_T;$/;"	t	typeref:struct:__anon2	file:
+QMI_PIN_STATUS_BLOCKED	MPQMUX.h	1256;"	d
+QMI_PIN_STATUS_CHANGED	MPQMUX.h	1259;"	d
+QMI_PIN_STATUS_DISABLED	MPQMUX.h	1255;"	d
+QMI_PIN_STATUS_NOT_INIT	MPQMUX.h	1252;"	d
+QMI_PIN_STATUS_NOT_VERIF	MPQMUX.h	1253;"	d
+QMI_PIN_STATUS_PERM_BLOCKED	MPQMUX.h	1257;"	d
+QMI_PIN_STATUS_UNBLOCKED	MPQMUX.h	1258;"	d
+QMI_PIN_STATUS_VERIFIED	MPQMUX.h	1254;"	d
+QMI_QOS_EVENT_REPORT_IND	MPQMUX.h	1575;"	d
+QMI_QOS_SET_EVENT_REPORT_REQ	MPQMUX.h	1573;"	d
+QMI_QOS_SET_EVENT_REPORT_RESP	MPQMUX.h	1574;"	d
+QMI_RESULT_CODE_TYPE	MPQMI.h	/^} QMI_RESULT_CODE_TYPE;$/;"	t	typeref:enum:_QMI_RESULT_CODE_TYPE
+QMI_RESULT_FAILURE	MPQMI.h	/^   QMI_RESULT_FAILURE = 0x0001$/;"	e	enum:_QMI_RESULT_CODE_TYPE
+QMI_RESULT_SUCCESS	MPQMI.h	/^   QMI_RESULT_SUCCESS = 0x0000,$/;"	e	enum:_QMI_RESULT_CODE_TYPE
+QMI_SERVICE_TYPE	MPQMI.h	/^} QMI_SERVICE_TYPE;$/;"	t	typeref:enum:_QMI_SERVICE_TYPE
+QMI_SERVICE_VERSION	MPQMI.h	/^} __attribute__ ((packed)) QMI_SERVICE_VERSION, *PQMI_SERVICE_VERSION;$/;"	t	typeref:struct:_QMI_SERVICE_VERSION
+QMI_TLV_HDR	MPQMI.h	/^} __attribute__ ((packed)) QMI_TLV_HDR, *PQMI_TLV_HDR;$/;"	t	typeref:struct:_QMI_TLV_HDR
+QMUXError	MPQCTL.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+QMUXError	MPQMI.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INTERNAL, QMI_ERR_MALFORMED_MSG, QMI_ERR_INVALID_ARG$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMI_ERR_INVALID_ARG$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;        \/\/ QMUX_ERR_INVALID_ARG$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;       \/\/ error code$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+QMUXError	MPQMUX.h	/^   USHORT QMUXError;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+QMUXHdr	MPQMUX.h	/^   QCQMUX_HDR QMUXHdr;$/;"	m	struct:_QMUX_MSG
+QMUXMsgHdr	MPQMUX.h	/^      QCQMUX_MSG_HDR                           QMUXMsgHdr;$/;"	m	union:_QMUX_MSG::__anon3
+QMUXMsgHdrResp	MPQMUX.h	/^      QCQMUX_MSG_HDR_RESP                      QMUXMsgHdrResp;$/;"	m	union:_QMUX_MSG::__anon3
+QMUXResult	MPQCTL.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+QMUXResult	MPQMI.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMI_RESULT_SUCCESS, QMI_RESULT_FAILURE$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;       \/\/ QMUX_RESULT_SUCCESS$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;      \/\/ result code$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+QMUXResult	MPQMUX.h	/^   USHORT QMUXResult;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+QMUXType	MPQCTL.h	/^   UCHAR  QMUXType;$/;"	m	struct:_QMUX_TYPE_VERSION_STRUCT
+QMUXTypes	MPQCTL.h	/^   UCHAR  QMUXTypes;       \/\/ List of one byte QMUX_TYPE values$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+QMUX_BROADCAST_CID	MPQMI.h	158;"	d
+QMUX_CTL_FLAG_COMPOUND_MSG	MPQMI.h	212;"	d
+QMUX_CTL_FLAG_MASK_COMPOUND	MPQMI.h	216;"	d
+QMUX_CTL_FLAG_MASK_TYPE	MPQMI.h	217;"	d
+QMUX_CTL_FLAG_SINGLE_MSG	MPQMI.h	211;"	d
+QMUX_CTL_FLAG_TYPE_CMD	MPQMI.h	213;"	d
+QMUX_CTL_FLAG_TYPE_IND	MPQMI.h	215;"	d
+QMUX_CTL_FLAG_TYPE_RSP	MPQMI.h	214;"	d
+QMUX_MSG	MPQMUX.h	/^} __attribute__ ((packed)) QMUX_MSG, *PQMUX_MSG;$/;"	t	typeref:struct:_QMUX_MSG
+QMUX_MSG_OVERHEAD_BYTES	MPQMI.h	156;"	d
+QMUX_NAME	MPQMUX.c	294;"	d	file:
+QMUX_TYPE_ALL	MPQMI.h	/^   QMUX_TYPE_ALL  = 0xFF$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_CTL	MPQMI.h	/^   QMUX_TYPE_CTL  = 0x00,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_DMS	MPQMI.h	/^   QMUX_TYPE_DMS  = 0x02,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_MAX	MPQMI.h	/^   QMUX_TYPE_MAX  = 0xFF,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_NAS	MPQMI.h	/^   QMUX_TYPE_NAS  = 0x03,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_PDS	MPQMI.h	/^   QMUX_TYPE_PDS  = 0x06,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_QOS	MPQMI.h	/^   QMUX_TYPE_QOS  = 0x04,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_UIM	MPQMI.h	/^   QMUX_TYPE_UIM  = 0x0B,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_VERSION_STRUCT	MPQCTL.h	/^} __attribute__ ((packed)) QMUX_TYPE_VERSION_STRUCT, *PQMUX_TYPE_VERSION_STRUCT;$/;"	t	typeref:struct:_QMUX_TYPE_VERSION_STRUCT
+QMUX_TYPE_WDS	MPQMI.h	/^   QMUX_TYPE_WDS  = 0x01,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_WDS_ADMIN	MPQMI.h	/^   QMUX_TYPE_WDS_ADMIN  = 0x1A,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_WDS_IPV6	MPQMI.h	/^   QMUX_TYPE_WDS_IPV6  = 0x11,$/;"	e	enum:_QMI_SERVICE_TYPE
+QMUX_TYPE_WMS	MPQMI.h	/^   QMUX_TYPE_WMS  = 0x05,$/;"	e	enum:_QMI_SERVICE_TYPE
+QOSSetting	MPQMUX.h	/^   UCHAR  QOSSetting;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS
+QUECTEL_PACKET_TRANSFER_END_IND	MPQMUX.h	2238;"	d
+QUECTEL_PACKET_TRANSFER_START_IND	MPQMUX.h	2237;"	d
+QWDS_PKT_DATA_AUTHENTICATING	MPQMUX.h	79;"	d
+QWDS_PKT_DATA_CONNECTED	MPQMUX.h	77;"	d
+QWDS_PKT_DATA_DISCONNECTED	MPQMUX.h	76;"	d
+QWDS_PKT_DATA_SUSPENDED	MPQMUX.h	78;"	d
+QWDS_STAT_MASK_RX_PKT_ER	MPQMUX.h	61;"	d
+QWDS_STAT_MASK_RX_PKT_OF	MPQMUX.h	63;"	d
+QWDS_STAT_MASK_RX_PKT_OK	MPQMUX.h	59;"	d
+QWDS_STAT_MASK_TX_PKT_ER	MPQMUX.h	60;"	d
+QWDS_STAT_MASK_TX_PKT_OF	MPQMUX.h	62;"	d
+QWDS_STAT_MASK_TX_PKT_OK	MPQMUX.h	58;"	d
+QmiThreadRecvQMI	QMIThread.c	/^void QmiThreadRecvQMI(PQCQMIMSG pResponse) {$/;"	f
+QmiThreadSendQMI	QMIThread.c	/^int QmiThreadSendQMI(PQCQMIMSG pRequest, PQCQMIMSG *ppResponse) {$/;"	f
+QmiThreadSendQMITimeout	QMIThread.c	/^int QmiThreadSendQMITimeout(PQCQMIMSG pRequest, PQCQMIMSG *ppResponse, unsigned msecs) {$/;"	f
+QmiWwanDeInit	QmiWwanCM.c	/^int QmiWwanDeInit(void) {$/;"	f
+QmiWwanDeInit	QmiWwanCM.c	/^int QmiWwanDeInit(void) {return -1;}$/;"	f
+QmiWwanGetClientID	QmiWwanCM.c	/^static int QmiWwanGetClientID(UCHAR QMIType) {$/;"	f	file:
+QmiWwanInit	QmiWwanCM.c	/^int QmiWwanInit(PROFILE_T *profile) {$/;"	f
+QmiWwanInit	QmiWwanCM.c	/^int QmiWwanInit(PROFILE_T *profile) {return -1;}$/;"	f
+QmiWwanReleaseClientID	QmiWwanCM.c	/^static int QmiWwanReleaseClientID(QMI_SERVICE_TYPE QMIType, UCHAR ClientId) {$/;"	f	file:
+QmiWwanSendQMI	QmiWwanCM.c	/^int QmiWwanSendQMI(PQCQMIMSG pRequest) {$/;"	f
+QmiWwanSendQMI	QmiWwanCM.c	/^int QmiWwanSendQMI(PQCQMIMSG pRequest) {return -1;}$/;"	f
+QmiWwanThread	QmiWwanCM.c	/^void * QmiWwanThread(void *pData) {$/;"	f
+QmiWwanThread	QmiWwanCM.c	/^void * QmiWwanThread(void *pData) {dbg_time("please set CONFIG_QMIWWAN"); return NULL;}$/;"	f
+QosSetting	MPQCTL.h	/^   UCHAR  QosSetting;    \/\/ 0x0: Disable; 0x01: Enable$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING
+READ_TRANSPARENT_TLV	MPQMUX.h	/^} __attribute__ ((packed)) READ_TRANSPARENT_TLV, *PREAD_TRANSPARENT_TLV;$/;"	t	typeref:struct:_READ_TRANSPARENT_TLV
+RIL_INDICATE_DEVICE_CONNECTED	QMIThread.h	128;"	d
+RIL_INDICATE_DEVICE_DISCONNECTED	QMIThread.h	129;"	d
+RIL_REQUEST_QUIT	QMIThread.h	127;"	d
+RIL_UNSOL_DATA_CALL_LIST_CHANGED	QMIThread.h	131;"	d
+RIL_UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED	QMIThread.h	130;"	d
+RadioIF	MPQMUX.h	/^   UCHAR  RadioIF;$/;"	m	struct:_SERVING_SYSTEM
+Reason	MPQMUX.h	/^   USHORT Reason;$/;"	m	struct:_QMIWDS_CALLENDREASON
+ReconfigReqd	MPQMUX.h	/^   UCHAR  ReconfigReqd;$/;"	m	struct:_QMIWDS_PKT_SRVC_TLV
+RegRejectInfoValid	MPQMUX.h	/^   UCHAR  RegRejectInfoValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+RegRejectInfoValid	MPQMUX.h	/^   UCHAR  RegRejectInfoValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+RegRejectInfoValid	MPQMUX.h	/^   UCHAR  RegRejectInfoValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+RegRejectInfoValid	MPQMUX.h	/^   UCHAR  RegRejectInfoValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+RegistrationState	MPQMUX.h	/^   UCHAR  RegistrationState;$/;"	m	struct:_SERVING_SYSTEM
+RegistredNetwork	MPQMUX.h	/^   UCHAR  RegistredNetwork;$/;"	m	struct:_SERVING_SYSTEM
+RejCause	MPQMUX.h	/^   UCHAR  RejCause;$/;"	m	struct:_GSM_SYSTEM_INFO
+RejCause	MPQMUX.h	/^   UCHAR  RejCause;$/;"	m	struct:_LTE_SYSTEM_INFO
+RejCause	MPQMUX.h	/^   UCHAR  RejCause;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+RejCause	MPQMUX.h	/^   UCHAR  RejCause;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+RejectSrvDomain	MPQMUX.h	/^   UCHAR  RejectSrvDomain;$/;"	m	struct:_GSM_SYSTEM_INFO
+RejectSrvDomain	MPQMUX.h	/^   UCHAR  RejectSrvDomain;$/;"	m	struct:_LTE_SYSTEM_INFO
+RejectSrvDomain	MPQMUX.h	/^   UCHAR  RejectSrvDomain;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+RejectSrvDomain	MPQMUX.h	/^   UCHAR  RejectSrvDomain;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+ReleaseClientIdReq	MPQCTL.h	/^      QMICTL_RELEASE_CLIENT_ID_REQ_MSG             ReleaseClientIdReq;$/;"	m	union:_QMICTL_MSG::__anon1
+ReleaseClientIdRsp	MPQCTL.h	/^      QMICTL_RELEASE_CLIENT_ID_RESP_MSG            ReleaseClientIdRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+RevisionID	MPQMUX.h	/^   UCHAR  RevisionID;$/;"	m	struct:_DEVICE_REV_ID
+RevokeClientIdInd	MPQCTL.h	/^      QMICTL_REVOKE_CLIENT_ID_IND_MSG              RevokeClientIdInd;$/;"	m	union:_QMICTL_MSG::__anon1
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_CDMA_SYSTEM_INFO
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_GSM_SYSTEM_INFO
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_HDR_SYSTEM_INFO
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_LTE_SYSTEM_INFO
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+RoamStatus	MPQMUX.h	/^   UCHAR  RoamStatus;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+RoamStatusValid	MPQMUX.h	/^   UCHAR  RoamStatusValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+SDU	MPQMI.h	/^   UCHAR  SDU;$/;"	m	struct:_QCQMI
+SERVICE_STATUS_INFO	MPQMUX.h	/^} __attribute__ ((packed)) SERVICE_STATUS_INFO, *PSERVICE_STATUS_INFO;$/;"	t	typeref:struct:_SERVICE_STATUS_INFO
+SERVING_SYSTEM	MPQMUX.h	/^} __attribute__ ((packed)) SERVING_SYSTEM, *PSERVING_SYSTEM;$/;"	t	typeref:struct:_SERVING_SYSTEM
+SET_DATA_FORMAT_LINK_PROTO_ETH	MPQCTL.h	268;"	d
+SET_DATA_FORMAT_LINK_PROTO_IP	MPQCTL.h	269;"	d
+SET_DATA_FORMAT_TLV_TYPE_DL_TLP	MPQCTL.h	288;"	d
+SET_DATA_FORMAT_TLV_TYPE_LINK_PROTO	MPQCTL.h	267;"	d
+SET_DATA_FORMAT_TLV_TYPE_QOS_SETTING	MPQCTL.h	300;"	d
+SET_DATA_FORMAT_TLV_TYPE_UL_TLP	MPQCTL.h	278;"	d
+SID	MPQMUX.h	/^   USHORT SID;$/;"	m	struct:_CDMA_SYSTEM_INFO
+SIM_ABSENT	QMIThread.h	/^    SIM_ABSENT = 0,$/;"	e	enum:__anon5
+SIM_BAD	QMIThread.h	/^    SIM_BAD = 6,$/;"	e	enum:__anon5
+SIM_NETWORK_PERSONALIZATION	QMIThread.h	/^    SIM_NETWORK_PERSONALIZATION = 5,$/;"	e	enum:__anon5
+SIM_NOT_READY	QMIThread.h	/^    SIM_NOT_READY = 1,$/;"	e	enum:__anon5
+SIM_PIN	QMIThread.h	/^    SIM_PIN = 3,$/;"	e	enum:__anon5
+SIM_PUK	QMIThread.h	/^    SIM_PUK = 4,$/;"	e	enum:__anon5
+SIM_READY	QMIThread.h	/^    SIM_READY = 2, \/* SIM_READY means the radio state is RADIO_STATE_SIM_READY *\/$/;"	e	enum:__anon5
+SIM_Status	QMIThread.h	/^} SIM_Status;$/;"	t	typeref:enum:__anon5
+Session_Type	MPQMUX.h	/^   UCHAR  Session_Type;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+Session_Type	MPQMUX.h	/^   UCHAR  Session_Type;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+SetAutoConnectReq	MPQMUX.h	/^      QMIWDS_SET_AUTO_CONNECT_REQ_MSG SetAutoConnectReq;$/;"	m	union:_QMUX_MSG::__anon3
+SetClientIpFamilyPrefReq	MPQMUX.h	/^      QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG  SetClientIpFamilyPrefReq;$/;"	m	union:_QMUX_MSG::__anon3
+SetClientIpFamilyPrefResp	MPQMUX.h	/^      QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG SetClientIpFamilyPrefResp;$/;"	m	union:_QMUX_MSG::__anon3
+SetDataFormatReq	MPQCTL.h	/^      QMICTL_SET_DATA_FORMAT_REQ_MSG               SetDataFormatReq;$/;"	m	union:_QMICTL_MSG::__anon1
+SetDataFormatRsp	MPQCTL.h	/^      QMICTL_SET_DATA_FORMAT_RESP_MSG              SetDataFormatRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+SetInstanceIdReq	MPQCTL.h	/^      QMICTL_SET_INSTANCE_ID_REQ_MSG               SetInstanceIdReq;$/;"	m	union:_QMICTL_MSG::__anon1
+SetInstanceIdRsp	MPQCTL.h	/^      QMICTL_SET_INSTANCE_ID_RESP_MSG              SetInstanceIdRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+SetOperatingModeReq	MPQMUX.h	/^      QMIDMS_SET_OPERATING_MODE_REQ_MSG         SetOperatingModeReq;$/;"	m	union:_QMUX_MSG::__anon3
+SetOperatingModeResp	MPQMUX.h	/^      QMIDMS_SET_OPERATING_MODE_RESP_MSG        SetOperatingModeResp;$/;"	m	union:_QMUX_MSG::__anon3
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_CDMA_SYSTEM_INFO
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_GSM_SYSTEM_INFO
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_HDR_SYSTEM_INFO
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_LTE_SYSTEM_INFO
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+SrvCapability	MPQMUX.h	/^   UCHAR  SrvCapability;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+SrvCapabilityValid	MPQMUX.h	/^   UCHAR  SrvCapabilityValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_CDMA_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_GSM_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_HDR_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_LTE_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+SrvDomain	MPQMUX.h	/^   UCHAR  SrvDomain;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_CDMA_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_GSM_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+SrvDomainValid	MPQMUX.h	/^   UCHAR  SrvDomainValid;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+SrvStatus	MPQMUX.h	/^   UCHAR  SrvStatus;$/;"	m	struct:_SERVICE_STATUS_INFO
+StartNwInterfaceReq	MPQMUX.h	/^      QMIWDS_START_NETWORK_INTERFACE_REQ_MSG    StartNwInterfaceReq;$/;"	m	union:_QMUX_MSG::__anon3
+StartNwInterfaceResp	MPQMUX.h	/^      QMIWDS_START_NETWORK_INTERFACE_RESP_MSG   StartNwInterfaceResp;$/;"	m	union:_QMUX_MSG::__anon3
+StopNwInterfaceReq	MPQMUX.h	/^      QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG     StopNwInterfaceReq;$/;"	m	union:_QMUX_MSG::__anon3
+StopNwInterfaceResp	MPQMUX.h	/^      QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG    StopNwInterfaceResp;$/;"	m	union:_QMUX_MSG::__anon3
+SubnetMask	QMIThread.h	/^    UCHAR SubnetMask[16];$/;"	m	struct:__IPV6
+SubnetMask	QMIThread.h	/^    uint32_t SubnetMask;$/;"	m	struct:__IPV4
+SyncInd	MPQCTL.h	/^      QMICTL_SYNC_IND_MSG                          SyncInd;$/;"	m	union:_QMICTL_MSG::__anon1
+SyncReq	MPQCTL.h	/^      QMICTL_SYNC_REQ_MSG                          SyncReq;$/;"	m	union:_QMICTL_MSG::__anon1
+SyncRsp	MPQCTL.h	/^      QMICTL_SYNC_RESP_MSG                         SyncRsp;$/;"	m	union:_QMICTL_MSG::__anon1
+SystemID	MPQMUX.h	/^   USHORT SystemID;$/;"	m	struct:_HOME_NETWORK_SYSTEMID
+TDSCDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) TDSCDMA_SYSTEM_INFO, *PTDSCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_TDSCDMA_SYSTEM_INFO
+TLV2Length	MPQCTL.h	/^   USHORT TLV2Length;      \/\/ 0x0002$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+TLV2Length	MPQCTL.h	/^   USHORT TLV2Length;      \/\/ 2$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+TLV2Length	MPQCTL.h	/^   USHORT TLV2Length;      \/\/ 2$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+TLV2Length	MPQCTL.h	/^   USHORT TLV2Length;      \/\/ var$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;       \/\/ 20$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+TLV2Length	MPQMUX.h	/^   USHORT TLV2Length;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLV2Type	MPQCTL.h	/^   UCHAR  TLV2Type;        \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+TLV2Type	MPQCTL.h	/^   UCHAR  TLV2Type;        \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+TLV2Type	MPQCTL.h	/^   UCHAR  TLV2Type;        \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+TLV2Type	MPQCTL.h	/^   UCHAR  TLV2Type;        \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;         \/\/ 0x01$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+TLV2Type	MPQMUX.h	/^   UCHAR  TLV2Type;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLV3Length	MPQMUX.h	/^   USHORT TLV3Length;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLV3Type	MPQMUX.h	/^   UCHAR  TLV3Type;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0002$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0002$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0002$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 1$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 1$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 1$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 1$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 1$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ 2$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;       \/\/ var$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;     \/\/ 1$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING
+TLVLength	MPQCTL.h	/^   USHORT TLVLength;$/;"	m	struct:_QCQMICTL_TLV_HDR
+TLVLength	MPQMI.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+TLVLength	MPQMI.h	/^   USHORT TLVLength;$/;"	m	struct:_QMI_TLV_HDR
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 1$/;"	m	struct:_QMIWDS_IP_FAMILY_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 1$/;"	m	struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 1$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;        \/\/ 4$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ 0x0004$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ 16$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ 4$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ 4$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ length of the mfr string$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;       \/\/ length of the mfr string$/;"	m	struct:_QMINAS_DATA_CAP
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_CDMA_SYSTEM_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_DEVICE_REV_ID
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_GSM_SYSTEM_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_HDR_SYSTEM_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_HOME_NETWORK
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_HOME_NETWORK_SYSTEMID
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_LTE_SYSTEM_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIDMS_UIM_PIN_STATUS
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_CARD_STATUS
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_CONTENT
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_APNNAME
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_AUTH_PREFERENCE
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_AUTOCONNECT
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_CALLENDREASON
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_CALL_END_REASON_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_CALL_END_REASON_V_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_PASSWD
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_PDPTYPE
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_PKT_SRVC_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_PROFILENAME
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_PROFILE_IDENTIFIER
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_TECHNOLOGY_PREFERECE
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_QMIWDS_USERNAME
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_READ_TRANSPARENT_TLV
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_SERVICE_STATUS_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_SERVING_SYSTEM
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+TLVLength	MPQMUX.h	/^   USHORT TLVLength;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ 0x11, Uplink TLP Setting$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ 0x11, Uplink TLP Setting$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ Link-Layer Protocol$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_REQUIRED_PARAMETER$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;       \/\/ 0x12, QoS setting$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING
+TLVType	MPQCTL.h	/^   UCHAR  TLVType;$/;"	m	struct:_QCQMICTL_TLV_HDR
+TLVType	MPQMI.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+TLVType	MPQMI.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMI_TLV_HDR
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x01$/;"	m	struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x01$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02 - result code$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x02$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;          \/\/ 0x12$/;"	m	struct:_QMIWDS_IP_FAMILY_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ 0x01 - required parameter$/;"	m	struct:_QMINAS_CURRENT_PLMN_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ 0x01 - required parameter$/;"	m	struct:_QMINAS_DATA_CAP
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ 0x10$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ QCTLV_TYPE_RESULT_CODE$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV4$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_IPV6$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;         \/\/ QMIWDS_GET_RUNTIME_SETTINGS_TLV_TYPE_MTU$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_CDMA_SYSTEM_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_DEVICE_REV_ID
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_GSM_SYSTEM_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_HDR_SYSTEM_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_HOME_NETWORK
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_HOME_NETWORK_SYSTEMID
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_LTE_SYSTEM_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIDMS_UIM_PIN_STATUS
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_CARD_STATUS
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_CONTENT
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_APNNAME
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_AUTH_PREFERENCE
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_AUTOCONNECT
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_CALLENDREASON
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_CALL_END_REASON_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_CALL_END_REASON_V_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_PASSWD
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_PDPTYPE
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_PKT_SRVC_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_PROFILENAME
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_PROFILE_IDENTIFIER
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_TECHNOLOGY_PREFERECE
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_QMIWDS_USERNAME
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_READ_TRANSPARENT_TLV
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_SERVICE_STATUS_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_SERVING_SYSTEM
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_TDSCDMA_SYSTEM_INFO
+TLVType	MPQMUX.h	/^   UCHAR  TLVType;$/;"	m	struct:_WCDMA_SYSTEM_INFO
+TLV_WDS_CHANNEL_RATE	MPQMUX.h	72;"	d
+TLV_WDS_DATA_BEARER	MPQMUX.h	73;"	d
+TLV_WDS_DORMANCY_STATUS	MPQMUX.h	74;"	d
+TLV_WDS_RX_ERROR	MPQMUX.h	69;"	d
+TLV_WDS_RX_GOOD_PKTS	MPQMUX.h	67;"	d
+TLV_WDS_RX_OVERFLOW	MPQMUX.h	71;"	d
+TLV_WDS_TX_ERROR	MPQMUX.h	68;"	d
+TLV_WDS_TX_GOOD_PKTS	MPQMUX.h	66;"	d
+TLV_WDS_TX_OVERFLOW	MPQMUX.h	70;"	d
+TRUE	MPQMI.h	38;"	d
+Tac	MPQMUX.h	/^   USHORT Tac;$/;"	m	struct:_LTE_SYSTEM_INFO
+TacValid	MPQMUX.h	/^   UCHAR  TacValid;$/;"	m	struct:_LTE_SYSTEM_INFO
+TechPreference	MPQMUX.h	/^   UCHAR  TechPreference;$/;"	m	struct:_QMIWDS_TECHNOLOGY_PREFERECE
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QCQMICTL_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QCQMICTL_MSG_HDR
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QCQMICTL_MSG_HDR_RESP
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_GET_CLIENT_ID_RESP_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_GET_VERSION_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_INVALID_CLIENT_ID_IND_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_RELEASE_CLIENT_ID_RESP_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_REVOKE_CLIENT_ID_IND_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_RESP_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_RESP_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SYNC_IND_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SYNC_REQ_MSG
+TransactionId	MPQCTL.h	/^   UCHAR  TransactionId;$/;"	m	struct:_QMICTL_SYNC_RESP_MSG
+TransactionId	MPQMI.h	/^   USHORT TransactionId;$/;"	m	struct:_QCQMUX
+TransactionId	MPQMI.h	/^   USHORT TransactionId;$/;"	m	struct:_QCQMUX_HDR
+Type	MPQMI.h	/^   UCHAR Type;$/;"	m	struct:_QCQMUX_TLV
+Type	MPQMI.h	/^   USHORT Type;$/;"	m	struct:_QCQMUX_MSG_HDR
+Type	MPQMI.h	/^   USHORT Type;$/;"	m	struct:_QCQMUX_MSG_HDR_RESP
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0000$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0002$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0002$/;"	m	struct:_QMIDMS_SET_OPERATING_MODE_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0003$/;"	m	struct:_QMINAS_GET_HOME_NETWORK_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0005$/;"	m	struct:_QMIDMS_GET_DEVICE_REV_ID_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0024$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0024$/;"	m	struct:_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0024$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0024$/;"	m	struct:_QMIDMS_UIM_VERIFY_PIN_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0037$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0040$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0040$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x004D$/;"	m	struct:_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;             \/\/ QMUX type 0x0051$/;"	m	struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;            \/\/ QMIWDS_GET_RUNTIME_SETTINGS_REQ$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;            \/\/ QMIWDS_GET_RUNTIME_SETTINGS_RESP$/;"	m	struct:_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIDMS_UIM_GET_IMSI_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMINAS_GET_SERVING_SYSTEM_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMINAS_GET_SYS_INFO_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMINAS_SYS_INFO_IND_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIUIM_GET_CARD_STATUS_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIUIM_VERIFY_PIN_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIUIM_VERIFY_PIN_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_START_NETWORK_INTERFACE_REQ_MSG
+Type	MPQMUX.h	/^   USHORT Type;$/;"	m	struct:_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG
+TypeVersion	MPQCTL.h	/^   QMUX_TYPE_VERSION_STRUCT TypeVersion;$/;"	m	struct:_QMICTL_GET_VERSION_RESP_MSG
+UCHAR	MPQMI.h	/^typedef unsigned char   UCHAR;$/;"	t
+UIMGetCardStatus	MPQMUX.h	/^      QMIUIM_GET_CARD_STATUS_RESP_MSG           UIMGetCardStatus;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetIMSIReq	MPQMUX.h	/^      QMIDMS_UIM_GET_IMSI_REQ_MSG               UIMGetIMSIReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetIMSIResp	MPQMUX.h	/^      QMIDMS_UIM_GET_IMSI_RESP_MSG              UIMGetIMSIResp;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetPinStatusReq	MPQMUX.h	/^      QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG         UIMGetPinStatusReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetPinStatusResp	MPQMUX.h	/^      QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG        UIMGetPinStatusResp;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetStateReq	MPQMUX.h	/^      QMIDMS_UIM_GET_STATE_REQ_MSG              UIMGetStateReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMGetStateResp	MPQMUX.h	/^      QMIDMS_UIM_GET_STATE_RESP_MSG             UIMGetStateResp;$/;"	m	union:_QMUX_MSG::__anon3
+UIMState	MPQMUX.h	/^   UCHAR  UIMState;$/;"	m	struct:_QMIDMS_UIM_GET_STATE_RESP_MSG
+UIMUIMReadTransparentReq	MPQMUX.h	/^      QMIUIM_READ_TRANSPARENT_REQ_MSG           UIMUIMReadTransparentReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMUIMReadTransparentResp	MPQMUX.h	/^      QMIUIM_READ_TRANSPARENT_RESP_MSG          UIMUIMReadTransparentResp;$/;"	m	union:_QMUX_MSG::__anon3
+UIMUIMVerifyPinReq	MPQMUX.h	/^      QMIUIM_VERIFY_PIN_REQ_MSG                 UIMUIMVerifyPinReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMUIMVerifyPinResp	MPQMUX.h	/^      QMIUIM_VERIFY_PIN_RESP_MSG                UIMUIMVerifyPinResp;$/;"	m	union:_QMUX_MSG::__anon3
+UIMVerifyPinReq	MPQMUX.h	/^      QMIDMS_UIM_VERIFY_PIN_REQ_MSG             UIMVerifyPinReq;$/;"	m	union:_QMUX_MSG::__anon3
+UIMVerifyPinResp	MPQMUX.h	/^      QMIDMS_UIM_VERIFY_PIN_RESP_MSG            UIMVerifyPinResp;$/;"	m	union:_QMUX_MSG::__anon3
+UINT	MPQMI.h	/^typedef unsigned int   UINT;$/;"	t
+ULONG	MPQMI.h	/^typedef unsigned int   ULONG;$/;"	t
+ULONG64	MPQMI.h	/^typedef unsigned long long   ULONG64;$/;"	t
+UPINRetries	MPQMUX.h	/^   UCHAR  UPINRetries;$/;"	m	struct:_QMIUIM_CARD_STATUS
+UPINState	MPQMUX.h	/^   UCHAR  UPINState;$/;"	m	struct:_QMIUIM_CARD_STATUS
+UPUKRetries	MPQMUX.h	/^   UCHAR  UPUKRetries;$/;"	m	struct:_QMIUIM_CARD_STATUS
+USBQMI_H	MPQMI.h	23;"	d
+USB_CTL_MSG_TYPE_QMI	MPQMI.h	48;"	d
+USE_DHCLIENT	udhcpc.c	73;"	d	file:
+USHORT	MPQMI.h	/^typedef unsigned short   USHORT;$/;"	t
+UimReadTransparentIMSIReqSend	QMIThread.c	/^static USHORT UimReadTransparentIMSIReqSend(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+UimVerifyPinReqSend	QMIThread.c	/^static USHORT UimVerifyPinReqSend(PQMUX_MSG pMUXMsg, void *arg)$/;"	f	file:
+UlTlpSetting	MPQCTL.h	/^   UCHAR  UlTlpSetting;    \/\/ 0x0: Disable; 0x01: Enable$/;"	m	struct:_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP
+UnivPIN	MPQMUX.h	/^   UCHAR  UnivPIN;$/;"	m	struct:_QMIUIM_PIN_STATE
+UserName	MPQMUX.h	/^   UCHAR  UserName;$/;"	m	struct:_QMIWDS_USERNAME
+Value	MPQCTL.h	/^   UCHAR  Value;           \/\/ Host-unique QMI instance for this device driver$/;"	m	struct:_QMICTL_SET_INSTANCE_ID_REQ_MSG
+Value	MPQMI.h	/^   UCHAR  Value;$/;"	m	struct:_QCQMUX_TLV
+Value	MPQMUX.h	/^   ULONG  Value;$/;"	m	struct:_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV
+WCDMA_SYSTEM_INFO	MPQMUX.h	/^} __attribute__ ((packed)) WCDMA_SYSTEM_INFO, *PWCDMA_SYSTEM_INFO;$/;"	t	typeref:struct:_WCDMA_SYSTEM_INFO
+WDM_DEFAULT_BUFSIZE	QMIThread.h	126;"	d
+WMS_MESSAGE_PROTOCOL_CDMA	MPQMUX.h	1936;"	d
+WMS_MESSAGE_PROTOCOL_WCDMA	MPQMUX.h	1937;"	d
+WWAN_DATA_CLASS_1XEVDO	QMIThread.h	53;"	d
+WWAN_DATA_CLASS_1XEVDO_REVA	QMIThread.h	54;"	d
+WWAN_DATA_CLASS_1XEVDO_REVB	QMIThread.h	57;"	d
+WWAN_DATA_CLASS_1XEVDV	QMIThread.h	55;"	d
+WWAN_DATA_CLASS_1XRTT	QMIThread.h	52;"	d
+WWAN_DATA_CLASS_3XRTT	QMIThread.h	56;"	d
+WWAN_DATA_CLASS_CUSTOM	QMIThread.h	59;"	d
+WWAN_DATA_CLASS_EDGE	QMIThread.h	47;"	d
+WWAN_DATA_CLASS_GPRS	QMIThread.h	46;"	d
+WWAN_DATA_CLASS_HSDPA	QMIThread.h	49;"	d
+WWAN_DATA_CLASS_HSUPA	QMIThread.h	50;"	d
+WWAN_DATA_CLASS_LTE	QMIThread.h	51;"	d
+WWAN_DATA_CLASS_NONE	QMIThread.h	45;"	d
+WWAN_DATA_CLASS_UMB	QMIThread.h	58;"	d
+WWAN_DATA_CLASS_UMTS	QMIThread.h	48;"	d
+WdaSetDataFormat	QMIThread.c	/^static USHORT WdaSetDataFormat(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsConnectionIPv4Handle	QMIThread.c	/^static uint32_t WdsConnectionIPv4Handle = 0;$/;"	v	file:
+WdsConnectionIPv6Handle	QMIThread.c	/^static uint32_t WdsConnectionIPv6Handle = 0;$/;"	v	file:
+WdsGetProfileSettingsReqSend	QMIThread.c	/^static USHORT WdsGetProfileSettingsReqSend(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsGetRuntimeSettingReq	QMIThread.c	/^static USHORT WdsGetRuntimeSettingReq(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsModifyProfileSettingsReq	QMIThread.c	/^static USHORT WdsModifyProfileSettingsReq(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsSetAutoConnect	QMIThread.c	/^static USHORT WdsSetAutoConnect(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsSetClientIPFamilyPref	QMIThread.c	/^static USHORT WdsSetClientIPFamilyPref(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsStartNwInterfaceReq	QMIThread.c	/^static USHORT WdsStartNwInterfaceReq(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+WdsStopNwInterfaceReq	QMIThread.c	/^static USHORT WdsStopNwInterfaceReq(PQMUX_MSG pMUXMsg, void *arg) {$/;"	f	file:
+_ADDENDUM_VERSION_PREAMBLE	MPQCTL.h	/^typedef struct _ADDENDUM_VERSION_PREAMBLE$/;"	s
+_CDMA_SYSTEM_INFO	MPQMUX.h	/^typedef struct _CDMA_SYSTEM_INFO$/;"	s
+_DEVICE_REV_ID	MPQMUX.h	/^typedef struct _DEVICE_REV_ID$/;"	s
+_GSM_SYSTEM_INFO	MPQMUX.h	/^typedef struct _GSM_SYSTEM_INFO$/;"	s
+_HDR_SYSTEM_INFO	MPQMUX.h	/^typedef struct _HDR_SYSTEM_INFO$/;"	s
+_HOME_NETWORK	MPQMUX.h	/^typedef struct _HOME_NETWORK$/;"	s
+_HOME_NETWORK_SYSTEMID	MPQMUX.h	/^typedef struct _HOME_NETWORK_SYSTEMID$/;"	s
+_LTE_SYSTEM_INFO	MPQMUX.h	/^typedef struct _LTE_SYSTEM_INFO$/;"	s
+_QCQMI	MPQMI.h	/^typedef struct _QCQMI$/;"	s
+_QCQMICTL_MSG	MPQCTL.h	/^typedef struct _QCQMICTL_MSG$/;"	s
+_QCQMICTL_MSG_HDR	MPQCTL.h	/^typedef struct _QCQMICTL_MSG_HDR$/;"	s
+_QCQMICTL_MSG_HDR_RESP	MPQCTL.h	/^typedef struct _QCQMICTL_MSG_HDR_RESP$/;"	s
+_QCQMICTL_TLV_HDR	MPQCTL.h	/^typedef struct _QCQMICTL_TLV_HDR$/;"	s
+_QCQMIMSG	QMIThread.h	/^typedef struct _QCQMIMSG {$/;"	s
+_QCQMI_HDR	MPQMI.h	/^typedef struct _QCQMI_HDR$/;"	s
+_QCQMUX	MPQMI.h	/^typedef struct _QCQMUX$/;"	s
+_QCQMUX_HDR	MPQMI.h	/^typedef struct _QCQMUX_HDR$/;"	s
+_QCQMUX_MSG_HDR	MPQMI.h	/^typedef struct _QCQMUX_MSG_HDR$/;"	s
+_QCQMUX_MSG_HDR_RESP	MPQMI.h	/^typedef struct _QCQMUX_MSG_HDR_RESP$/;"	s
+_QCQMUX_TLV	MPQMI.h	/^typedef struct _QCQMUX_TLV$/;"	s
+_QCUSB_CTL_MSG	MPQMI.h	/^typedef struct _QCUSB_CTL_MSG$/;"	s
+_QCUSB_CTL_MSG_HDR	MPQMI.h	/^typedef struct _QCUSB_CTL_MSG_HDR$/;"	s
+_QMICTL_GET_CLIENT_ID_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_GET_CLIENT_ID_REQ_MSG$/;"	s
+_QMICTL_GET_CLIENT_ID_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_GET_CLIENT_ID_RESP_MSG$/;"	s
+_QMICTL_GET_VERSION_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_GET_VERSION_REQ_MSG$/;"	s
+_QMICTL_GET_VERSION_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_GET_VERSION_RESP_MSG$/;"	s
+_QMICTL_INVALID_CLIENT_ID_IND_MSG	MPQCTL.h	/^typedef struct _QMICTL_INVALID_CLIENT_ID_IND_MSG$/;"	s
+_QMICTL_MSG	MPQCTL.h	/^typedef struct _QMICTL_MSG$/;"	s
+_QMICTL_RELEASE_CLIENT_ID_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_RELEASE_CLIENT_ID_REQ_MSG$/;"	s
+_QMICTL_RELEASE_CLIENT_ID_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_RELEASE_CLIENT_ID_RESP_MSG$/;"	s
+_QMICTL_REVOKE_CLIENT_ID_IND_MSG	MPQCTL.h	/^typedef struct _QMICTL_REVOKE_CLIENT_ID_IND_MSG$/;"	s
+_QMICTL_SET_DATA_FORMAT_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_REQ_MSG$/;"	s
+_QMICTL_SET_DATA_FORMAT_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_RESP_MSG$/;"	s
+_QMICTL_SET_DATA_FORMAT_TLV_DL_TLP	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_TLV_DL_TLP$/;"	s
+_QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_TLV_LINK_PROT$/;"	s
+_QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_TLV_QOS_SETTING$/;"	s
+_QMICTL_SET_DATA_FORMAT_TLV_UL_TLP	MPQCTL.h	/^typedef struct _QMICTL_SET_DATA_FORMAT_TLV_UL_TLP$/;"	s
+_QMICTL_SET_INSTANCE_ID_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_SET_INSTANCE_ID_REQ_MSG$/;"	s
+_QMICTL_SET_INSTANCE_ID_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_SET_INSTANCE_ID_RESP_MSG$/;"	s
+_QMICTL_SYNC_IND_MSG	MPQCTL.h	/^typedef struct _QMICTL_SYNC_IND_MSG$/;"	s
+_QMICTL_SYNC_REQ_MSG	MPQCTL.h	/^typedef struct _QMICTL_SYNC_REQ_MSG$/;"	s
+_QMICTL_SYNC_RESP_MSG	MPQCTL.h	/^typedef struct _QMICTL_SYNC_RESP_MSG$/;"	s
+_QMIDMS_GET_DEVICE_REV_ID_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_GET_DEVICE_REV_ID_REQ_MSG$/;"	s
+_QMIDMS_SET_OPERATING_MODE_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_SET_OPERATING_MODE_REQ_MSG$/;"	s
+_QMIDMS_SET_OPERATING_MODE_RESP_MSG	MPQMUX.h	/^typedef struct _QMIDMS_SET_OPERATING_MODE_RESP_MSG$/;"	s
+_QMIDMS_UIM_GET_IMSI_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_IMSI_REQ_MSG$/;"	s
+_QMIDMS_UIM_GET_IMSI_RESP_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_IMSI_RESP_MSG$/;"	s
+_QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_PIN_STATUS_REQ_MSG$/;"	s
+_QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_PIN_STATUS_RESP_MSG$/;"	s
+_QMIDMS_UIM_GET_STATE_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_STATE_REQ_MSG$/;"	s
+_QMIDMS_UIM_GET_STATE_RESP_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_GET_STATE_RESP_MSG$/;"	s
+_QMIDMS_UIM_PIN_STATUS	MPQMUX.h	/^typedef struct _QMIDMS_UIM_PIN_STATUS$/;"	s
+_QMIDMS_UIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_VERIFY_PIN_REQ_MSG$/;"	s
+_QMIDMS_UIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^typedef struct _QMIDMS_UIM_VERIFY_PIN_RESP_MSG$/;"	s
+_QMINAS_CURRENT_PLMN_MSG	MPQMUX.h	/^typedef struct _QMINAS_CURRENT_PLMN_MSG$/;"	s
+_QMINAS_DATA_CAP	MPQMUX.h	/^typedef struct _QMINAS_DATA_CAP$/;"	s
+_QMINAS_GET_HOME_NETWORK_REQ_MSG	MPQMUX.h	/^typedef struct _QMINAS_GET_HOME_NETWORK_REQ_MSG$/;"	s
+_QMINAS_GET_SERVING_SYSTEM_RESP_MSG	MPQMUX.h	/^typedef struct _QMINAS_GET_SERVING_SYSTEM_RESP_MSG$/;"	s
+_QMINAS_GET_SYS_INFO_RESP_MSG	MPQMUX.h	/^typedef struct _QMINAS_GET_SYS_INFO_RESP_MSG$/;"	s
+_QMINAS_SYS_INFO_IND_MSG	MPQMUX.h	/^typedef struct _QMINAS_SYS_INFO_IND_MSG$/;"	s
+_QMIUIM_CARD_STATUS	MPQMUX.h	/^typedef struct _QMIUIM_CARD_STATUS$/;"	s
+_QMIUIM_CONTENT	MPQMUX.h	/^typedef struct _QMIUIM_CONTENT$/;"	s
+_QMIUIM_GET_CARD_STATUS_RESP_MSG	MPQMUX.h	/^typedef struct _QMIUIM_GET_CARD_STATUS_RESP_MSG$/;"	s
+_QMIUIM_PIN_STATE	MPQMUX.h	/^typedef struct _QMIUIM_PIN_STATE$/;"	s
+_QMIUIM_READ_TRANSPARENT_REQ_MSG	MPQMUX.h	/^typedef struct _QMIUIM_READ_TRANSPARENT_REQ_MSG$/;"	s
+_QMIUIM_READ_TRANSPARENT_RESP_MSG	MPQMUX.h	/^typedef struct _QMIUIM_READ_TRANSPARENT_RESP_MSG$/;"	s
+_QMIUIM_VERIFY_PIN_REQ_MSG	MPQMUX.h	/^typedef struct _QMIUIM_VERIFY_PIN_REQ_MSG$/;"	s
+_QMIUIM_VERIFY_PIN_RESP_MSG	MPQMUX.h	/^typedef struct _QMIUIM_VERIFY_PIN_RESP_MSG$/;"	s
+_QMIWDS_ADMIN_SET_DATA_FORMAT	MPQMUX.h	/^typedef struct _QMIWDS_ADMIN_SET_DATA_FORMAT$/;"	s
+_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV	MPQMUX.h	/^typedef struct _QMIWDS_ADMIN_SET_DATA_FORMAT_TLV$/;"	s
+_QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS	MPQMUX.h	/^typedef struct _QMIWDS_ADMIN_SET_DATA_FORMAT_TLV_QOS$/;"	s
+_QMIWDS_APNNAME	MPQMUX.h	/^typedef struct _QMIWDS_APNNAME$/;"	s
+_QMIWDS_AUTH_PREFERENCE	MPQMUX.h	/^typedef struct _QMIWDS_AUTH_PREFERENCE$/;"	s
+_QMIWDS_AUTOCONNECT	MPQMUX.h	/^typedef struct _QMIWDS_AUTOCONNECT$/;"	s
+_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG$/;"	s
+_QMIWDS_CALLENDREASON	MPQMUX.h	/^typedef struct _QMIWDS_CALLENDREASON$/;"	s
+_QMIWDS_CALL_END_REASON_TLV	MPQMUX.h	/^typedef struct _QMIWDS_CALL_END_REASON_TLV$/;"	s
+_QMIWDS_CALL_END_REASON_V_TLV	MPQMUX.h	/^typedef struct _QMIWDS_CALL_END_REASON_V_TLV$/;"	s
+_QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_GET_DEFAULT_SETTINGS_REQ_MSG$/;"	s
+_QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_GET_DEFAULT_SETTINGS_RESP_MSG$/;"	s
+_QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_GET_PROFILE_SETTINGS_REQ_MSG$/;"	s
+_QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_GET_RUNTIME_SETTINGS_REQ_MSG$/;"	s
+_QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_GET_RUNTIME_SETTINGS_RESP_MSG$/;"	s
+_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR	MPQMUX.h	/^typedef struct _QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV4_ADDR$/;"	s
+_QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR	MPQMUX.h	/^typedef struct _QMIWDS_GET_RUNTIME_SETTINGS_TLV_IPV6_ADDR$/;"	s
+_QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU	MPQMUX.h	/^typedef struct _QMIWDS_GET_RUNTIME_SETTINGS_TLV_MTU$/;"	s
+_QMIWDS_IP_FAMILY_TLV	MPQMUX.h	/^typedef struct _QMIWDS_IP_FAMILY_TLV$/;"	s
+_QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_MODIFY_PROFILE_SETTINGS_REQ_MSG$/;"	s
+_QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_MODIFY_PROFILE_SETTINGS_RESP_MSG$/;"	s
+_QMIWDS_PASSWD	MPQMUX.h	/^typedef struct _QMIWDS_PASSWD$/;"	s
+_QMIWDS_PDPTYPE	MPQMUX.h	/^typedef struct _QMIWDS_PDPTYPE$/;"	s
+_QMIWDS_PKT_SRVC_TLV	MPQMUX.h	/^typedef struct _QMIWDS_PKT_SRVC_TLV$/;"	s
+_QMIWDS_PROFILENAME	MPQMUX.h	/^typedef struct _QMIWDS_PROFILENAME$/;"	s
+_QMIWDS_PROFILE_IDENTIFIER	MPQMUX.h	/^typedef struct _QMIWDS_PROFILE_IDENTIFIER$/;"	s
+_QMIWDS_SET_AUTO_CONNECT_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_SET_AUTO_CONNECT_REQ_MSG$/;"	s
+_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_SET_CLIENT_IP_FAMILY_PREF_REQ_MSG$/;"	s
+_QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_SET_CLIENT_IP_FAMILY_PREF_RESP_MSG$/;"	s
+_QMIWDS_START_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_START_NETWORK_INTERFACE_REQ_MSG$/;"	s
+_QMIWDS_START_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_START_NETWORK_INTERFACE_RESP_MSG$/;"	s
+_QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG	MPQMUX.h	/^typedef struct _QMIWDS_STOP_NETWORK_INTERFACE_REQ_MSG$/;"	s
+_QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG	MPQMUX.h	/^typedef struct _QMIWDS_STOP_NETWORK_INTERFACE_RESP_MSG$/;"	s
+_QMIWDS_TECHNOLOGY_PREFERECE	MPQMUX.h	/^typedef struct _QMIWDS_TECHNOLOGY_PREFERECE$/;"	s
+_QMIWDS_USERNAME	MPQMUX.h	/^typedef struct _QMIWDS_USERNAME$/;"	s
+_QMI_ERROR_CODE_TYPE	MPQMI.h	/^typedef enum _QMI_ERROR_CODE_TYPE$/;"	g
+_QMI_RESULT_CODE_TYPE	MPQMI.h	/^typedef enum _QMI_RESULT_CODE_TYPE$/;"	g
+_QMI_SERVICE_TYPE	MPQMI.h	/^typedef enum _QMI_SERVICE_TYPE$/;"	g
+_QMI_SERVICE_VERSION	MPQMI.h	/^typedef struct _QMI_SERVICE_VERSION$/;"	s
+_QMI_TLV_HDR	MPQMI.h	/^typedef struct _QMI_TLV_HDR$/;"	s
+_QMUX_MSG	MPQMUX.h	/^typedef struct _QMUX_MSG$/;"	s
+_QMUX_TYPE_VERSION_STRUCT	MPQCTL.h	/^typedef struct _QMUX_TYPE_VERSION_STRUCT$/;"	s
+_READ_TRANSPARENT_TLV	MPQMUX.h	/^typedef struct _READ_TRANSPARENT_TLV$/;"	s
+_SERVICE_STATUS_INFO	MPQMUX.h	/^typedef struct _SERVICE_STATUS_INFO$/;"	s
+_SERVING_SYSTEM	MPQMUX.h	/^typedef struct _SERVING_SYSTEM$/;"	s
+_TDSCDMA_SYSTEM_INFO	MPQMUX.h	/^typedef struct _TDSCDMA_SYSTEM_INFO$/;"	s
+_UTILS_H_	util.h	18;"	d
+_WCDMA_SYSTEM_INFO	MPQMUX.h	/^typedef struct _WCDMA_SYSTEM_INFO$/;"	s
+__IPV4	QMIThread.h	/^typedef struct __IPV4 {$/;"	s
+__IPV6	QMIThread.h	/^typedef struct __IPV6 {$/;"	s
+__PROFILE	QMIThread.h	/^typedef struct __PROFILE {$/;"	s
+__QMI_THREAD_H__	QMIThread.h	2;"	d
+__V	util.c	6;"	d	file:
+__V	util.c	9;"	d	file:
+android_property_set	udhcpc.c	/^static void android_property_set(char *ifname, char *type, uint32_t ipaddr) {$/;"	f	file:
+apn	QMIThread.h	/^    const char *apn;$/;"	m	struct:__PROFILE
+auth	QMIThread.h	/^    int auth;$/;"	m	struct:__PROFILE
+autoconnect_setting	MPQMUX.h	/^   UCHAR  autoconnect_setting;     \/\/  0x00 ?C Disabled, 0x01 ?C Enabled, 0x02 ?C Paused (resume on power cycle)$/;"	m	struct:_QMIWDS_SET_AUTO_CONNECT_REQ_MSG
+cdc_wdm_fd	QmiWwanCM.c	/^int cdc_wdm_fd = -1;$/;"	v
+check_ipv4_address	main.c	/^static int check_ipv4_address(PROFILE_T *now_profile) {$/;"	f	file:
+class2str	QMIThread.c	/^struct wwan_data_class_str class2str[] = {$/;"	v	typeref:struct:wwan_data_class_str
+client_type	MPQMUX.h	/^   ULONG  client_type;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+const	util.c	10;"	d	file:
+content	MPQMUX.h	/^   UCHAR  content[];$/;"	m	struct:_QMIUIM_CONTENT
+content_len	MPQMUX.h	/^   USHORT content_len;$/;"	m	struct:_QMIUIM_CONTENT
+cpu_to_le16	util.c	/^USHORT cpu_to_le16(USHORT v16) {$/;"	f
+cpu_to_le32	util.c	/^UINT cpu_to_le32 (UINT v32) {$/;"	f
+curIpFamily	QMIThread.h	/^    int curIpFamily;$/;"	m	struct:__PROFILE
+daemon_pipe_fd	main.c	/^static int daemon_pipe_fd[2];$/;"	v	file:
+dbg	MPQMUX.c	4;"	d	file:
+dbg	MPQMUX.c	5;"	d	file:
+dbg_time	util.c	/^void dbg_time (const char *fmt, ...) {$/;"	f
+debug_qmi	main.c	/^int debug_qmi = 0;$/;"	v
+dhclient_alive	udhcpc.c	/^static int dhclient_alive = 0;$/;"	v	file:
+dibbler_client_alive	udhcpc.c	/^static int dibbler_client_alive = 0;$/;"	v	file:
+do_dhcp_request	dhcpclient.c	/^void do_dhcp_request(PROFILE_T *profile) {$/;"	f
+dumpQMIMutex	MPQMUX.c	/^static pthread_mutex_t dumpQMIMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+dump_ctl	MPQMUX.c	/^void dump_ctl(PQCQMICTL_MSG_HDR CTLHdr) {$/;"	f
+dump_qmi	MPQMUX.c	/^void dump_qmi(void *dataBuffer, int dataLen) $/;"	f
+dump_qmux	MPQMUX.c	/^int dump_qmux(QMI_SERVICE_TYPE serviceType, PQCQMUX_HDR QMUXHdr) {$/;"	f
+dump_tlv	MPQMUX.c	/^void dump_tlv(PQCQMUX_MSG_HDR pQMUXMsgHdr) {$/;"	f
+ep_type	MPQMUX.h	/^   ULONG  ep_type;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+file_id	MPQMUX.h	/^   USHORT file_id;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+gQmiThreadID	main.c	/^pthread_t gQmiThreadID;$/;"	v
+get_time	util.c	/^static const char * get_time(void) {$/;"	f	file:
+has_more_argv	main.c	445;"	d	file:
+i	util.c	/^const int i = 1;$/;"	v
+iface_id	MPQMUX.h	/^   ULONG  iface_id;$/;"	m	struct:_QMIWDS_BIND_MUX_DATA_PORT_REQ_MSG
+ipaddr_to_string	dhcpclient.c	/^static const char *ipaddr_to_string(in_addr_t addr)$/;"	f	file:
+ipv4	QMIThread.h	/^    IPV4_T ipv4;$/;"	m	struct:__PROFILE
+ipv6	QMIThread.h	/^    IPV6_T ipv6;$/;"	m	struct:__PROFILE
+is856SysId	MPQMUX.h	/^   UCHAR  is856SysId[16];$/;"	m	struct:_HDR_SYSTEM_INFO
+is856SysIdValid	MPQMUX.h	/^   UCHAR  is856SysIdValid;$/;"	m	struct:_HDR_SYSTEM_INFO
+is_bigendian	util.c	97;"	d	file:
+is_brother_process	main.c	/^static int is_brother_process(const char *dir, const char *file, void *argv[])$/;"	f	file:
+is_response	QMIThread.c	/^static int is_response(const PQCQMIMSG pRequest, const PQCQMIMSG pResponse) {$/;"	f	file:
+is_same_linkfile	main.c	/^static int is_same_linkfile(const char *dir, const char *file,  void *argv[])$/;"	f	file:
+kill_brothers	main.c	/^static int kill_brothers(const char *qmichannel)$/;"	f	file:
+le16_to_cpu	util.c	/^USHORT le16_to_cpu(USHORT v16) {$/;"	f
+le32_to_cpu	util.c	/^UINT  le32_to_cpu (UINT v32) {$/;"	f
+line	MPQMUX.c	/^static char line[1024];$/;"	v	file:
+line	util.c	/^static char line[1024];$/;"	v	file:
+list_declare	util.h	31;"	d
+list_empty	util.h	48;"	d
+list_for_each	util.h	37;"	d
+list_for_each_reverse	util.h	40;"	d
+list_head	util.h	49;"	d
+list_tail	util.h	50;"	d
+listnode	util.h	/^struct listnode$/;"	s
+logfilefp	util.c	/^FILE *logfilefp = NULL;$/;"	v
+ls_dir	main.c	/^static int ls_dir(const char *dir, int (*match)(const char *dir, const char *file, void *argv[]), void *argv[])$/;"	f	file:
+main_loop	main.c	/^int main_loop = 0;$/;"	v
+main_send_event_to_qmidevice	main.c	/^static void main_send_event_to_qmidevice(int triger_event) {$/;"	f	file:
+name	MPQMUX.c	/^    const char *name;$/;"	m	struct:__anon2	file:
+next	util.h	/^    struct listnode *next;$/;"	m	struct:listnode	typeref:struct:listnode::listnode
+node_to_item	util.h	28;"	d
+password	QMIThread.h	/^    const char *password;$/;"	m	struct:__PROFILE
+path	MPQMUX.h	/^   UCHAR  path[];$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+path_len	MPQMUX.h	/^   UCHAR  path_len;$/;"	m	struct:_QMIUIM_READ_TRANSPARENT_REQ_MSG
+pdp	QMIThread.h	/^    int pdp;$/;"	m	struct:__PROFILE
+pincode	QMIThread.h	/^    const char *pincode;$/;"	m	struct:__PROFILE
+prev	util.h	/^    struct listnode *prev;$/;"	m	struct:listnode	typeref:struct:listnode::listnode
+printfMutex	util.c	/^static pthread_mutex_t printfMutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+pthread_cond_timeout_np	util.c	/^int pthread_cond_timeout_np(pthread_cond_t *cond,$/;"	f
+ql_enter_daemon	main.c	/^static void ql_enter_daemon(int signo) {$/;"	f	file:
+ql_prepare_daemon	main.c	/^static void ql_prepare_daemon(void) {$/;"	f	file:
+ql_set_mtu	udhcpc.c	/^static void ql_set_mtu(const char *usbnet_adapter, int ifru_mtu) {$/;"	f	file:
+ql_sigaction	main.c	/^static void ql_sigaction(int signo) {$/;"	f	file:
+ql_swap32	util.c	/^UINT ql_swap32(UINT v32) {$/;"	f
+ql_system	udhcpc.c	/^static int ql_system(const char *shell_cmd) {$/;"	f	file:
+qmi_CtlFlags	MPQMUX.c	/^static const QMI_NAME_T qmi_CtlFlags[] = {$/;"	v	file:
+qmi_IFType	MPQMUX.c	/^static const QMI_NAME_T qmi_IFType[] = {$/;"	v	file:
+qmi_QMIType	MPQMUX.c	/^static const QMI_NAME_T qmi_QMIType[] = {$/;"	v	file:
+qmi_ctl_CtlFlags	MPQMUX.c	/^static const QMI_NAME_T qmi_ctl_CtlFlags[] = {$/;"	v	file:
+qmi_name_get	MPQMUX.c	/^static const char * qmi_name_get(const QMI_NAME_T *table, size_t size, int type, const char *tag) {$/;"	f	file:
+qmi_name_item	MPQMUX.c	14;"	d	file:
+qmichannel	QMIThread.h	/^    char * qmichannel;$/;"	m	struct:__PROFILE
+qmichannel	main.c	/^char * qmichannel;$/;"	v
+qmiclientId	QMIThread.c	/^int qmiclientId[QMUX_TYPE_WDS_ADMIN + 1]; \/\/GobiNet use fd to indicate client ID, so type of qmiclientId must be int$/;"	v
+qmidevice_control_fd	main.c	/^int qmidevice_control_fd[2];$/;"	v
+qmidevice_detect	main.c	/^static int qmidevice_detect(char **pp_qmichannel, char **pp_usbnet_adapter) {$/;"	f	file:
+qmidevice_send_event_to_main	main.c	/^void qmidevice_send_event_to_main(int triger_event) {$/;"	f
+qmux_CtlFlags	MPQMUX.c	/^static const QMI_NAME_T qmux_CtlFlags[] = {$/;"	v	file:
+qmux_ctl_QMICTLType	MPQMUX.c	/^static const QMI_NAME_T qmux_ctl_QMICTLType[] = {$/;"	v	file:
+qmux_dms_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_dms_Type[] = {$/;"	v	file:
+qmux_nas_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_nas_Type[] = {$/;"	v	file:
+qmux_uim_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_uim_Type[] = {$/;"	v	file:
+qmux_wds_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_wds_Type[] = {$/;"	v	file:
+qmux_wds_admin_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_wds_admin_Type[] = {$/;"	v	file:
+qmux_wms_Type	MPQMUX.c	/^static const QMI_NAME_T qmux_wms_Type[] = {$/;"	v	file:
+qstrcpy	QMIThread.c	/^static char *qstrcpy(char *to, const char *from) { \/\/no __strcpy_chk$/;"	f	file:
+quectel_CM	main.c	/^int quectel_CM(int argc, char *argv[])$/;"	f
+quectel_convert_cdma_mcc_2_ascii_mcc	QMIThread.c	/^static void quectel_convert_cdma_mcc_2_ascii_mcc( USHORT *p_mcc, USHORT mcc )$/;"	f	file:
+quectel_convert_cdma_mnc_2_ascii_mnc	QMIThread.c	/^static void quectel_convert_cdma_mnc_2_ascii_mnc( USHORT *p_mnc, USHORT imsi_11_12)$/;"	f	file:
+rawIP	QMIThread.h	/^    int rawIP;$/;"	m	struct:__PROFILE
+requestBaseBandVersion	QMIThread.c	/^int requestBaseBandVersion(const char **pp_reversion) {$/;"	f
+requestDeactivateDefaultPDP	QMIThread.c	/^int requestDeactivateDefaultPDP(PROFILE_T *profile, int curIpFamily) {$/;"	f
+requestEnterSimPin	QMIThread.c	/^int requestEnterSimPin(const CHAR *pPinCode) {$/;"	f
+requestGetHomeNetwork	QMIThread.c	/^int requestGetHomeNetwork(USHORT *p_mcc, USHORT *p_mnc, USHORT *p_sid, USHORT *p_nid) {$/;"	f
+requestGetICCID	QMIThread.c	/^int requestGetICCID(void) { \/\/RIL_REQUEST_GET_IMSI$/;"	f
+requestGetIMSI	QMIThread.c	/^int requestGetIMSI(void) { \/\/RIL_REQUEST_GET_IMSI$/;"	f
+requestGetIPAddress	QMIThread.c	/^int requestGetIPAddress(PROFILE_T *profile, int curIpFamily) {$/;"	f
+requestGetPINStatus	QMIThread.c	/^int requestGetPINStatus(SIM_Status *pSIMStatus) {$/;"	f
+requestGetProfile	QMIThread.c	/^int requestGetProfile(PROFILE_T *profile) {$/;"	f
+requestGetSIMStatus	QMIThread.c	/^int requestGetSIMStatus(SIM_Status *pSIMStatus) { \/\/RIL_REQUEST_GET_SIM_STATUS$/;"	f
+requestQueryDataCall	QMIThread.c	/^int requestQueryDataCall(UCHAR  *pConnectionStatus, int curIpFamily) {$/;"	f
+requestRegistrationState	QMIThread.c	/^int requestRegistrationState(UCHAR *pPSAttachedState) {$/;"	f
+requestRegistrationState2	QMIThread.c	/^int requestRegistrationState2(UCHAR *pPSAttachedState) {$/;"	f
+requestSetEthMode	QMIThread.c	/^int requestSetEthMode(PROFILE_T *profile) {$/;"	f
+requestSetOperatingMode	QMIThread.c	/^int requestSetOperatingMode(UCHAR OperatingMode) {$/;"	f
+requestSetProfile	QMIThread.c	/^int requestSetProfile(PROFILE_T *profile) {$/;"	f
+requestSetupDataCall	QMIThread.c	/^int requestSetupDataCall(PROFILE_T *profile, int curIpFamily) {$/;"	f
+s_9x07	QMIThread.c	/^static int s_9x07 = -1;$/;"	v	file:
+s_commandcond	QMIThread.c	/^static pthread_cond_t s_commandcond = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+s_commandmutex	QMIThread.c	/^static pthread_mutex_t s_commandmutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+s_hdr_personality	QMIThread.c	/^static int s_hdr_personality = 0; \/\/ 0x01-HRPD, 0x02-eHRPD$/;"	v	file:
+s_is_cdma	QMIThread.c	/^static int s_is_cdma = 0;$/;"	v	file:
+s_pRequest	QMIThread.c	/^static PQCQMIMSG s_pRequest;$/;"	v	file:
+s_pResponse	QMIThread.c	/^static PQCQMIMSG s_pResponse;$/;"	v	file:
+send_signo_to_main	main.c	/^static void send_signo_to_main(int signo) {$/;"	f	file:
+setTimespecRelative	util.c	/^static void setTimespecRelative(struct timespec *p_ts, long long msec)$/;"	f	file:
+signal_control_fd	main.c	/^static int signal_control_fd[2];$/;"	v	file:
+str	QMIThread.h	/^    CHAR *str;$/;"	m	struct:wwan_data_class_str
+type	MPQMUX.c	/^    UINT type;$/;"	m	struct:__anon2	file:
+udhcpc_start	udhcpc.c	/^void udhcpc_start(PROFILE_T *profile) {$/;"	f
+udhcpc_stop	udhcpc.c	/^void udhcpc_stop(PROFILE_T *profile) {$/;"	f
+udhcpc_thread_function	udhcpc.c	/^static void* udhcpc_thread_function(void* arg) {$/;"	f	file:
+usage	main.c	/^static int usage(const char *progname) {$/;"	f	file:
+usbnet_adapter	QMIThread.h	/^    char * usbnet_adapter;$/;"	m	struct:__PROFILE
+usbnet_link_change	main.c	/^static void usbnet_link_change(int link, PROFILE_T *profile) {$/;"	f	file:
+user	QMIThread.h	/^    const char *user;$/;"	m	struct:__PROFILE
+volatile	util.c	11;"	d	file:
+wwan_data_class2str	QMIThread.c	/^CHAR *wwan_data_class2str(ULONG class)$/;"	f
+wwan_data_class_str	QMIThread.h	/^struct wwan_data_class_str {$/;"	s
